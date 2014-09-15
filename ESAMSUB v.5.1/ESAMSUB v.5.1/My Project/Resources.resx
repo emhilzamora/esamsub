@@ -118,188 +118,56 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Login Icon_mirror1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login Icon_mirror1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Login Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Login Icon_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login Icon_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Explorer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Explorer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Untitled_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Change Pword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Change Pword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cancel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Add new user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add new user2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Profile2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Profile2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User With Frame_mirror with Text" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User With Frame_mirror with Text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Live Messenger alt 1_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Live Messenger alt 1_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Save1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Access Control" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Access Control.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Profile.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Access Control1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Access Control1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="left Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\left Arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Add new user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add new user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Recycle Bin Full" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Recycle Bin Full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Power - Restart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Power - Restart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Live Messenger alt 1_mirror1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Live Messenger alt 1_mirror1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Power - Restart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Power - Restart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UCU_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UCU_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search alt (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search alt (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Monitoring" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Monitoring.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Right arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Right arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="searchalt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\searchalt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Internet Access" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Internet Access.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="erase-256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\erase-256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Employee_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Employee_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Add new user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add new user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Right arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Right arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Student Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Student Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Calendar_mirror1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Calendar_mirror1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Live Messenger alt 1_mirror1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Live Messenger alt 1_mirror1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Update" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Employee Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Employee Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Refresh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Refresh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="internet Access_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\internet Access_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Edit Username1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Edit Username1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pictures Library" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pictures Library.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Update1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Update1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Monitoring1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Monitoring1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User With Frame_mirror with Text1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User With Frame_mirror with Text1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Login Icon_mirror3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login Icon_mirror3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Profile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Profile1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Login Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logout-1-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout-1-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Edit Username" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Edit Username.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="User With Frame_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User With Frame_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Manage Users" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Manage Users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Add Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="internet logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\internet logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Share1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Share1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Login Icon_mirror2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login Icon_mirror2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Calendar_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Calendar_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Save1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Share" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Share.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Edit User" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Edit User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Create Id_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Create Id_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Manage Users1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Manage Users1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Live Messenger alt 3_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Live Messenger alt 3_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -307,7 +175,148 @@
   <data name="Monitoring_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Monitoring_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="left Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left Arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calendar_mirror1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calendar_mirror1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add new user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add new user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login Icon_mirror1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login Icon_mirror1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Change Pword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Change Pword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Recycle Bin Full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Recycle Bin Full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User With Frame_mirror with Text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User With Frame_mirror with Text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User With Frame_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User With Frame_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="erase-256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\erase-256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User With Frame_mirror with Text1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User With Frame_mirror with Text1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UCU_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UCU_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Student Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Student Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="searchalt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\searchalt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Power - Restart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Power - Restart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Explorer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Explorer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add new user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add new user2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Employee Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Employee Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Access Control" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Access Control.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manage Users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Manage Users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search alt (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search alt (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monitoring1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monitoring1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monitoring" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monitoring.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Create Id_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Create Id_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login Icon_mirror2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login Icon_mirror2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="internet Access_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\internet Access_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pictures Library" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pictures Library.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Live Messenger alt 1_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Live Messenger alt 1_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Profile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Profile1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit Username1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit Username1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login Icon_mirror3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login Icon_mirror3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="internet logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\internet logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calendar_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calendar_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Update1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Update1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Profile.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit User" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Share1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Share1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add new user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add new user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Internet Access" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Internet Access.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manage Users1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Manage Users1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Power - Restart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Power - Restart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit Username" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit Username.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Access Control1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Access Control1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report_mirror1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report_mirror1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

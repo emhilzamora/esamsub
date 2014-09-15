@@ -25,15 +25,15 @@ Partial Class Dashboard
         Me.components = New System.ComponentModel.Container()
         Me.lblUserLevel = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnShutdown = New System.Windows.Forms.Button()
-        Me.btnMinimize = New System.Windows.Forms.Button()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblTime = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.tmrTimeRunner = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnCreatId = New System.Windows.Forms.Button()
         Me.btnEmployee = New System.Windows.Forms.Button()
         Me.btnInternetAccess = New System.Windows.Forms.Button()
@@ -41,10 +41,11 @@ Partial Class Dashboard
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnHelp = New System.Windows.Forms.Button()
         Me.btnManageUsers = New System.Windows.Forms.Button()
-        Me.btnUserPic = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.btnMonitoring = New System.Windows.Forms.Button()
+        Me.btnShutdown = New System.Windows.Forms.Button()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnUserPic = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -77,30 +78,6 @@ Partial Class Dashboard
         Me.Panel2.Size = New System.Drawing.Size(1374, 79)
         Me.Panel2.TabIndex = 29
         '
-        'btnShutdown
-        '
-        Me.btnShutdown.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.logout_1_512
-        Me.btnShutdown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnShutdown.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.btnShutdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnShutdown.Location = New System.Drawing.Point(1258, 7)
-        Me.btnShutdown.Name = "btnShutdown"
-        Me.btnShutdown.Size = New System.Drawing.Size(42, 37)
-        Me.btnShutdown.TabIndex = 37
-        Me.btnShutdown.UseVisualStyleBackColor = True
-        '
-        'btnMinimize
-        '
-        Me.btnMinimize.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.searchalt
-        Me.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnMinimize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Location = New System.Drawing.Point(1199, 6)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(42, 37)
-        Me.btnMinimize.TabIndex = 36
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
         'lblDate
         '
         Me.lblDate.AutoSize = True
@@ -122,16 +99,6 @@ Partial Class Dashboard
         Me.lblTime.Size = New System.Drawing.Size(183, 39)
         Me.lblTime.TabIndex = 31
         Me.lblTime.Text = "10:50:09 PM"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Logo
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(8, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(86, 74)
-        Me.PictureBox1.TabIndex = 11
-        Me.PictureBox1.TabStop = False
         '
         'Label2
         '
@@ -158,6 +125,41 @@ Partial Class Dashboard
         '
         'tmrTimeRunner
         '
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.Panel1.Location = New System.Drawing.Point(-2, 673)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1308, 27)
+        Me.Panel1.TabIndex = 47
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label4.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(1167, 610)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(127, 60)
+        Me.Label4.TabIndex = 49
+        Me.Label4.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
+            "ms v.6.1"
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.report_mirror1
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.Enabled = False
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(591, 389)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(220, 197)
+        Me.Button1.TabIndex = 50
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'btnCreatId
         '
@@ -253,41 +255,6 @@ Partial Class Dashboard
         Me.btnManageUsers.TabIndex = 40
         Me.btnManageUsers.UseVisualStyleBackColor = True
         '
-        'btnUserPic
-        '
-        Me.btnUserPic.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnUserPic.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile1
-        Me.btnUserPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnUserPic.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnUserPic.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnUserPic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUserPic.Location = New System.Drawing.Point(1239, 95)
-        Me.btnUserPic.Name = "btnUserPic"
-        Me.btnUserPic.Size = New System.Drawing.Size(48, 48)
-        Me.btnUserPic.TabIndex = 14
-        Me.btnUserPic.UseVisualStyleBackColor = False
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(-2, 673)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1308, 27)
-        Me.Panel1.TabIndex = 47
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.Label4.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(1167, 610)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(127, 60)
-        Me.Label4.TabIndex = 49
-        Me.Label4.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
-            "ms v.6.1"
-        '
         'btnMonitoring
         '
         Me.btnMonitoring.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Monitoring_mirror
@@ -302,12 +269,61 @@ Partial Class Dashboard
         Me.btnMonitoring.TabIndex = 39
         Me.btnMonitoring.UseVisualStyleBackColor = True
         '
+        'btnShutdown
+        '
+        Me.btnShutdown.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.logout_1_512
+        Me.btnShutdown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnShutdown.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.btnShutdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnShutdown.Location = New System.Drawing.Point(1258, 7)
+        Me.btnShutdown.Name = "btnShutdown"
+        Me.btnShutdown.Size = New System.Drawing.Size(42, 37)
+        Me.btnShutdown.TabIndex = 37
+        Me.btnShutdown.UseVisualStyleBackColor = True
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.searchalt
+        Me.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMinimize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Location = New System.Drawing.Point(1199, 6)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(42, 37)
+        Me.btnMinimize.TabIndex = 36
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Logo
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(8, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(86, 74)
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
+        '
+        'btnUserPic
+        '
+        Me.btnUserPic.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnUserPic.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile1
+        Me.btnUserPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnUserPic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnUserPic.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnUserPic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUserPic.Location = New System.Drawing.Point(1239, 95)
+        Me.btnUserPic.Name = "btnUserPic"
+        Me.btnUserPic.Size = New System.Drawing.Size(48, 48)
+        Me.btnUserPic.TabIndex = 14
+        Me.btnUserPic.UseVisualStyleBackColor = False
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1300, 700)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnCreatId)
@@ -356,4 +372,5 @@ Partial Class Dashboard
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btnMonitoring As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

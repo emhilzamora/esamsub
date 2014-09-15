@@ -47,7 +47,8 @@ Public Class Monitoring
 
     Private Sub Monitoring_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         tt = New ToolTip
-        tt.SetToolTip(btnReset, "Reset records")
+        tt.SetToolTip(btnReset, "Reset")
+        tt.SetToolTip(btnRecords, "Open records")
         tt.SetToolTip(btnSearch, "Search student")
         SendMessage(Me.txtSearch.Handle, &H1501, 0, "$X.XX") 'Me.Font, Brushes.LightGray
         SendMessage(Me.txtSearch.Handle, &H1501, 0, "Search Student")
