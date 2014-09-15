@@ -136,7 +136,7 @@ Partial Class Monitoring
         Me.lvMonitoringStud.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
         Me.lvMonitoringStud.Location = New System.Drawing.Point(50, 156)
         Me.lvMonitoringStud.Name = "lvMonitoringStud"
-        Me.lvMonitoringStud.Size = New System.Drawing.Size(1209, 470)
+        Me.lvMonitoringStud.Size = New System.Drawing.Size(1209, 496)
         Me.lvMonitoringStud.TabIndex = 55
         Me.lvMonitoringStud.UseCompatibleStateImageBehavior = False
         Me.lvMonitoringStud.View = System.Windows.Forms.View.Details
@@ -189,9 +189,9 @@ Partial Class Monitoring
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(-4, 649)
+        Me.Panel1.Location = New System.Drawing.Point(-4, 672)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1308, 50)
+        Me.Panel1.Size = New System.Drawing.Size(1308, 27)
         Me.Panel1.TabIndex = 56
         '
         'txtSearch
@@ -200,7 +200,7 @@ Partial Class Monitoring
         Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtSearch.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtSearch.Location = New System.Drawing.Point(785, 110)
+        Me.txtSearch.Location = New System.Drawing.Point(785, 96)
         Me.txtSearch.MaxLength = 30
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(237, 26)
@@ -213,7 +213,7 @@ Partial Class Monitoring
         Me.txtMonitoring.Enabled = False
         Me.txtMonitoring.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMonitoring.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtMonitoring.Location = New System.Drawing.Point(345, 106)
+        Me.txtMonitoring.Location = New System.Drawing.Point(345, 92)
         Me.txtMonitoring.MaxLength = 30
         Me.txtMonitoring.Name = "txtMonitoring"
         Me.txtMonitoring.Size = New System.Drawing.Size(237, 26)
@@ -225,7 +225,7 @@ Partial Class Monitoring
         Me.cmbType.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbType.FormattingEnabled = True
         Me.cmbType.Items.AddRange(New Object() {"Time-In", "Time-Out"})
-        Me.cmbType.Location = New System.Drawing.Point(111, 102)
+        Me.cmbType.Location = New System.Drawing.Point(111, 88)
         Me.cmbType.Name = "cmbType"
         Me.cmbType.Size = New System.Drawing.Size(121, 30)
         Me.cmbType.TabIndex = 60
@@ -249,7 +249,7 @@ Partial Class Monitoring
         Me.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.Location = New System.Drawing.Point(1028, 103)
+        Me.btnSearch.Location = New System.Drawing.Point(1028, 89)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(41, 36)
         Me.btnSearch.TabIndex = 57
@@ -271,7 +271,7 @@ Partial Class Monitoring
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(238, 110)
+        Me.Label4.Location = New System.Drawing.Point(107, 121)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(101, 22)
         Me.Label4.TabIndex = 39

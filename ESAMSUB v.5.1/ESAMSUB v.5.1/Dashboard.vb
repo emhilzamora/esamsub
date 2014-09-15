@@ -4,9 +4,26 @@ Public Class Dashboard
     Private Sub tmrTimeRunner_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrTimeRunner.Tick
         lblDate.Text = Now.ToLongDateString
         lblTime.Text = Now.ToLongTimeString
+        If lblUserLevel.Text = "Administrator" Then
+            btnManageUsers.Enabled = True
+            btnInternetAccess.Enabled = True
+            btnCreatId.Enabled = True
+            btnEmployee.Enabled = True
+            btnMonitoring.Enabled = True
+            btnStudents.Enabled = True
+
+        ElseIf lblUserLevel.Text = "Registrar" Then
+            btnStudents.Enabled = True
+            btnManageUsers.Enabled = False
+            btnInternetAccess.Enabled = False
+            btnCreatId.Enabled = False
+            btnEmployee.Enabled = False
+            btnMonitoring.Enabled = False
+        End If
     End Sub
 
     Private Sub Dashboard_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+       
         'para sa tooltip
         tt1 = New ToolTip
         tt1.SetToolTip(btnHelp, "Help")
@@ -48,6 +65,11 @@ Public Class Dashboard
     End Sub
 
     Private Sub btnUserPic_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUserPic.Click
+        btnManageUsers.Enabled = False
+        btnCreatId.Enabled = False
+        btnEmployee.Enabled = False
+        btnMonitoring.Enabled = False
+        btnStudents.Enabled = False
         animateWin(Me, False)
         Me.Hide()
         animateWin(Startup, True)
@@ -80,5 +102,9 @@ Public Class Dashboard
         Me.Hide()
         animateWin(Employees, True)
         Employees.Show()
+    End Sub
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 End Class

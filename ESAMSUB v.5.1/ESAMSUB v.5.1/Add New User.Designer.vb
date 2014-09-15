@@ -117,6 +117,7 @@ Partial Class Add_New_User
         '
         'cmbUserType
         '
+        Me.cmbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbUserType.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbUserType.Font = New System.Drawing.Font("Open Sans Light", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbUserType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))

@@ -62,6 +62,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="TouchlessLib">
+      <HintPath>D:\School Activities\Employee and Student Attendance Monitoring System\Touchless\TouchlessLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -92,6 +95,12 @@
       <DependentUpon>Admin Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Camera.Designer.vb">
+      <DependentUpon>Camera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Camera.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.vb">
@@ -199,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin Login.resx">
       <DependentUpon>Admin Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Camera.resx">
+      <DependentUpon>Camera.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
@@ -445,6 +457,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Power - Restart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

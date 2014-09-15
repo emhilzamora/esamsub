@@ -48,6 +48,7 @@ Public Class Startup
     End Sub
 
     Private Sub btnAdministor_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdministor.Click
+        Admin_Login.txtUsername.Focus()
         animateWin(Me, False)
         Me.Hide()
         Admin_Login.ShowDialog()
@@ -57,6 +58,7 @@ Public Class Startup
         animateWin(Me, False)
         Me.Hide()
         Other_User_Login.ShowDialog()
+        Other_User_Login.cmbUserType.Focus()
     End Sub
 End Class
 '1366 x 768 Screen Resolution ng Laptop ko

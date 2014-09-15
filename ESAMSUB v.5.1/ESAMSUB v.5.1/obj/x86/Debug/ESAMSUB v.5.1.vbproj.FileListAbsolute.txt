@@ -74,3 +74,27 @@ C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB
 C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.exe
 C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.xml
 C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.pdb
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.exe
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.pdb
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.xml
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.vbprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Add_New_User.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.AddStudent.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Admin_Login.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Dashboard.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Edit_User.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Edit_Student_Record.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Employees.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Internet_Access_Prompt.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Internet_Access_Usage.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Manage_Users.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Monitoring.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Other_User_Login.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Startup.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Resources.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Student_TimeIn.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Student_TimeOut.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Students.resources
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.vbproj.GenerateResource.Cache
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\TouchlessLib.dll
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Camera.resources

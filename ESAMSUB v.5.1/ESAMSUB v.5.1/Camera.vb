@@ -1,0 +1,44 @@
+﻿
+Public Class Camera
+    'calls for the instances of camera
+    Public touchless As New TouchlessLib.TouchlessMgr
+    Public camera1 As TouchlessLib.Camera = touchless.Cameras.ElementAt(0)
+    Private Sub Camera_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'enabled buttons
+        btnSave.Enabled = False
+        'ito ung tuamtawag ng camera na may size na 
+        touchless.CurrentCamera = camera1
+        touchless.CurrentCamera.CaptureHeight = 480
+        touchless.CurrentCamera.CaptureWidth = 480
+    End Sub
+
+    Private Sub tmrCamera_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrCamera.Tick
+        pictMainCamera.Image = touchless.CurrentCamera.GetCurrentImage
+    End Sub
+
+    Private Sub btnTakePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTakePicture.Click
+        'sinasalin sa picturebox ang picture
+        pictMainCamera.Image = touchless.CurrentCamera.GetCurrentImage
+        tmrCamera.Stop()
+        'enabled button
+        btnSave.Enabled = True
+        btnTakePicture.Enabled = False
+    End Sub
+
+    Private Sub btnRetake_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRetake.Click
+        'start ulit ang camera para sa bagong pagtake ng picture
+        tmrCamera.Start()
+        'enabeld button
+        btnSave.Enabled = False
+        btnTakePicture.Enabled = True
+    End Sub
+
+    Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
+        AddStudent.pictStudentPic.Image = touchless.CurrentCamera.GetCurrentImage
+        'babalik sa pag add ng student
+        animateWin(Me, False)
+        Me.Hide()
+        animateWin(AddStudent, True)
+        AddStudent.Show()
+    End Sub
+End Class
