@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CFC83AFA-BD78-45E6-93E0-9346216C0F6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ESAMSUB_v._5._1.My.MyApplication</StartupObject>
+    <RootNamespace>ESAMSUB_v._5._1</RootNamespace>
+    <AssemblyName>ESAMSUB v.5.1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ESAMSUB v.5.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ESAMSUB v.5.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.3.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.3.5\Assemblies\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add New User.Designer.vb">
+      <DependentUpon>Add New User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add New User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudent.Designer.vb">
+      <DependentUpon>AddStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Login.Designer.vb">
+      <DependentUpon>Admin Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password.Designer.vb">
+      <DependentUpon>Change Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Student Record.Designer.vb">
+      <DependentUpon>Edit Student Record.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Student Record.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees.Designer.vb">
+      <DependentUpon>Employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internet Access Prompt.Designer.vb">
+      <DependentUpon>Internet Access Prompt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Internet Access Prompt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internet Access Usage.Designer.vb">
+      <DependentUpon>Internet Access Usage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Internet Access Usage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Users.Designer.vb">
+      <DependentUpon>Manage Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monitoring.Designer.vb">
+      <DependentUpon>Monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other User Login.Designer.vb">
+      <DependentUpon>Other User Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Other User Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlidingForms.vb" />
+    <Compile Include="Startup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.vb">
+      <DependentUpon>Startup.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Student TimeIn.Designer.vb">
+      <DependentUpon>Student TimeIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student TimeIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student TimeOut.Designer.vb">
+      <DependentUpon>Student TimeOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student TimeOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students.Designer.vb">
+      <DependentUpon>Students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Add New User.resx">
+      <DependentUpon>Add New User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudent.resx">
+      <DependentUpon>AddStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Login.resx">
+      <DependentUpon>Admin Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password.resx">
+      <DependentUpon>Change Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Student Record.resx">
+      <DependentUpon>Edit Student Record.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.resx">
+      <DependentUpon>Employees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internet Access Prompt.resx">
+      <DependentUpon>Internet Access Prompt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internet Access Usage.resx">
+      <DependentUpon>Internet Access Usage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Users.resx">
+      <DependentUpon>Manage Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitoring.resx">
+      <DependentUpon>Monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other User Login.resx">
+      <DependentUpon>Other User Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student TimeIn.resx">
+      <DependentUpon>Student TimeIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student TimeOut.resx">
+      <DependentUpon>Student TimeOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students.resx">
+      <DependentUpon>Students.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UCU_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-1-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchalt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User With Frame_mirror with Text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Live Messenger alt 1_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Access Control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Live Messenger alt 3_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User With Frame_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle Bin Full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search alt %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Access Control1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add new user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add new user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add new user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Change Pword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar_mirror1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage Users1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User With Frame_mirror with Text1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Live Messenger alt 1_mirror1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Icon_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Icon_mirror1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Icon_mirror2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit Username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Icon_mirror3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Explorer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erase-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit Username1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Share1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet Access_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitoring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitoring_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create Id_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Internet Access.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitoring1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power - Restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power - Restart1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

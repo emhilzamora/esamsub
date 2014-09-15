@@ -1,0 +1,76 @@
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.exe
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.xml
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Add_New_User.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.AddStudent.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Admin_Login.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Dashboard.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Edit_User.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Edit_Student_Record.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Employees.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Manage_Users.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Other_User_Login.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Startup.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Resources.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Students.resources
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.vbproj.GenerateResource.Cache
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.exe
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.xml
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.vbprojResolveAssemblyReference.cache
+F:\ESAMSUB v.5.1 - Copy\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.exe
+F:\ESAMSUB v.5.1 - Copy\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.xml
+F:\ESAMSUB v.5.1 - Copy\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.pdb
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.exe
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.pdb
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.xml
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Add_New_User.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.AddStudent.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Admin_Login.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Dashboard.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Edit_User.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Edit_Student_Record.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Employees.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Internet_Access_Prompt.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Internet_Access_Usage.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Manage_Users.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Monitoring.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Other_User_Login.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Startup.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Resources.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Student_TimeIn.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Student_TimeOut.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Students.resources
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.vbproj.GenerateResource.Cache
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.exe
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.xml
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.pdb
+F:\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.vbprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.exe
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.xml
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.pdb
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.exe
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.pdb
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\bin\Debug\ESAMSUB v.5.1.xml
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.vbprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Add_New_User.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.AddStudent.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Admin_Login.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Dashboard.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Edit_User.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Edit_Student_Record.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Employees.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Internet_Access_Prompt.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Internet_Access_Usage.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Manage_Users.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Monitoring.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Other_User_Login.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Startup.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Resources.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Student_TimeIn.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Student_TimeOut.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB_v._5._1.Students.resources
+C:\Users\Admin\Desktop\ESAMSUB\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.vbproj.GenerateResource.Cache
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.exe
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.xml
+C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.pdb
