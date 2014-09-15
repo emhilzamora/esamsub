@@ -156,8 +156,8 @@ Public Class AddStudent
                 .ExecuteNonQuery()
             End With
             'indert to table monitoring student
-            Dim query_monitor As String = "INSERT into tbl_monitoring_stud(idnumber,fname,mname,lname,department,course,year,date_today,time_in,time_out) VALUES('" & txtStudentId.Text & _
-   "','" & txtFirstname.Text & "','" & txtMiddlename.Text & "','" & txtLastname.Text & "','" & cmbDepartment.Text & "','" & cmbCourse.Text & "','" & cmbYear.Text & "','" & Date.Today & "','" & "" & "','" & "" & "')"
+            Dim query_monitor As String = "INSERT into tbl_monitoring_stud(idnumber,fname,mname,lname,department,course,date_log,time_in,time_out) VALUES('" & txtStudentId.Text & _
+   "','" & txtFirstname.Text & "','" & txtMiddlename.Text & "','" & txtLastname.Text & "','" & cmbDepartment.Text & "','" & cmbCourse.Text & "','" & Date.Today & "','" & "" & "','" & "" & "')"
 
             Dim sqlCommandMonitor As New MySqlCommand
 
@@ -180,11 +180,15 @@ Public Class AddStudent
             End If
             Select Case MsgBox("Student successfully added to database, want to add more Student?", MsgBoxStyle.YesNo, "Added new record")
                 Case MsgBoxResult.Yes
+                    'send back default picture
+                    pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
                     'pag yes close the application
                     clearComboBox()
                     ClearTextBoxes()
                     txtStudentId.Focus()
                 Case MsgBoxResult.No
+                    'send back default picture
+                    pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
                     'Walang gagawin kapag no ang kanyang pinili
                     clearComboBox()
                     ClearTextBoxes()
