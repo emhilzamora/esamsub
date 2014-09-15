@@ -26,10 +26,12 @@ Partial Class Camera
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.btnCancel = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.btnSave = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnSave = New System.Windows.Forms.Button()
         Me.btnTakePicture = New System.Windows.Forms.Button()
         Me.btnRetake = New System.Windows.Forms.Button()
         Me.pictMainCamera = New System.Windows.Forms.PictureBox()
@@ -48,9 +50,9 @@ Partial Class Camera
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.GroupBox1)
         Me.Panel1.Controls.Add(Me.pictMainCamera)
-        Me.Panel1.Location = New System.Drawing.Point(12, 78)
+        Me.Panel1.Location = New System.Drawing.Point(20, 78)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(572, 439)
+        Me.Panel1.Size = New System.Drawing.Size(542, 439)
         Me.Panel1.TabIndex = 0
         '
         'Label2
@@ -58,7 +60,7 @@ Partial Class Camera
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Open Sans Light", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(422, 401)
+        Me.Label2.Location = New System.Drawing.Point(417, 401)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(115, 15)
         Me.Label2.TabIndex = 35
@@ -66,50 +68,63 @@ Partial Class Camera
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.btnCancel)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.btnSave)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.btnSave)
         Me.GroupBox1.Controls.Add(Me.btnTakePicture)
         Me.GroupBox1.Controls.Add(Me.btnRetake)
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(423, 28)
+        Me.GroupBox1.Location = New System.Drawing.Point(432, 28)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(114, 370)
+        Me.GroupBox1.Size = New System.Drawing.Size(86, 370)
         Me.GroupBox1.TabIndex = 42
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Controls"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Open Sans Light", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(21, 344)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(39, 15)
+        Me.Label6.TabIndex = 48
+        Me.Label6.Text = "Cancel"
+        '
+        'btnCancel
+        '
+        Me.btnCancel.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Refresh
+        Me.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Location = New System.Drawing.Point(18, 300)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(48, 41)
+        Me.btnCancel.TabIndex = 47
+        Me.btnCancel.UseVisualStyleBackColor = True
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Open Sans Light", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(42, 331)
+        Me.Label5.Location = New System.Drawing.Point(26, 262)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(30, 15)
         Me.Label5.TabIndex = 46
         Me.Label5.Text = "Save"
-        '
-        'btnSave
-        '
-        Me.btnSave.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Save
-        Me.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSave.Location = New System.Drawing.Point(28, 269)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(59, 60)
-        Me.btnSave.TabIndex = 45
-        Me.btnSave.UseVisualStyleBackColor = True
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Open Sans Light", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(37, 212)
+        Me.Label4.Location = New System.Drawing.Point(21, 169)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(41, 15)
         Me.Label4.TabIndex = 44
@@ -120,11 +135,24 @@ Partial Class Camera
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Open Sans Light", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(33, 105)
+        Me.Label3.Location = New System.Drawing.Point(19, 83)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(47, 15)
         Me.Label3.TabIndex = 43
         Me.Label3.Text = "Capture"
+        '
+        'btnSave
+        '
+        Me.btnSave.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Save
+        Me.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSave.Location = New System.Drawing.Point(18, 218)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(48, 41)
+        Me.btnSave.TabIndex = 45
+        Me.btnSave.UseVisualStyleBackColor = True
         '
         'btnTakePicture
         '
@@ -133,9 +161,9 @@ Partial Class Camera
         Me.btnTakePicture.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTakePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnTakePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTakePicture.Location = New System.Drawing.Point(22, 39)
+        Me.btnTakePicture.Location = New System.Drawing.Point(18, 38)
         Me.btnTakePicture.Name = "btnTakePicture"
-        Me.btnTakePicture.Size = New System.Drawing.Size(69, 65)
+        Me.btnTakePicture.Size = New System.Drawing.Size(48, 46)
         Me.btnTakePicture.TabIndex = 40
         Me.btnTakePicture.UseVisualStyleBackColor = True
         '
@@ -146,15 +174,15 @@ Partial Class Camera
         Me.btnRetake.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRetake.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnRetake.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRetake.Location = New System.Drawing.Point(28, 147)
+        Me.btnRetake.Location = New System.Drawing.Point(18, 125)
         Me.btnRetake.Name = "btnRetake"
-        Me.btnRetake.Size = New System.Drawing.Size(59, 60)
+        Me.btnRetake.Size = New System.Drawing.Size(48, 41)
         Me.btnRetake.TabIndex = 41
         Me.btnRetake.UseVisualStyleBackColor = True
         '
         'pictMainCamera
         '
-        Me.pictMainCamera.Location = New System.Drawing.Point(17, 28)
+        Me.pictMainCamera.Location = New System.Drawing.Point(19, 25)
         Me.pictMainCamera.Name = "pictMainCamera"
         Me.pictMainCamera.Size = New System.Drawing.Size(388, 388)
         Me.pictMainCamera.TabIndex = 0
@@ -190,7 +218,7 @@ Partial Class Camera
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(596, 529)
+        Me.ClientSize = New System.Drawing.Size(584, 541)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Panel1)
@@ -223,4 +251,6 @@ Partial Class Camera
     Friend WithEvents btnRetake As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents btnSave As System.Windows.Forms.Button
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
 End Class

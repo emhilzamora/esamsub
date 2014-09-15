@@ -84,6 +84,8 @@ Public Class Admin_Login
                             'welcomes the user as Admiistrator
                             MessageBox.Show("Welcome " & name & " you login as Administrator ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
                             animateWin(Me, False)
+                            txtUsername.Text = Nothing
+                            txtPassword.Text = Nothing
                             'set the lbllogin text to Logout 
                             Dashboard.Show()
                             Me.Hide()
@@ -145,11 +147,14 @@ Public Class Admin_Login
                     If user_type = "Administrator" Then
                         'welcomes the user as Admiistrator
                         MessageBox.Show("Welcome " & name & " you login as Administrator ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        'enabled user level
                         animateWin(Me, False)
                         'set the lbllogin text to Logout 
                         animateWin(Dashboard, True)
                         Dashboard.Show()
                         Dashboard.lblUserLevel.Text = user_type
+                        txtUsername.Text = Nothing
+                        txtPassword.Text = Nothing
                         Me.Hide()
                     End If
 
@@ -168,5 +173,9 @@ Public Class Admin_Login
 
         End Try
         con.Clone()
+    End Sub
+
+    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class

@@ -4,6 +4,7 @@ Public Class Camera
     Public touchless As New TouchlessLib.TouchlessMgr
     Public camera1 As TouchlessLib.Camera = touchless.Cameras.ElementAt(0)
     Private Sub Camera_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        tmrCamera.Enabled = True
         'enabled buttons
         btnSave.Enabled = False
         'ito ung tuamtawag ng camera na may size na 
@@ -34,11 +35,21 @@ Public Class Camera
     End Sub
 
     Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
-        AddStudent.pictStudentPic.Image = touchless.CurrentCamera.GetCurrentImage
+        btnTakePicture.Enabled = True
+        'ipapasa ang picture sa kabila
+        AddStudent.pictStudentPic.Image = pictMainCamera.Image
         'babalik sa pag add ng student
         animateWin(Me, False)
         Me.Hide()
-        animateWin(AddStudent, True)
+        pictMainCamera.Image = Nothing
+        AddStudent.Show()
+    End Sub
+
+    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+        btnTakePicture.Enabled = True
+        pictMainCamera.Image = Nothing
+        animateWin(Me, False)
+        Me.Hide()
         AddStudent.Show()
     End Sub
 End Class

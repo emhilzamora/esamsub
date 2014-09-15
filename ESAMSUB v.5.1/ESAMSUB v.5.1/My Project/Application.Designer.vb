@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.ESAMSUB_v._5._1.Camera
+            Me.MainForm = Global.ESAMSUB_v._5._1.AddStudent
         End Sub
     End Class
 End Namespace

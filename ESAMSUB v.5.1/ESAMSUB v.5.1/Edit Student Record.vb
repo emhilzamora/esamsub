@@ -1,5 +1,7 @@
 ﻿Imports System.Runtime.InteropServices
 Imports MySql.Data.MySqlClient
+Imports System.IO
+
 Public Class Edit_Student_Record
     Dim tt = New ToolTip
     'tagahawak ng mga data
@@ -114,6 +116,7 @@ Public Class Edit_Student_Record
         End If
     End Sub
     Private Sub btnUpdate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdate.Click
+
         'error handling
         On Error GoTo labas
         'validation kung bakante ang mga textbox
@@ -230,6 +233,8 @@ Public Class Edit_Student_Record
             Students.LoadStudent()
         End If
 labas:
+        'send back default picture
+        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
     End Sub
     'lilinisin ang mga textbox
     Public Sub ClearTextBoxes()
@@ -436,13 +441,13 @@ labas:
         txtMotherOccupation.Text = Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(txtMotherOccupation.Text)
     End Sub
     Private Sub txtAge_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtAge.KeyPress
-    'Accept Only numbers
+        'Accept Only numbers
         If Char.IsDigit(e.KeyChar) = False And Char.IsControl(e.KeyChar) = False Then
             e.Handled = True
         End If
     End Sub
     Private Sub txtGuardianContact_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtGuardianContact.KeyPress
-       'Accept Only numbers
+        'Accept Only numbers
         If Char.IsDigit(e.KeyChar) = False And Char.IsControl(e.KeyChar) = False Then
             e.Handled = True
         End If
@@ -483,7 +488,9 @@ labas:
         animateWin(Students, True)
         Students.Show()
         ClearTextBoxes()
-        ClearComboBox()
+        clearComboBox()
+        'send back default picture
+        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
     End Sub
 
     Private Sub dtBirthday_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtBirthday.ValueChanged
@@ -493,4 +500,24 @@ DateTime.Today.Year - dtBirthday.Value.Year
         txtAge.Text = myAge.ToString()
     End Sub
 
+    Private Sub btnBrowsePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBrowsePicture.Click
+        Dim fdlg As OpenFileDialog = New OpenFileDialog()
+        fdlg.Title = "Choose Student Picture"
+        fdlg.InitialDirectory = "c:\"
+        fdlg.Filter = "Picture Files(*.jpg;*.jpeg;*.png;*.bmp;*.gif)|*.jpg;*.jpeg;*.png;*.bmp;*.gif"
+        fdlg.FilterIndex = 2
+        fdlg.RestoreDirectory = True
+        If fdlg.ShowDialog() = DialogResult.OK Then
+            If File.Exists(fdlg.FileName) = False Then
+                MessageBox.Show("Sorry, The File You Specified Does Not Exist.")
+            Else
+                pictStudentPic.ImageLocation = fdlg.FileName
+            End If
+
+        End If
+    End Sub
+
+    Private Sub btnTakePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTakePicture.Click
+        Camera.ShowDialog()
+    End Sub
 End Class

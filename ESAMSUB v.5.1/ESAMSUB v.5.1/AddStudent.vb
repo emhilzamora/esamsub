@@ -10,7 +10,6 @@ Public Class AddStudent
     Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal msg As Integer, ByVal wParam As Integer, <MarshalAs(UnmanagedType.LPWStr)> ByVal lParam As String) As Int32
     End Function
     Private Sub AddStudent_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
         If sqlConnection.State = ConnectionState.Closed Then
             sqlConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
             sqlConnection.Open()
@@ -36,6 +35,8 @@ Public Class AddStudent
     End Sub
 
     Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+        'send back default picture
+        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
         ClearTextBoxes()
         ClearComboBox()
         animateWin(Me, False)
@@ -62,6 +63,8 @@ Public Class AddStudent
     End Sub
     'add ng record ng student
     Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
+        'send back default picture
+        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
         'validate lahat ng textbox at combobox kapag walang laman
         If txtStudentId.Text = "" And txtFirstname.Text = "" And txtMiddlename.Text = "" And txtLastname.Text = "" And cmbDepartment.Text = "" And cmbCourse.Text = "" And txtBirthPlace.Text = "" And txtStudentAddress.Text = "" And txtStudentContact.Text = "" And txtnationality.Text = "" And txtReligion.Text = "" And cmbCivilStatus.Text = "" And cmbYear.Text = "" And cmbGender.Text = "" And txtAge.Text = "" And txtGuardian.Text = "" And txtGuardianContact.Text = "" And txtGuardianAddress.Text = "" And txtFatherName.Text = "" And txtFatherOccupation.Text = "" And txtMotherName.Text = "" And txtMotherOccupation.Text = "" Then
             MessageBox.Show("All Required fields are empty", "Cannot add new student", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -178,12 +181,12 @@ Public Class AddStudent
             Select Case MsgBox("Student successfully added to database, want to add more Student?", MsgBoxStyle.YesNo, "Added new record")
                 Case MsgBoxResult.Yes
                     'pag yes close the application
-                    ClearComboBox()
+                    clearComboBox()
                     ClearTextBoxes()
                     txtStudentId.Focus()
                 Case MsgBoxResult.No
                     'Walang gagawin kapag no ang kanyang pinili
-                    ClearComboBox()
+                    clearComboBox()
                     ClearTextBoxes()
                     animateWin(Me, False)
                     Me.Close()
@@ -493,7 +496,7 @@ Public Class AddStudent
     End Sub
 
     Private Sub btnTakePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTakePicture.Click
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        Camera.ShowDialog()
     End Sub
     Private Sub dtBirthday_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtBirthday.ValueChanged
         Dim myAge =
@@ -502,6 +505,8 @@ DateTime.Today.Year - dtBirthday.Value.Year
     End Sub
 
     Private Sub btnClear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClear.Click
+        'send back default picture
+        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
         clearComboBox()
         ClearTextBoxes()
     End Sub
