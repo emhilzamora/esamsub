@@ -136,12 +136,9 @@ Public Class Students
         lblFthrOccuaption.Text = sqlTable.Rows(0)("fthr_occupation")
         lblMothername.Text = sqlTable.Rows(0)("mother")
         lblmthrOccupation.Text = sqlTable.Rows(0)("mthr_occupation")
+        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\" & lvStudents.SelectedItems(0).Text & ".jpg"
 labas:
     End Sub
-    Public Sub AutosizeImage(ByVal ImagePath As String, ByVal picBox As PictureBox, Optional ByVal pSizeMode As PictureBoxSizeMode = PictureBoxSizeMode.CenterImage)
-
-    End Sub
-
     Private Sub btnSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSearch.Click
         'Search code
         Dim SqlQuery As String = "SELECT * FROM tbl_student Where idnumber like '%" & Me.txtSearch.Text & "%'  or fname like '%" & Me.txtSearch.Text & "%'  or lname like '%" & Me.txtSearch.Text & "'"
@@ -179,7 +176,7 @@ labas:
 
     Private Sub txtSearch_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtSearch.TextChanged
         'Search code
-        Dim SqlQuery As String = "SELECT * FROM tbl_student Where idnumber like '%" & Me.txtSearch.Text & "%'  or fname like '%" & Me.txtSearch.Text & "%'  or lname like '%" & Me.txtSearch.Text & "'"
+        Dim SqlQuery As String = "SELECT * FROM tbl_student Where idnumber like '%" & Me.txtSearch.Text & "%'  or fname like '%" & Me.txtSearch.Text & "%'  or course like '%" & Me.txtSearch.Text & "%'  or department like '%" & Me.txtSearch.Text & "%'  or year like '%" & Me.txtSearch.Text & "'"
         Dim SqlCommand As New MySqlCommand
         Dim SqlAdapter As New MySqlDataAdapter
         Dim TABLE As New DataTable

@@ -11,7 +11,7 @@ Public Class Dashboard
             btnEmployee.Enabled = True
             btnMonitoring.Enabled = True
             btnStudents.Enabled = True
-
+            btnReports.Enabled = True
         ElseIf lblUserLevel.Text = "Registrar" Then
             btnStudents.Enabled = True
             btnManageUsers.Enabled = False
@@ -19,6 +19,7 @@ Public Class Dashboard
             btnCreatId.Enabled = False
             btnEmployee.Enabled = False
             btnMonitoring.Enabled = False
+            btnReports.Enabled = False
         End If
     End Sub
 

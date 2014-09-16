@@ -24,6 +24,7 @@ Partial Class Students
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblTime = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -44,6 +45,7 @@ Partial Class Students
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.pictStudentPic = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -96,13 +98,11 @@ Partial Class Students
         Me.btnEditstudent = New System.Windows.Forms.Button()
         Me.btnAddStudent = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.pictStudentPic = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -117,6 +117,16 @@ Partial Class Students
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1374, 79)
         Me.Panel2.TabIndex = 31
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Login_Icon_mirror3
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(4, 5)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(70, 70)
+        Me.PictureBox2.TabIndex = 38
+        Me.PictureBox2.TabStop = False
         '
         'lblDate
         '
@@ -280,6 +290,17 @@ Partial Class Students
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Student Picture"
         '
+        'pictStudentPic
+        '
+        Me.pictStudentPic.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile2
+        Me.pictStudentPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pictStudentPic.Location = New System.Drawing.Point(13, 26)
+        Me.pictStudentPic.Name = "pictStudentPic"
+        Me.pictStudentPic.Size = New System.Drawing.Size(111, 112)
+        Me.pictStudentPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pictStudentPic.TabIndex = 114
+        Me.pictStudentPic.TabStop = False
+        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -340,7 +361,7 @@ Partial Class Students
         Me.lblFname.AutoSize = True
         Me.lblFname.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFname.ForeColor = System.Drawing.Color.White
-        Me.lblFname.Location = New System.Drawing.Point(320, 46)
+        Me.lblFname.Location = New System.Drawing.Point(330, 46)
         Me.lblFname.Name = "lblFname"
         Me.lblFname.Size = New System.Drawing.Size(52, 18)
         Me.lblFname.TabIndex = 127
@@ -351,7 +372,7 @@ Partial Class Students
         Me.lblMname.AutoSize = True
         Me.lblMname.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMname.ForeColor = System.Drawing.Color.White
-        Me.lblMname.Location = New System.Drawing.Point(321, 77)
+        Me.lblMname.Location = New System.Drawing.Point(331, 77)
         Me.lblMname.Name = "lblMname"
         Me.lblMname.Size = New System.Drawing.Size(52, 18)
         Me.lblMname.TabIndex = 128
@@ -362,7 +383,7 @@ Partial Class Students
         Me.lblLname.AutoSize = True
         Me.lblLname.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLname.ForeColor = System.Drawing.Color.White
-        Me.lblLname.Location = New System.Drawing.Point(320, 108)
+        Me.lblLname.Location = New System.Drawing.Point(330, 108)
         Me.lblLname.Name = "lblLname"
         Me.lblLname.Size = New System.Drawing.Size(52, 18)
         Me.lblLname.TabIndex = 129
@@ -373,7 +394,7 @@ Partial Class Students
         Me.lblAddress.AutoSize = True
         Me.lblAddress.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAddress.ForeColor = System.Drawing.Color.White
-        Me.lblAddress.Location = New System.Drawing.Point(320, 140)
+        Me.lblAddress.Location = New System.Drawing.Point(330, 140)
         Me.lblAddress.Name = "lblAddress"
         Me.lblAddress.Size = New System.Drawing.Size(52, 18)
         Me.lblAddress.TabIndex = 130
@@ -384,7 +405,7 @@ Partial Class Students
         Me.lblYear.AutoSize = True
         Me.lblYear.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblYear.ForeColor = System.Drawing.Color.White
-        Me.lblYear.Location = New System.Drawing.Point(640, 77)
+        Me.lblYear.Location = New System.Drawing.Point(652, 77)
         Me.lblYear.Name = "lblYear"
         Me.lblYear.Size = New System.Drawing.Size(52, 18)
         Me.lblYear.TabIndex = 132
@@ -395,7 +416,7 @@ Partial Class Students
         Me.lblIdnumber.AutoSize = True
         Me.lblIdnumber.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblIdnumber.ForeColor = System.Drawing.Color.White
-        Me.lblIdnumber.Location = New System.Drawing.Point(320, 20)
+        Me.lblIdnumber.Location = New System.Drawing.Point(330, 20)
         Me.lblIdnumber.Name = "lblIdnumber"
         Me.lblIdnumber.Size = New System.Drawing.Size(52, 18)
         Me.lblIdnumber.TabIndex = 134
@@ -417,7 +438,7 @@ Partial Class Students
         Me.lblGuardian.AutoSize = True
         Me.lblGuardian.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGuardian.ForeColor = System.Drawing.Color.White
-        Me.lblGuardian.Location = New System.Drawing.Point(1050, 20)
+        Me.lblGuardian.Location = New System.Drawing.Point(1043, 20)
         Me.lblGuardian.Name = "lblGuardian"
         Me.lblGuardian.Size = New System.Drawing.Size(52, 18)
         Me.lblGuardian.TabIndex = 140
@@ -428,7 +449,7 @@ Partial Class Students
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(985, 20)
+        Me.Label16.Location = New System.Drawing.Point(968, 20)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(69, 18)
         Me.Label16.TabIndex = 138
@@ -439,7 +460,7 @@ Partial Class Students
         Me.lblReligion.AutoSize = True
         Me.lblReligion.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblReligion.ForeColor = System.Drawing.Color.White
-        Me.lblReligion.Location = New System.Drawing.Point(640, 171)
+        Me.lblReligion.Location = New System.Drawing.Point(652, 171)
         Me.lblReligion.Name = "lblReligion"
         Me.lblReligion.Size = New System.Drawing.Size(52, 18)
         Me.lblReligion.TabIndex = 148
@@ -450,7 +471,7 @@ Partial Class Students
         Me.lblbirthplace.AutoSize = True
         Me.lblbirthplace.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblbirthplace.ForeColor = System.Drawing.Color.White
-        Me.lblbirthplace.Location = New System.Drawing.Point(320, 200)
+        Me.lblbirthplace.Location = New System.Drawing.Point(330, 200)
         Me.lblbirthplace.Name = "lblbirthplace"
         Me.lblbirthplace.Size = New System.Drawing.Size(52, 18)
         Me.lblbirthplace.TabIndex = 147
@@ -483,7 +504,7 @@ Partial Class Students
         Me.lblNationality.AutoSize = True
         Me.lblNationality.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNationality.ForeColor = System.Drawing.Color.White
-        Me.lblNationality.Location = New System.Drawing.Point(642, 140)
+        Me.lblNationality.Location = New System.Drawing.Point(654, 140)
         Me.lblNationality.Name = "lblNationality"
         Me.lblNationality.Size = New System.Drawing.Size(52, 18)
         Me.lblNationality.TabIndex = 144
@@ -494,7 +515,7 @@ Partial Class Students
         Me.lblContact.AutoSize = True
         Me.lblContact.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblContact.ForeColor = System.Drawing.Color.White
-        Me.lblContact.Location = New System.Drawing.Point(320, 171)
+        Me.lblContact.Location = New System.Drawing.Point(330, 171)
         Me.lblContact.Name = "lblContact"
         Me.lblContact.Size = New System.Drawing.Size(52, 18)
         Me.lblContact.TabIndex = 143
@@ -527,7 +548,7 @@ Partial Class Students
         Me.lblCivilStatus.AutoSize = True
         Me.lblCivilStatus.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivilStatus.ForeColor = System.Drawing.Color.White
-        Me.lblCivilStatus.Location = New System.Drawing.Point(640, 200)
+        Me.lblCivilStatus.Location = New System.Drawing.Point(652, 200)
         Me.lblCivilStatus.Name = "lblCivilStatus"
         Me.lblCivilStatus.Size = New System.Drawing.Size(52, 18)
         Me.lblCivilStatus.TabIndex = 150
@@ -549,7 +570,7 @@ Partial Class Students
         Me.lblGender.AutoSize = True
         Me.lblGender.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGender.ForeColor = System.Drawing.Color.White
-        Me.lblGender.Location = New System.Drawing.Point(320, 230)
+        Me.lblGender.Location = New System.Drawing.Point(330, 230)
         Me.lblGender.Name = "lblGender"
         Me.lblGender.Size = New System.Drawing.Size(52, 18)
         Me.lblGender.TabIndex = 154
@@ -571,7 +592,7 @@ Partial Class Students
         Me.lblDateBirth.AutoSize = True
         Me.lblDateBirth.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDateBirth.ForeColor = System.Drawing.Color.White
-        Me.lblDateBirth.Location = New System.Drawing.Point(642, 230)
+        Me.lblDateBirth.Location = New System.Drawing.Point(654, 230)
         Me.lblDateBirth.Name = "lblDateBirth"
         Me.lblDateBirth.Size = New System.Drawing.Size(52, 18)
         Me.lblDateBirth.TabIndex = 152
@@ -593,7 +614,7 @@ Partial Class Students
         Me.lblAge.AutoSize = True
         Me.lblAge.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAge.ForeColor = System.Drawing.Color.White
-        Me.lblAge.Location = New System.Drawing.Point(640, 108)
+        Me.lblAge.Location = New System.Drawing.Point(652, 108)
         Me.lblAge.Name = "lblAge"
         Me.lblAge.Size = New System.Drawing.Size(52, 18)
         Me.lblAge.TabIndex = 156
@@ -615,7 +636,7 @@ Partial Class Students
         Me.lblGcontact.AutoSize = True
         Me.lblGcontact.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGcontact.ForeColor = System.Drawing.Color.White
-        Me.lblGcontact.Location = New System.Drawing.Point(1050, 51)
+        Me.lblGcontact.Location = New System.Drawing.Point(1043, 51)
         Me.lblGcontact.Name = "lblGcontact"
         Me.lblGcontact.Size = New System.Drawing.Size(52, 18)
         Me.lblGcontact.TabIndex = 158
@@ -626,7 +647,7 @@ Partial Class Students
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.Color.White
-        Me.Label26.Location = New System.Drawing.Point(937, 51)
+        Me.Label26.Location = New System.Drawing.Point(920, 51)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(117, 18)
         Me.Label26.TabIndex = 157
@@ -637,7 +658,7 @@ Partial Class Students
         Me.lblGaddress.AutoSize = True
         Me.lblGaddress.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGaddress.ForeColor = System.Drawing.Color.White
-        Me.lblGaddress.Location = New System.Drawing.Point(1050, 82)
+        Me.lblGaddress.Location = New System.Drawing.Point(1043, 82)
         Me.lblGaddress.Name = "lblGaddress"
         Me.lblGaddress.Size = New System.Drawing.Size(52, 18)
         Me.lblGaddress.TabIndex = 160
@@ -648,7 +669,7 @@ Partial Class Students
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label28.ForeColor = System.Drawing.Color.White
-        Me.Label28.Location = New System.Drawing.Point(934, 82)
+        Me.Label28.Location = New System.Drawing.Point(917, 82)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(120, 18)
         Me.Label28.TabIndex = 159
@@ -659,7 +680,7 @@ Partial Class Students
         Me.lblMothername.AutoSize = True
         Me.lblMothername.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMothername.ForeColor = System.Drawing.Color.White
-        Me.lblMothername.Location = New System.Drawing.Point(1050, 174)
+        Me.lblMothername.Location = New System.Drawing.Point(1043, 174)
         Me.lblMothername.Name = "lblMothername"
         Me.lblMothername.Size = New System.Drawing.Size(52, 18)
         Me.lblMothername.TabIndex = 164
@@ -670,7 +691,7 @@ Partial Class Students
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(961, 174)
+        Me.Label17.Location = New System.Drawing.Point(944, 174)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(93, 18)
         Me.Label17.TabIndex = 163
@@ -681,7 +702,7 @@ Partial Class Students
         Me.lblFatherName.AutoSize = True
         Me.lblFatherName.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFatherName.ForeColor = System.Drawing.Color.White
-        Me.lblFatherName.Location = New System.Drawing.Point(1050, 114)
+        Me.lblFatherName.Location = New System.Drawing.Point(1043, 114)
         Me.lblFatherName.Name = "lblFatherName"
         Me.lblFatherName.Size = New System.Drawing.Size(52, 18)
         Me.lblFatherName.TabIndex = 162
@@ -692,7 +713,7 @@ Partial Class Students
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label30.ForeColor = System.Drawing.Color.White
-        Me.Label30.Location = New System.Drawing.Point(966, 114)
+        Me.Label30.Location = New System.Drawing.Point(949, 114)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(88, 18)
         Me.Label30.TabIndex = 161
@@ -703,7 +724,7 @@ Partial Class Students
         Me.lblmthrOccupation.AutoSize = True
         Me.lblmthrOccupation.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblmthrOccupation.ForeColor = System.Drawing.Color.White
-        Me.lblmthrOccupation.Location = New System.Drawing.Point(1050, 204)
+        Me.lblmthrOccupation.Location = New System.Drawing.Point(1043, 204)
         Me.lblmthrOccupation.Name = "lblmthrOccupation"
         Me.lblmthrOccupation.Size = New System.Drawing.Size(52, 18)
         Me.lblmthrOccupation.TabIndex = 168
@@ -714,7 +735,7 @@ Partial Class Students
         Me.Label32.AutoSize = True
         Me.Label32.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label32.ForeColor = System.Drawing.Color.White
-        Me.Label32.Location = New System.Drawing.Point(972, 204)
+        Me.Label32.Location = New System.Drawing.Point(955, 204)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(82, 18)
         Me.Label32.TabIndex = 167
@@ -725,7 +746,7 @@ Partial Class Students
         Me.lblFthrOccuaption.AutoSize = True
         Me.lblFthrOccuaption.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFthrOccuaption.ForeColor = System.Drawing.Color.White
-        Me.lblFthrOccuaption.Location = New System.Drawing.Point(1050, 145)
+        Me.lblFthrOccuaption.Location = New System.Drawing.Point(1043, 145)
         Me.lblFthrOccuaption.Name = "lblFthrOccuaption"
         Me.lblFthrOccuaption.Size = New System.Drawing.Size(52, 18)
         Me.lblFthrOccuaption.TabIndex = 166
@@ -736,7 +757,7 @@ Partial Class Students
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(972, 147)
+        Me.Label9.Location = New System.Drawing.Point(955, 147)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(82, 18)
         Me.Label9.TabIndex = 169
@@ -747,7 +768,7 @@ Partial Class Students
         Me.lblCourse.AutoSize = True
         Me.lblCourse.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCourse.ForeColor = System.Drawing.Color.White
-        Me.lblCourse.Location = New System.Drawing.Point(640, 46)
+        Me.lblCourse.Location = New System.Drawing.Point(652, 46)
         Me.lblCourse.Name = "lblCourse"
         Me.lblCourse.Size = New System.Drawing.Size(52, 18)
         Me.lblCourse.TabIndex = 171
@@ -769,7 +790,7 @@ Partial Class Students
         Me.lblDepartment.AutoSize = True
         Me.lblDepartment.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDepartment.ForeColor = System.Drawing.Color.White
-        Me.lblDepartment.Location = New System.Drawing.Point(640, 20)
+        Me.lblDepartment.Location = New System.Drawing.Point(652, 20)
         Me.lblDepartment.Name = "lblDepartment"
         Me.lblDepartment.Size = New System.Drawing.Size(52, 18)
         Me.lblDepartment.TabIndex = 173
@@ -910,27 +931,6 @@ Partial Class Students
         Me.btnBack.TabIndex = 43
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Login_Icon_mirror3
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(4, 5)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(70, 70)
-        Me.PictureBox2.TabIndex = 38
-        Me.PictureBox2.TabStop = False
-        '
-        'pictStudentPic
-        '
-        Me.pictStudentPic.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile2
-        Me.pictStudentPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pictStudentPic.Location = New System.Drawing.Point(13, 26)
-        Me.pictStudentPic.Name = "pictStudentPic"
-        Me.pictStudentPic.Size = New System.Drawing.Size(111, 112)
-        Me.pictStudentPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pictStudentPic.TabIndex = 114
-        Me.pictStudentPic.TabStop = False
-        '
         'Students
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
@@ -958,11 +958,11 @@ Partial Class Students
         Me.Text = "-----------"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

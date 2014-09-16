@@ -24,33 +24,33 @@ Partial Class Monitoring
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblTime = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.tmrTimeDate = New System.Windows.Forms.Timer(Me.components)
         Me.lvMonitoringStud = New System.Windows.Forms.ListView()
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader15 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader17 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader18 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader19 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.txtMonitoring = New System.Windows.Forms.TextBox()
         Me.cmbType = New System.Windows.Forms.ComboBox()
-        Me.btnBack = New System.Windows.Forms.Button()
-        Me.btnReset = New System.Windows.Forms.Button()
-        Me.btnSearch = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.btnRecords = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnRecords = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnReset = New System.Windows.Forms.Button()
+        Me.btnSearch = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -67,6 +67,16 @@ Partial Class Monitoring
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1374, 79)
         Me.Panel2.TabIndex = 54
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Monitoring1
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(4, 5)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(70, 70)
+        Me.PictureBox2.TabIndex = 38
+        Me.PictureBox2.TabStop = False
         '
         'lblDate
         '
@@ -121,69 +131,69 @@ Partial Class Monitoring
         '
         Me.lvMonitoringStud.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.lvMonitoringStud.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lvMonitoringStud.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13, Me.ColumnHeader14, Me.ColumnHeader15, Me.ColumnHeader17, Me.ColumnHeader18, Me.ColumnHeader19})
+        Me.lvMonitoringStud.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10, Me.ColumnHeader1})
         Me.lvMonitoringStud.ForeColor = System.Drawing.Color.White
         Me.lvMonitoringStud.FullRowSelect = True
         Me.lvMonitoringStud.GridLines = True
         Me.lvMonitoringStud.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.lvMonitoringStud.Location = New System.Drawing.Point(50, 156)
+        Me.lvMonitoringStud.Location = New System.Drawing.Point(30, 143)
         Me.lvMonitoringStud.Name = "lvMonitoringStud"
-        Me.lvMonitoringStud.Size = New System.Drawing.Size(1209, 496)
+        Me.lvMonitoringStud.Size = New System.Drawing.Size(1246, 496)
         Me.lvMonitoringStud.TabIndex = 55
         Me.lvMonitoringStud.UseCompatibleStateImageBehavior = False
         Me.lvMonitoringStud.View = System.Windows.Forms.View.Details
         '
-        'ColumnHeader2
+        'ColumnHeader3
         '
-        Me.ColumnHeader2.Text = "Student Id"
-        Me.ColumnHeader2.Width = 106
+        Me.ColumnHeader3.Text = "ID Number"
+        Me.ColumnHeader3.Width = 98
         '
-        'ColumnHeader11
+        'ColumnHeader4
         '
-        Me.ColumnHeader11.Text = "Firstname"
-        Me.ColumnHeader11.Width = 132
+        Me.ColumnHeader4.Text = "First Name"
+        Me.ColumnHeader4.Width = 126
         '
-        'ColumnHeader12
+        'ColumnHeader5
         '
-        Me.ColumnHeader12.Text = "Middlename"
-        Me.ColumnHeader12.Width = 137
+        Me.ColumnHeader5.Text = "Middle Name"
+        Me.ColumnHeader5.Width = 130
         '
-        'ColumnHeader13
+        'ColumnHeader6
         '
-        Me.ColumnHeader13.Text = "Lastname"
-        Me.ColumnHeader13.Width = 138
+        Me.ColumnHeader6.Text = "Last Name"
+        Me.ColumnHeader6.Width = 126
         '
-        'ColumnHeader14
+        'ColumnHeader7
         '
-        Me.ColumnHeader14.Text = "Department"
-        Me.ColumnHeader14.Width = 100
+        Me.ColumnHeader7.Text = "Department"
+        Me.ColumnHeader7.Width = 99
         '
-        'ColumnHeader15
+        'ColumnHeader8
         '
-        Me.ColumnHeader15.Text = "Course"
-        Me.ColumnHeader15.Width = 260
+        Me.ColumnHeader8.Text = "Course"
+        Me.ColumnHeader8.Width = 285
         '
-        'ColumnHeader17
+        'ColumnHeader9
         '
-        Me.ColumnHeader17.Text = "Current date"
-        Me.ColumnHeader17.Width = 129
+        Me.ColumnHeader9.Text = "Date"
+        Me.ColumnHeader9.Width = 128
         '
-        'ColumnHeader18
+        'ColumnHeader10
         '
-        Me.ColumnHeader18.Text = "Time in"
-        Me.ColumnHeader18.Width = 103
+        Me.ColumnHeader10.Text = "Time In"
+        Me.ColumnHeader10.Width = 125
         '
-        'ColumnHeader19
+        'ColumnHeader1
         '
-        Me.ColumnHeader19.Text = "Time out"
-        Me.ColumnHeader19.Width = 100
+        Me.ColumnHeader1.Text = "Time Out"
+        Me.ColumnHeader1.Width = 125
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.Panel1.Location = New System.Drawing.Point(-4, 672)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1308, 27)
+        Me.Panel1.Size = New System.Drawing.Size(1308, 24)
         Me.Panel1.TabIndex = 56
         '
         'txtSearch
@@ -192,7 +202,7 @@ Partial Class Monitoring
         Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtSearch.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtSearch.Location = New System.Drawing.Point(785, 89)
+        Me.txtSearch.Location = New System.Drawing.Point(599, 89)
         Me.txtSearch.MaxLength = 30
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(237, 26)
@@ -205,7 +215,7 @@ Partial Class Monitoring
         Me.txtMonitoring.Enabled = False
         Me.txtMonitoring.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMonitoring.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtMonitoring.Location = New System.Drawing.Point(346, 89)
+        Me.txtMonitoring.Location = New System.Drawing.Point(314, 89)
         Me.txtMonitoring.MaxLength = 30
         Me.txtMonitoring.Name = "txtMonitoring"
         Me.txtMonitoring.Size = New System.Drawing.Size(237, 26)
@@ -221,69 +231,6 @@ Partial Class Monitoring
         Me.cmbType.Name = "cmbType"
         Me.cmbType.Size = New System.Drawing.Size(121, 30)
         Me.cmbType.TabIndex = 60
-        '
-        'btnBack
-        '
-        Me.btnBack.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.left_Arrow
-        Me.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnBack.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBack.Location = New System.Drawing.Point(50, 96)
-        Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(43, 41)
-        Me.btnBack.TabIndex = 63
-        Me.btnBack.UseVisualStyleBackColor = True
-        '
-        'btnReset
-        '
-        Me.btnReset.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Power___Restart1
-        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.Location = New System.Drawing.Point(1210, 79)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(36, 36)
-        Me.btnReset.TabIndex = 62
-        Me.btnReset.UseVisualStyleBackColor = True
-        '
-        'btnSearch
-        '
-        Me.btnSearch.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Search_alt__2_
-        Me.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.Location = New System.Drawing.Point(1028, 83)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(41, 36)
-        Me.btnSearch.TabIndex = 57
-        Me.btnSearch.UseVisualStyleBackColor = True
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Monitoring1
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(4, 5)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(70, 70)
-        Me.PictureBox2.TabIndex = 38
-        Me.PictureBox2.TabStop = False
-        '
-        'btnRecords
-        '
-        Me.btnRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnRecords.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Report
-        Me.btnRecords.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnRecords.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRecords.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnRecords.FlatAppearance.BorderSize = 0
-        Me.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRecords.Location = New System.Drawing.Point(1120, 79)
-        Me.btnRecords.Name = "btnRecords"
-        Me.btnRecords.Size = New System.Drawing.Size(36, 36)
-        Me.btnRecords.TabIndex = 177
-        Me.btnRecords.UseVisualStyleBackColor = False
         '
         'Label12
         '
@@ -318,6 +265,59 @@ Partial Class Monitoring
         Me.Label4.TabIndex = 180
         Me.Label4.Text = "Login/Logout"
         '
+        'btnRecords
+        '
+        Me.btnRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnRecords.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Report
+        Me.btnRecords.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnRecords.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRecords.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnRecords.FlatAppearance.BorderSize = 0
+        Me.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRecords.Location = New System.Drawing.Point(1120, 79)
+        Me.btnRecords.Name = "btnRecords"
+        Me.btnRecords.Size = New System.Drawing.Size(36, 36)
+        Me.btnRecords.TabIndex = 177
+        Me.btnRecords.UseVisualStyleBackColor = False
+        '
+        'btnBack
+        '
+        Me.btnBack.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.left_Arrow
+        Me.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBack.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack.Location = New System.Drawing.Point(50, 96)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(43, 41)
+        Me.btnBack.TabIndex = 63
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'btnReset
+        '
+        Me.btnReset.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Power___Restart1
+        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReset.Location = New System.Drawing.Point(1210, 79)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(36, 36)
+        Me.btnReset.TabIndex = 62
+        Me.btnReset.UseVisualStyleBackColor = True
+        '
+        'btnSearch
+        '
+        Me.btnSearch.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Search_alt__2_
+        Me.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearch.Location = New System.Drawing.Point(842, 83)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(41, 36)
+        Me.btnSearch.TabIndex = 57
+        Me.btnSearch.UseVisualStyleBackColor = True
+        '
         'Monitoring
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
@@ -342,7 +342,6 @@ Partial Class Monitoring
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Monitoring"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Monitoring"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -358,15 +357,6 @@ Partial Class Monitoring
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents tmrTimeDate As System.Windows.Forms.Timer
     Friend WithEvents lvMonitoringStud As System.Windows.Forms.ListView
-    Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader11 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader12 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader13 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader14 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader15 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader17 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader18 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader19 As System.Windows.Forms.ColumnHeader
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox
     Friend WithEvents btnSearch As System.Windows.Forms.Button
@@ -378,4 +368,13 @@ Partial Class Monitoring
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader4 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader5 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader6 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader7 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader8 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader9 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader10 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
 End Class

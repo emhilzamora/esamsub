@@ -33,7 +33,7 @@ Partial Class Dashboard
         Me.tmrTimeRunner = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnReports = New System.Windows.Forms.Button()
         Me.btnCreatId = New System.Windows.Forms.Button()
         Me.btnEmployee = New System.Windows.Forms.Button()
         Me.btnInternetAccess = New System.Windows.Forms.Button()
@@ -147,19 +147,19 @@ Partial Class Dashboard
         Me.Label4.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
             "ms v.6.1"
         '
-        'Button1
+        'btnReports
         '
-        Me.Button1.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.report_mirror1
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Enabled = False
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(591, 389)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(220, 197)
-        Me.Button1.TabIndex = 50
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnReports.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.report_mirror1
+        Me.btnReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReports.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReports.Enabled = False
+        Me.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReports.Location = New System.Drawing.Point(591, 389)
+        Me.btnReports.Name = "btnReports"
+        Me.btnReports.Size = New System.Drawing.Size(220, 197)
+        Me.btnReports.TabIndex = 50
+        Me.btnReports.UseVisualStyleBackColor = True
         '
         'btnCreatId
         '
@@ -323,7 +323,7 @@ Partial Class Dashboard
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1300, 700)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnReports)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnCreatId)
@@ -372,5 +372,5 @@ Partial Class Dashboard
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btnMonitoring As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnReports As System.Windows.Forms.Button
 End Class

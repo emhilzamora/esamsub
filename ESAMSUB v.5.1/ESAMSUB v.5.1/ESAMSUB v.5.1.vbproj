@@ -97,6 +97,12 @@
     <Compile Include="Admin Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Camera edit.Designer.vb">
+      <DependentUpon>Camera edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Camera edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Camera.Designer.vb">
       <DependentUpon>Camera.vb</DependentUpon>
     </Compile>
@@ -133,6 +139,12 @@
     <Compile Include="Internet Access Prompt.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Internet Access Report.Designer.vb">
+      <DependentUpon>Internet Access Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Internet Access Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Internet Access Usage.Designer.vb">
       <DependentUpon>Internet Access Usage.vb</DependentUpon>
     </Compile>
@@ -143,6 +155,12 @@
       <DependentUpon>Manage Users.vb</DependentUpon>
     </Compile>
     <Compile Include="Manage Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monitoring Report.Designer.vb">
+      <DependentUpon>Monitoring Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoring Report.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Monitoring.Designer.vb">
@@ -209,6 +227,9 @@
     <EmbeddedResource Include="Admin Login.resx">
       <DependentUpon>Admin Login.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Camera edit.resx">
+      <DependentUpon>Camera edit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Camera.resx">
       <DependentUpon>Camera.vb</DependentUpon>
     </EmbeddedResource>
@@ -227,11 +248,17 @@
     <EmbeddedResource Include="Internet Access Prompt.resx">
       <DependentUpon>Internet Access Prompt.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Internet Access Report.resx">
+      <DependentUpon>Internet Access Report.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Internet Access Usage.resx">
       <DependentUpon>Internet Access Usage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage Users.resx">
       <DependentUpon>Manage Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitoring Report.resx">
+      <DependentUpon>Monitoring Report.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Monitoring.resx">
       <DependentUpon>Monitoring.vb</DependentUpon>
@@ -460,6 +487,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_mirror1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

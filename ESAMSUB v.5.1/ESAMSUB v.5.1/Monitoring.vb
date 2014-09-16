@@ -215,9 +215,18 @@ Public Class Monitoring
     End Sub
 
     Private Sub btnBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBack.Click
+        'back to dashboard
         animateWin(Me, False)
         Me.Hide()
         animateWin(Dashboard, True)
         Dashboard.Show()
+    End Sub
+
+    Private Sub btnRecords_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRecords.Click
+        'call the form monitoring student
+        animateWin(Me, False)
+        Me.Hide()
+        animateWin(Monitoring_Report, True)
+        Monitoring_Report.Show()
     End Sub
 End Class

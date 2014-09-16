@@ -187,7 +187,6 @@ Public Class Edit_Student_Record
             MessageBox.Show("Mother name is required field", "Cannot update student", MessageBoxButtons.OK, MessageBoxIcon.Error)
             txtMotherName.Focus()
         Else
-
             'update student record query
             Dim sqlQuery As String = "UPDATE tbl_student SET fname =' " & Me.txtFirstname.Text.Trim & _
                 "', mname = '" & Me.txtMiddlename.Text.Trim & " ', lname = '" & Me.txtLastname.Text.Trim & " ', department = '" & Me.cmbDepartment.Text.Trim & " ', course = '" & Me.cmbCourse.Text.Trim & " ', birth_place = '" & Me.txtBirthPlace.Text.Trim & " ', address = '" & Me.txtStudentAddress.Text.Trim & " ', contact_no = '" & Me.txtStudentContact.Text & " ', nationality = '" & Me.txtnationality.Text.Trim & " ', religion = '" & Me.txtReligion.Text.Trim & " ', civil_status = '" & Me.cmbCivilStatus.Text & " ', year = '" & Me.cmbYear.Text & " ', gender = '" & Me.cmbGender.Text & " ', date_birth = '" & Me.dtBirthday.Text & " ', age = '" & Me.txtAge.Text & " ', gName = '" & Me.txtGuardian.Text & " ', gContact = '" & Me.txtGuardianContact.Text & " ', gAddress = '" & Me.txtGuardianAddress.Text & " ', father = '" & Me.txtFatherName.Text & " ', fthr_occupation = '" & Me.txtFatherOccupation.Text & " ', mother = '" & Me.txtMotherName.Text & " ', mthr_occupation = '" & Me.txtMotherOccupation.Text & " ' WHERE  idnumber='" & id & "'"
@@ -198,7 +197,7 @@ Public Class Edit_Student_Record
                 .Connection = sqlConnection
                 .ExecuteNonQuery()
             End With
-
+            pictStudentPic.Image.Save(Application.StartupPath & "\Pictures\" & txtStudentId.Text & ".jpg")
             'Add record to tbl access card if department is CCs
             If cmbDepartment.Text = "CCS" Then
                 Dim query_internet_access = "INSERT into tbl_internet_access(idnumber,fname,mname,lname,course,year,hour_left)VALUES('" & Me.txtStudentId.Text.Trim & _
@@ -518,6 +517,6 @@ DateTime.Today.Year - dtBirthday.Value.Year
     End Sub
 
     Private Sub btnTakePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTakePicture.Click
-        Camera.ShowDialog()
+        Camera_edit.Show()
     End Sub
 End Class
