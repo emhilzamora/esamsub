@@ -22,7 +22,21 @@ Partial Class Employees
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnBack
+        '
+        Me.btnBack.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.left_Arrow
+        Me.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBack.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack.Location = New System.Drawing.Point(21, 111)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(43, 41)
+        Me.btnBack.TabIndex = 55
+        Me.btnBack.UseVisualStyleBackColor = True
         '
         'Employees
         '
@@ -30,6 +44,7 @@ Partial Class Employees
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1300, 700)
+        Me.Controls.Add(Me.btnBack)
         Me.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -39,4 +54,5 @@ Partial Class Employees
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents btnBack As System.Windows.Forms.Button
 End Class

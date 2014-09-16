@@ -60,9 +60,6 @@ Partial Class AddStudent
         Me.Label26 = New System.Windows.Forms.Label()
         Me.txtReligion = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btnBrowsePicture = New System.Windows.Forms.Button()
-        Me.pictStudentPic = New System.Windows.Forms.PictureBox()
-        Me.btnTakePicture = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
@@ -79,17 +76,20 @@ Partial Class AddStudent
         Me.Label22 = New System.Windows.Forms.Label()
         Me.txtGuardianContact = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnBrowsePicture = New System.Windows.Forms.Button()
+        Me.pictStudentPic = New System.Windows.Forms.PictureBox()
+        Me.btnTakePicture = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -520,43 +520,6 @@ Partial Class AddStudent
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Student Picture"
         '
-        'btnBrowsePicture
-        '
-        Me.btnBrowsePicture.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Explorer
-        Me.btnBrowsePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnBrowsePicture.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBrowsePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnBrowsePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBrowsePicture.Location = New System.Drawing.Point(156, 233)
-        Me.btnBrowsePicture.Name = "btnBrowsePicture"
-        Me.btnBrowsePicture.Size = New System.Drawing.Size(59, 58)
-        Me.btnBrowsePicture.TabIndex = 26
-        Me.btnBrowsePicture.UseVisualStyleBackColor = True
-        '
-        'pictStudentPic
-        '
-        Me.pictStudentPic.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile2
-        Me.pictStudentPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pictStudentPic.Location = New System.Drawing.Point(13, 26)
-        Me.pictStudentPic.Name = "pictStudentPic"
-        Me.pictStudentPic.Size = New System.Drawing.Size(201, 200)
-        Me.pictStudentPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pictStudentPic.TabIndex = 114
-        Me.pictStudentPic.TabStop = False
-        '
-        'btnTakePicture
-        '
-        Me.btnTakePicture.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Pictures_Library
-        Me.btnTakePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnTakePicture.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnTakePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnTakePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTakePicture.Location = New System.Drawing.Point(13, 233)
-        Me.btnTakePicture.Name = "btnTakePicture"
-        Me.btnTakePicture.Size = New System.Drawing.Size(59, 58)
-        Me.btnTakePicture.TabIndex = 25
-        Me.btnTakePicture.UseVisualStyleBackColor = True
-        '
         'Label21
         '
         Me.Label21.AutoSize = True
@@ -726,55 +689,6 @@ Partial Class AddStudent
         Me.Label24.TabIndex = 109
         Me.Label24.Text = "Contact Number"
         '
-        'btnClear
-        '
-        Me.btnClear.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Recycle_Bin_Full
-        Me.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClear.Location = New System.Drawing.Point(1142, 588)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(48, 50)
-        Me.btnClear.TabIndex = 28
-        Me.btnClear.UseVisualStyleBackColor = True
-        '
-        'btnSave
-        '
-        Me.btnSave.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Save1
-        Me.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSave.Location = New System.Drawing.Point(1046, 588)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(48, 50)
-        Me.btnSave.TabIndex = 27
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
-        'btnCancel
-        '
-        Me.btnCancel.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.cancel1
-        Me.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Location = New System.Drawing.Point(1240, 588)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(48, 50)
-        Me.btnCancel.TabIndex = 29
-        Me.btnCancel.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Add_new_user2
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(-1, -1)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(79, 72)
-        Me.PictureBox1.TabIndex = 63
-        Me.PictureBox1.TabStop = False
-        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.txtStudentId)
@@ -840,6 +754,92 @@ Partial Class AddStudent
         Me.Panel1.Size = New System.Drawing.Size(1321, 27)
         Me.Panel1.TabIndex = 185
         '
+        'btnClear
+        '
+        Me.btnClear.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Recycle_Bin_Full
+        Me.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.Location = New System.Drawing.Point(1142, 588)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(48, 50)
+        Me.btnClear.TabIndex = 28
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'btnSave
+        '
+        Me.btnSave.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Save1
+        Me.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSave.Location = New System.Drawing.Point(1046, 588)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(48, 50)
+        Me.btnSave.TabIndex = 27
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'btnCancel
+        '
+        Me.btnCancel.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.cancel1
+        Me.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Location = New System.Drawing.Point(1240, 588)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(48, 50)
+        Me.btnCancel.TabIndex = 29
+        Me.btnCancel.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Add_new_user2
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(-1, -1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(79, 72)
+        Me.PictureBox1.TabIndex = 63
+        Me.PictureBox1.TabStop = False
+        '
+        'btnBrowsePicture
+        '
+        Me.btnBrowsePicture.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Explorer
+        Me.btnBrowsePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBrowsePicture.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBrowsePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnBrowsePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBrowsePicture.Location = New System.Drawing.Point(156, 233)
+        Me.btnBrowsePicture.Name = "btnBrowsePicture"
+        Me.btnBrowsePicture.Size = New System.Drawing.Size(59, 58)
+        Me.btnBrowsePicture.TabIndex = 26
+        Me.btnBrowsePicture.UseVisualStyleBackColor = True
+        '
+        'pictStudentPic
+        '
+        Me.pictStudentPic.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile2
+        Me.pictStudentPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pictStudentPic.Location = New System.Drawing.Point(13, 26)
+        Me.pictStudentPic.Name = "pictStudentPic"
+        Me.pictStudentPic.Size = New System.Drawing.Size(201, 200)
+        Me.pictStudentPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pictStudentPic.TabIndex = 114
+        Me.pictStudentPic.TabStop = False
+        '
+        'btnTakePicture
+        '
+        Me.btnTakePicture.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Pictures_Library
+        Me.btnTakePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnTakePicture.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTakePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnTakePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTakePicture.Location = New System.Drawing.Point(13, 233)
+        Me.btnTakePicture.Name = "btnTakePicture"
+        Me.btnTakePicture.Size = New System.Drawing.Size(59, 58)
+        Me.btnTakePicture.TabIndex = 25
+        Me.btnTakePicture.UseVisualStyleBackColor = True
+        '
         'AddStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
@@ -865,10 +865,10 @@ Partial Class AddStudent
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
-        CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

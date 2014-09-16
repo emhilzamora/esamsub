@@ -79,7 +79,6 @@ Public Class Manage_Users
     End Sub
 
     Private Sub btnDeleteUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDeleteUser.Click
-        'Delete user
         If sqlConnection.State = ConnectionState.Closed Then
             sqlConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
             sqlConnection.Open()
@@ -87,15 +86,20 @@ Public Class Manage_Users
         If id = Nothing Then
             MessageBox.Show("Select User from List to delete", "No User Selected", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            Dim sqlQuery As String = "DELETE FROM tbl_users WHERE  id = '" & id & "'"
-            Dim sqlCommand As New MySqlCommand
-            With sqlCommand
+            Select Case MsgBox("Are you sure you want delete user?", MsgBoxStyle.YesNo, "Confirmation")
+                Case MsgBoxResult.Yes
+                    'Delete user
+                    Dim sqlQuery As String = "DELETE FROM tbl_users WHERE  id = '" & id & "'"
+                    Dim sqlCommand As New MySqlCommand
+                    With sqlCommand
 
-                .CommandText = sqlQuery
-                .Connection = sqlConnection
-                .ExecuteNonQuery()
-            End With
-
+                        .CommandText = sqlQuery
+                        .Connection = sqlConnection
+                        .ExecuteNonQuery()
+                    End With
+                Case MsgBoxResult.No
+                    'Walang gagawin kapag no ang kanyang pinili
+            End Select
 
             MessageBox.Show("User Successfully Deleted", "User Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information)
             id = Nothing
@@ -106,9 +110,17 @@ Public Class Manage_Users
     Private Sub btnAddNewUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAddNewUser.Click
         animateWin(Add_New_User, True)
         Add_New_User.ShowDialog()
+        Add_New_User.cmbUserType.Text = Nothing
     End Sub
 
     Private Sub btnBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBack.Click
+        'disabled the buttons
+        Dashboard.btnCreatId.Enabled = False
+        Dashboard.btnManageUsers.Enabled = False
+        Dashboard.btnCreatId.Enabled = False
+        Dashboard.btnEmployee.Enabled = False
+        Dashboard.btnMonitoring.Enabled = False
+        Dashboard.btnStudents.Enabled = False
         animateWin(Me, False)
         Me.Hide()
         animateWin(Dashboard, True)

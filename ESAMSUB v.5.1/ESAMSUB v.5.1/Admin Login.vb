@@ -60,9 +60,12 @@ Public Class Admin_Login
             Dim publictable As New DataTable
             Try
                 'check if the textbox is equal to nothing then it will display the message below!.
-                If txtUsername.Text = "" And txtPassword.Text = "" Then
-                    MessageBox.Show("Username and Password Incorrect", "Authentication Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                If txtUsername.Text = Nothing Then
+                    MessageBox.Show("No Username Entered", "Authentication Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     txtUsername.Focus()
+                ElseIf txtPassword.Text = Nothing Then
+                    MessageBox.Show("No Password Entered", "Authentication Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    txtPassword.Focus()
                 Else
                     sql = "select * from tbl_users where username ='" & txtUsername.Text & "' and password = '" & txtPassword.Text & "'"
                     'bind the connection and query
@@ -83,19 +86,21 @@ Public Class Admin_Login
                         If user_type = "Administrator" Then
                             'welcomes the user as Admiistrator
                             MessageBox.Show("Welcome " & name & " you login as Administrator ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            'enabled user level
                             animateWin(Me, False)
+                            'set the lbllogin text to Logout 
+                            animateWin(Dashboard, True)
+                            Dashboard.Show()
+                            Dashboard.lblAdmin.Visible = True
                             txtUsername.Text = Nothing
                             txtPassword.Text = Nothing
-                            'set the lbllogin text to Logout 
-                            Dashboard.Show()
                             Me.Hide()
-                            'check if the type of user is dean
                         End If
 
                     Else
                         MessageBox.Show("Please contact the Administrator", "Authentication Failure", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                        txtUsername.Text = ""
-                        txtPassword.Text = ""
+                        txtUsername.Text = Nothing
+                        txtPassword.Text = Nothing
                         txtUsername.Focus()
                     End If
 
@@ -152,7 +157,7 @@ Public Class Admin_Login
                         'set the lbllogin text to Logout 
                         animateWin(Dashboard, True)
                         Dashboard.Show()
-                        Dashboard.lblUserLevel.Text = user_type
+                        Dashboard.lblAdmin.Visible = True
                         txtUsername.Text = Nothing
                         txtPassword.Text = Nothing
                         Me.Hide()
@@ -173,9 +178,5 @@ Public Class Admin_Login
 
         End Try
         con.Clone()
-    End Sub
-
-    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
-
     End Sub
 End Class

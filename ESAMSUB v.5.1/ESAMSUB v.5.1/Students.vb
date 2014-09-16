@@ -110,9 +110,17 @@ labas:
         Me.WindowState = FormWindowState.Minimized
     End Sub
     Private Sub btnBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBack.Click
+       
         reset()
         animateWin(Me, False)
         Me.Hide()
+        'disabled the buttons
+        Dashboard.btnCreatId.Enabled = False
+        Dashboard.btnManageUsers.Enabled = False
+        Dashboard.btnCreatId.Enabled = False
+        Dashboard.btnEmployee.Enabled = False
+        Dashboard.btnMonitoring.Enabled = False
+        Dashboard.btnStudents.Enabled = False
         animateWin(Dashboard, True)
         Dashboard.Show()
     End Sub

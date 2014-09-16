@@ -65,27 +65,57 @@ Public Class Other_User_Login
                     'check if the type of user is admin
                     If user_type = "Registrar" Then
                         MessageBox.Show("Welcome " & name & " you login as Registrar", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        If Dashboard.lblUserLevel.Text = "Registrar" Then
+                        If Dashboard.lblAdmin.Text = "Registrar" Then
                             Dashboard.btnStudents.Enabled = True
                         End If
                         cmbUserType.Text = Nothing
                         txtUsername.Text = Nothing
                         txtPassword.Text = Nothing
                         animateWin(Me, False)
-                        animateWin(Dashboard, True)
-                        Dashboard.Show()
-                        Dashboard.lblUserLevel.Text = user_type
+                        animateWin(Students, True)
+                        Students.Show()
+                        Dashboard.lblRegistrar.Visible = True
                         Me.Hide()
-                    ElseIf user_type = "ID Room Personnel" Then
+                    ElseIf user_type = "Id Room Personnel" Then
                         MessageBox.Show("Welcome " & name & " you login as ID Room Personnel ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         cmbUserType.Text = Nothing
                         txtUsername.Text = Nothing
                         txtPassword.Text = Nothing
-                        animateWin(Dashboard, True)
                         animateWin(Me, False)
-                        Dashboard.Show()
-                        Dashboard.lblUserLevel.Text = user_type
                         Me.Hide()
+                        animateWin(Print_Id_Cards, True)
+                        Print_Id_Cards.Show()
+                        Dashboard.lblIdroom.Visible = True
+                    ElseIf user_type = "Security Personnel" Then
+                        MessageBox.Show("Welcome " & name & " you login as Security Personnel ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        cmbUserType.Text = Nothing
+                        txtUsername.Text = Nothing
+                        txtPassword.Text = Nothing
+                        animateWin(Me, False)
+                        Me.Hide()
+                        animateWin(Monitoring, True)
+                        Monitoring.Show()
+                        Dashboard.lblSecurity.Visible = true
+                    ElseIf user_type = "Librarian" Then
+                        MessageBox.Show("Welcome " & name & " you login as Librarian ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        cmbUserType.Text = Nothing
+                        txtUsername.Text = Nothing
+                        txtPassword.Text = Nothing
+                        animateWin(Me, False)
+                        Me.Hide()
+                        animateWin(Internet_Access_Usage, True)
+                        Internet_Access_Usage.Show()
+                        Dashboard.lblLibrarian.Visible = True
+                    ElseIf user_type = "Department Head" Then
+                        MessageBox.Show("Welcome " & name & " you login as Department Head ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        cmbUserType.Text = Nothing
+                        txtUsername.Text = Nothing
+                        txtPassword.Text = Nothing
+                        animateWin(Me, False)
+                        Me.Hide()
+                        animateWin(Monitoring, True)
+                        Monitoring.Show()
+                        Dashboard.lblHead.Visible = True
                     End If
                 Else
                     MessageBox.Show("Please contact the Administrator", "Authentication Failure", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -141,35 +171,65 @@ Public Class Other_User_Login
                         user_type = publictable.Rows(0).Item(1)
                         name = publictable.Rows(0).Item(2)
                         'check if the type of user is admin
-
                         If user_type = "Registrar" Then
-                            MessageBox.Show("Welcome " & name & " you login as Registrar", "Login Successful", MessageBoxButtons.OK)
-                            If Dashboard.lblUserLevel.Text = "Registrar" Then
+                            MessageBox.Show("Welcome " & name & " you login as Registrar", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            If Dashboard.lblAdmin.Text = "Registrar" Then
                                 Dashboard.btnStudents.Enabled = True
                             End If
                             cmbUserType.Text = Nothing
                             txtUsername.Text = Nothing
                             txtPassword.Text = Nothing
                             animateWin(Me, False)
-                            Dashboard.Show()
-                            Dashboard.lblUserLevel.Text = user_type
+                            animateWin(Students, True)
+                            Students.Show()
+                            Dashboard.lblRegistrar.Visible = True
                             Me.Hide()
-                        ElseIf user_type = "ID Room Personnel" Then
-                            MessageBox.Show("Welcome " & name & " you login as ID Room Personnel ", "Login Successful", MessageBoxButtons.OK)
+                        ElseIf user_type = "Id Room Personnel" Then
+                            MessageBox.Show("Welcome " & name & " you login as ID Room Personnel ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
                             cmbUserType.Text = Nothing
                             txtUsername.Text = Nothing
                             txtPassword.Text = Nothing
                             animateWin(Me, False)
-                            Dashboard.Show()
-                            Dashboard.lblUserLevel.Text = user_type
                             Me.Hide()
+                            animateWin(Print_Id_Cards, True)
+                            Print_Id_Cards.Show()
+                            Dashboard.lblIdroom.Visible = True
+                        ElseIf user_type = "Security Personnel" Then
+                            MessageBox.Show("Welcome " & name & " you login as Security Personnel ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            cmbUserType.Text = Nothing
+                            txtUsername.Text = Nothing
+                            txtPassword.Text = Nothing
+                            animateWin(Me, False)
+                            Me.Hide()
+                            animateWin(Monitoring, True)
+                            Monitoring.Show()
+                            Dashboard.lblSecurity.Visible = True
+                        ElseIf user_type = "Librarian" Then
+                            MessageBox.Show("Welcome " & name & " you login as Librarian ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            cmbUserType.Text = Nothing
+                            txtUsername.Text = Nothing
+                            txtPassword.Text = Nothing
+                            animateWin(Me, False)
+                            Me.Hide()
+                            animateWin(Internet_Access_Usage, True)
+                            Internet_Access_Usage.Show()
+                            Dashboard.lblLibrarian.Visible = True
+                        ElseIf user_type = "Department Head" Then
+                            MessageBox.Show("Welcome " & name & " you login as Department Head ", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            cmbUserType.Text = Nothing
+                            txtUsername.Text = Nothing
+                            txtPassword.Text = Nothing
+                            animateWin(Me, False)
+                            Me.Hide()
+                            animateWin(Monitoring, True)
+                            Monitoring.Show()
+                            Dashboard.lblHead.Visible = True
                         End If
-
                     Else
                         MessageBox.Show("Please contact the Administrator", "Authentication Failure", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                        cmbUserType.Text = Nothing
                         txtUsername.Text = Nothing
                         txtPassword.Text = Nothing
+                        cmbUserType.Text = Nothing
                         cmbUserType.Focus()
                     End If
 

@@ -122,7 +122,7 @@ Partial Class Add_New_User
         Me.cmbUserType.Font = New System.Drawing.Font("Open Sans Light", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbUserType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.cmbUserType.FormattingEnabled = True
-        Me.cmbUserType.Items.AddRange(New Object() {"Registrar", "Id Room Personnel"})
+        Me.cmbUserType.Items.AddRange(New Object() {"Registrar", "Id Room Personnel", "Security Personnel", "Department Head", "Librarian"})
         Me.cmbUserType.Location = New System.Drawing.Point(14, 49)
         Me.cmbUserType.MaxLength = 100
         Me.cmbUserType.Name = "cmbUserType"

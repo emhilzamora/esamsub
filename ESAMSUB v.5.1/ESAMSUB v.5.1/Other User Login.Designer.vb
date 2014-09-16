@@ -72,7 +72,7 @@ Partial Class Other_User_Login
         Me.cmbUserType.Font = New System.Drawing.Font("Open Sans Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbUserType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.cmbUserType.FormattingEnabled = True
-        Me.cmbUserType.Items.AddRange(New Object() {"Registrar", "Id Room Personnel"})
+        Me.cmbUserType.Items.AddRange(New Object() {"Registrar", "Id Room Personnel", "Security Personnel", "Department Head", "Librarian"})
         Me.cmbUserType.Location = New System.Drawing.Point(141, 77)
         Me.cmbUserType.Name = "cmbUserType"
         Me.cmbUserType.Size = New System.Drawing.Size(227, 28)

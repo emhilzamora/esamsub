@@ -138,7 +138,7 @@ Partial Class Internet_Access_Usage
         Me.Panel2.Controls.Add(Me.lblTime)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Location = New System.Drawing.Point(-5, -2)
+        Me.Panel2.Location = New System.Drawing.Point(-1, -2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1374, 79)
         Me.Panel2.TabIndex = 53

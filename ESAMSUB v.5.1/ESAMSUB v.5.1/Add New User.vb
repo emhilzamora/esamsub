@@ -35,11 +35,11 @@ Public Class Add_New_User
     End Sub
     'Code for Smart Clear of Textbox
     Public Sub ClearTextBoxes()
-        For Each ctrl As Control In Controls
-            If ctrl.GetType Is GetType(TextBox) Then
-                ctrl.Text = Nothing
-            End If
-        Next
+        txtContact.Text = ""
+        txtPassword.Text = ""
+        txtRetypeUserPassword.Text = ""
+        txtUsername.Text = ""
+        cmbUserType.Text = ""
     End Sub
     'Button Save
     Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
@@ -101,6 +101,17 @@ Public Class Add_New_User
         If Char.IsDigit(e.KeyChar) = False And Char.IsControl(e.KeyChar) = False Then
             MessageBox.Show("Enter Number Only", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtContact_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtContact.Leave
+        If txtContact.Text = "" Then
+
+        Else
+            If txtContact.TextLength < 11 Then
+                MessageBox.Show("The number should be atleast 11 digits", "Input error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                txtContact.Focus()
+            End If
         End If
     End Sub
 End Class

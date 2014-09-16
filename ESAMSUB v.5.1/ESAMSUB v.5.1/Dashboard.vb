@@ -4,7 +4,8 @@ Public Class Dashboard
     Private Sub tmrTimeRunner_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrTimeRunner.Tick
         lblDate.Text = Now.ToLongDateString
         lblTime.Text = Now.ToLongTimeString
-        If lblUserLevel.Text = "Administrator" Then
+        'enabled and disabled the buttons
+        If lblAdmin.Visible = True Then
             btnManageUsers.Enabled = True
             btnInternetAccess.Enabled = True
             btnCreatId.Enabled = True
@@ -12,10 +13,42 @@ Public Class Dashboard
             btnMonitoring.Enabled = True
             btnStudents.Enabled = True
             btnReports.Enabled = True
-        ElseIf lblUserLevel.Text = "Registrar" Then
+        ElseIf lblHead.Visible = True Then
+            btnStudents.Enabled = False
+            btnManageUsers.Enabled = False
+            btnInternetAccess.Enabled = False
+            btnCreatId.Enabled = False
+            btnEmployee.Enabled = False
+            btnMonitoring.Enabled = True
+            btnReports.Enabled = False
+        ElseIf lblIdroom.Visible = True Then
+            btnStudents.Enabled = False
+            btnManageUsers.Enabled = False
+            btnInternetAccess.Enabled = False
+            btnCreatId.Enabled = True
+            btnEmployee.Enabled = False
+            btnMonitoring.Enabled = False
+            btnReports.Enabled = False
+        ElseIf lblRegistrar.Visible = True Then
             btnStudents.Enabled = True
             btnManageUsers.Enabled = False
             btnInternetAccess.Enabled = False
+            btnCreatId.Enabled = False
+            btnEmployee.Enabled = False
+            btnMonitoring.Enabled = False
+            btnReports.Enabled = False
+        ElseIf lblSecurity.Visible = True Then
+            btnStudents.Enabled = False
+            btnManageUsers.Enabled = False
+            btnInternetAccess.Enabled = False
+            btnCreatId.Enabled = False
+            btnEmployee.Enabled = False
+            btnMonitoring.Enabled = True
+            btnReports.Enabled = False
+        ElseIf lblLibrarian.Visible = True Then
+            btnStudents.Enabled = False
+            btnManageUsers.Enabled = False
+            btnInternetAccess.Enabled = True
             btnCreatId.Enabled = False
             btnEmployee.Enabled = False
             btnMonitoring.Enabled = False
@@ -24,7 +57,6 @@ Public Class Dashboard
     End Sub
 
     Private Sub Dashboard_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-       
         'para sa tooltip
         tt1 = New ToolTip
         tt1.SetToolTip(btnHelp, "Help")
@@ -66,11 +98,11 @@ Public Class Dashboard
     End Sub
 
     Private Sub btnUserPic_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUserPic.Click
-        btnManageUsers.Enabled = False
-        btnCreatId.Enabled = False
-        btnEmployee.Enabled = False
-        btnMonitoring.Enabled = False
-        btnStudents.Enabled = False
+        lblAdmin.Visible = False
+        lblHead.Visible = False
+        lblIdroom.Visible = False
+        lblLibrarian.Visible = False
+        lblSecurity.Visible = False
         animateWin(Me, False)
         Me.Hide()
         animateWin(Startup, True)
@@ -105,7 +137,10 @@ Public Class Dashboard
         Employees.Show()
     End Sub
 
-    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
+    Private Sub btnCreatId_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCreatId.Click
+        animateWin(Me, False)
+        Me.Hide()
+        animateWin(Print_Id_Cards, True)
+        Print_Id_Cards.Show()
     End Sub
 End Class

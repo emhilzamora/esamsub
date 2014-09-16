@@ -24,6 +24,7 @@ Partial Class Manage_Users
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblTime = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -47,9 +48,6 @@ Partial Class Manage_Users
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnDeleteUser = New System.Windows.Forms.Button()
         Me.btnAddNewUser = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -66,6 +64,16 @@ Partial Class Manage_Users
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1374, 79)
         Me.Panel2.TabIndex = 30
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Manage_Users1
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(4, 5)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(70, 70)
+        Me.PictureBox2.TabIndex = 38
+        Me.PictureBox2.TabStop = False
         '
         'lblDate
         '
@@ -122,9 +130,9 @@ Partial Class Manage_Users
         Me.lvShowUsers.FullRowSelect = True
         Me.lvShowUsers.GridLines = True
         Me.lvShowUsers.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.lvShowUsers.Location = New System.Drawing.Point(154, 208)
+        Me.lvShowUsers.Location = New System.Drawing.Point(141, 208)
         Me.lvShowUsers.Name = "lvShowUsers"
-        Me.lvShowUsers.Size = New System.Drawing.Size(665, 288)
+        Me.lvShowUsers.Size = New System.Drawing.Size(736, 288)
         Me.lvShowUsers.TabIndex = 31
         Me.lvShowUsers.UseCompatibleStateImageBehavior = False
         Me.lvShowUsers.View = System.Windows.Forms.View.Details
@@ -137,22 +145,22 @@ Partial Class Manage_Users
         'ColumnHeader7
         '
         Me.ColumnHeader7.Text = "User Level"
-        Me.ColumnHeader7.Width = 145
+        Me.ColumnHeader7.Width = 198
         '
         'ColumnHeader8
         '
         Me.ColumnHeader8.Text = "Username"
-        Me.ColumnHeader8.Width = 161
+        Me.ColumnHeader8.Width = 174
         '
         'ColumnHeader9
         '
         Me.ColumnHeader9.Text = "User Password"
-        Me.ColumnHeader9.Width = 140
+        Me.ColumnHeader9.Width = 124
         '
         'ColumnHeader10
         '
         Me.ColumnHeader10.Text = "User Contact"
-        Me.ColumnHeader10.Width = 139
+        Me.ColumnHeader10.Width = 161
         '
         'tmrTimeRunner
         '
@@ -287,45 +295,12 @@ Partial Class Manage_Users
         Me.btnAddNewUser.TabIndex = 38
         Me.btnAddNewUser.UseVisualStyleBackColor = True
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Manage_Users1
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(4, 5)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(70, 70)
-        Me.PictureBox2.TabIndex = 38
-        Me.PictureBox2.TabStop = False
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.Panel3.Location = New System.Drawing.Point(-43, 541)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1321, 44)
-        Me.Panel3.TabIndex = 53
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(908, 478)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(127, 60)
-        Me.Label7.TabIndex = 54
-        Me.Label7.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
-            "ms v.6.1"
-        '
         'Manage_Users
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1036, 700)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Panel1)
@@ -377,6 +352,4 @@ Partial Class Manage_Users
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Label7 As System.Windows.Forms.Label
 End Class
