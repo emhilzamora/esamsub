@@ -39,9 +39,11 @@ Partial Class Monitoring_Report
         Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader15 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.btnSearch = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -172,6 +174,19 @@ Partial Class Monitoring_Report
         Me.Panel1.Size = New System.Drawing.Size(1308, 27)
         Me.Panel1.TabIndex = 57
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label4.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(1173, 610)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(127, 60)
+        Me.Label4.TabIndex = 62
+        Me.Label4.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         esa" & _
+            "msub v.6"
+        '
         'btnBack
         '
         Me.btnBack.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.left_Arrow
@@ -195,18 +210,29 @@ Partial Class Monitoring_Report
         Me.PictureBox2.TabIndex = 38
         Me.PictureBox2.TabStop = False
         '
-        'Label4
+        'txtSearch
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.Label4.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(1173, 610)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(127, 60)
-        Me.Label4.TabIndex = 62
-        Me.Label4.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         esa" & _
-            "msub v.6"
+        Me.txtSearch.BackColor = System.Drawing.Color.White
+        Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearch.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.txtSearch.Location = New System.Drawing.Point(950, 92)
+        Me.txtSearch.MaxLength = 30
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(237, 26)
+        Me.txtSearch.TabIndex = 66
+        '
+        'btnSearch
+        '
+        Me.btnSearch.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Search_alt__2_
+        Me.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearch.Location = New System.Drawing.Point(1193, 85)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(41, 36)
+        Me.btnSearch.TabIndex = 65
+        Me.btnSearch.UseVisualStyleBackColor = True
         '
         'Monitoring_Report
         '
@@ -214,6 +240,8 @@ Partial Class Monitoring_Report
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1300, 700)
+        Me.Controls.Add(Me.txtSearch)
+        Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Panel1)
@@ -251,4 +279,6 @@ Partial Class Monitoring_Report
     Friend WithEvents ColumnHeader15 As System.Windows.Forms.ColumnHeader
     Friend WithEvents btnBack As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents txtSearch As System.Windows.Forms.TextBox
+    Friend WithEvents btnSearch As System.Windows.Forms.Button
 End Class

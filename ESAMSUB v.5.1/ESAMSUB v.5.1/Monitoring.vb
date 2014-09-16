@@ -50,6 +50,7 @@ Public Class Monitoring
         tt.SetToolTip(btnReset, "Reset")
         tt.SetToolTip(btnRecords, "Open records")
         tt.SetToolTip(btnSearch, "Search student")
+        tt.SetToolTip(btnBack, "Back to dashboard")
         SendMessage(Me.txtSearch.Handle, &H1501, 0, "$X.XX") 'Me.Font, Brushes.LightGray
         SendMessage(Me.txtSearch.Handle, &H1501, 0, "Search Student")
         SendMessage(Me.txtMonitoring.Handle, &H1501, 0, "$X.XX") 'Me.Font, Brushes.LightGray

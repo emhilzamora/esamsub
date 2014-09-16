@@ -24,7 +24,6 @@ Partial Class Monitoring
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblTime = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -51,6 +50,8 @@ Partial Class Monitoring
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -67,16 +68,6 @@ Partial Class Monitoring
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1374, 79)
         Me.Panel2.TabIndex = 54
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Monitoring1
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(4, 5)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(70, 70)
-        Me.PictureBox2.TabIndex = 38
-        Me.PictureBox2.TabStop = False
         '
         'lblDate
         '
@@ -136,9 +127,9 @@ Partial Class Monitoring
         Me.lvMonitoringStud.FullRowSelect = True
         Me.lvMonitoringStud.GridLines = True
         Me.lvMonitoringStud.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.lvMonitoringStud.Location = New System.Drawing.Point(30, 143)
+        Me.lvMonitoringStud.Location = New System.Drawing.Point(26, 160)
         Me.lvMonitoringStud.Name = "lvMonitoringStud"
-        Me.lvMonitoringStud.Size = New System.Drawing.Size(1246, 496)
+        Me.lvMonitoringStud.Size = New System.Drawing.Size(1246, 444)
         Me.lvMonitoringStud.TabIndex = 55
         Me.lvMonitoringStud.UseCompatibleStateImageBehavior = False
         Me.lvMonitoringStud.View = System.Windows.Forms.View.Details
@@ -193,7 +184,7 @@ Partial Class Monitoring
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.Panel1.Location = New System.Drawing.Point(-4, 672)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1308, 24)
+        Me.Panel1.Size = New System.Drawing.Size(1308, 30)
         Me.Panel1.TabIndex = 56
         '
         'txtSearch
@@ -202,7 +193,7 @@ Partial Class Monitoring
         Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtSearch.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtSearch.Location = New System.Drawing.Point(599, 89)
+        Me.txtSearch.Location = New System.Drawing.Point(595, 106)
         Me.txtSearch.MaxLength = 30
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(237, 26)
@@ -215,7 +206,7 @@ Partial Class Monitoring
         Me.txtMonitoring.Enabled = False
         Me.txtMonitoring.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMonitoring.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtMonitoring.Location = New System.Drawing.Point(314, 89)
+        Me.txtMonitoring.Location = New System.Drawing.Point(310, 106)
         Me.txtMonitoring.MaxLength = 30
         Me.txtMonitoring.Name = "txtMonitoring"
         Me.txtMonitoring.Size = New System.Drawing.Size(237, 26)
@@ -227,7 +218,7 @@ Partial Class Monitoring
         Me.cmbType.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbType.FormattingEnabled = True
         Me.cmbType.Items.AddRange(New Object() {"Time-In", "Time-Out"})
-        Me.cmbType.Location = New System.Drawing.Point(154, 89)
+        Me.cmbType.Location = New System.Drawing.Point(150, 106)
         Me.cmbType.Name = "cmbType"
         Me.cmbType.Size = New System.Drawing.Size(121, 30)
         Me.cmbType.TabIndex = 60
@@ -237,7 +228,7 @@ Partial Class Monitoring
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(1115, 119)
+        Me.Label12.Location = New System.Drawing.Point(1111, 136)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(56, 18)
         Me.Label12.TabIndex = 178
@@ -248,7 +239,7 @@ Partial Class Monitoring
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(1212, 117)
+        Me.Label3.Location = New System.Drawing.Point(1208, 134)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(40, 18)
         Me.Label3.TabIndex = 179
@@ -259,7 +250,7 @@ Partial Class Monitoring
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(151, 122)
+        Me.Label4.Location = New System.Drawing.Point(147, 139)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(87, 18)
         Me.Label4.TabIndex = 180
@@ -274,7 +265,7 @@ Partial Class Monitoring
         Me.btnRecords.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnRecords.FlatAppearance.BorderSize = 0
         Me.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRecords.Location = New System.Drawing.Point(1120, 79)
+        Me.btnRecords.Location = New System.Drawing.Point(1116, 96)
         Me.btnRecords.Name = "btnRecords"
         Me.btnRecords.Size = New System.Drawing.Size(36, 36)
         Me.btnRecords.TabIndex = 177
@@ -287,7 +278,7 @@ Partial Class Monitoring
         Me.btnBack.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBack.Location = New System.Drawing.Point(50, 96)
+        Me.btnBack.Location = New System.Drawing.Point(26, 106)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(43, 41)
         Me.btnBack.TabIndex = 63
@@ -300,7 +291,7 @@ Partial Class Monitoring
         Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.Location = New System.Drawing.Point(1210, 79)
+        Me.btnReset.Location = New System.Drawing.Point(1206, 96)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(36, 36)
         Me.btnReset.TabIndex = 62
@@ -312,11 +303,34 @@ Partial Class Monitoring
         Me.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.Location = New System.Drawing.Point(842, 83)
+        Me.btnSearch.Location = New System.Drawing.Point(838, 100)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(41, 36)
         Me.btnSearch.TabIndex = 57
         Me.btnSearch.UseVisualStyleBackColor = True
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Monitoring1
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(4, 5)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(70, 70)
+        Me.PictureBox2.TabIndex = 38
+        Me.PictureBox2.TabStop = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label5.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(1161, 609)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(127, 60)
+        Me.Label5.TabIndex = 181
+        Me.Label5.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
+            "ms v.6.1"
         '
         'Monitoring
         '
@@ -324,6 +338,7 @@ Partial Class Monitoring
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1300, 700)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label12)
@@ -377,4 +392,5 @@ Partial Class Monitoring
     Friend WithEvents ColumnHeader9 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader10 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

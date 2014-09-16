@@ -24,6 +24,35 @@ Public Class Students
         SendMessage(Me.txtSearch.Handle, &H1501, 0, "$X.XX") 'Me.Font, Brushes.LightGray
         SendMessage(Me.txtSearch.Handle, &H1501, 0, "Search Student")
     End Sub
+
+    Public Sub reset()
+        lblIdnumber.Text = "-----------"
+        lblFname.Text = "-----------"
+        lblMname.Text = "-----------"
+        lblLname.Text = "-----------"
+        lblDepartment.Text = "-----------"
+        lblCourse.Text = "-----------"
+        lblbirthplace.Text = "-----------"
+        lblAddress.Text = "-----------"
+        lblContact.Text = "-----------"
+        lblNationality.Text = "-----------"
+        lblReligion.Text = "-----------"
+        lblCivilStatus.Text = "-----------"
+        lblYear.Text = "-----------"
+        lblGender.Text = "-----------"
+        lblDateBirth.Text = "-----------"
+        lblAge.Text = "-----------"
+        lblGuardian.Text = "-----------"
+        lblGcontact.Text = "-----------"
+        lblGaddress.Text = "-----------"
+        lblFatherName.Text = "-----------"
+        lblFthrOccuaption.Text = "-----------"
+        lblMothername.Text = "-----------"
+        lblmthrOccupation.Text = "-----------"
+        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
+labas:
+    End Sub
+
     Public Sub LoadStudent()
         Dim sqlQuery As String = "SELECT * from tbl_student"
         Dim sqlAdapter As New MySqlDataAdapter
@@ -81,15 +110,18 @@ Public Class Students
         Me.WindowState = FormWindowState.Minimized
     End Sub
     Private Sub btnBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBack.Click
+        reset()
         animateWin(Me, False)
         Me.Hide()
         animateWin(Dashboard, True)
         Dashboard.Show()
     End Sub
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
+        reset()
         LoadStudent()
     End Sub
     Private Sub btnAddStudent_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAddStudent.Click
+        reset()
         animateWin(Me, False)
         Me.Hide()
         animateWin(AddStudent, True)
@@ -253,6 +285,7 @@ labas:
             Edit_Student_Record.mother = sqlTable.Rows(0)("mother")
             Edit_Student_Record.mthrOccupation = sqlTable.Rows(0)("mthr_occupation")
             Edit_Student_Record.ShowDialog()
+            reset()
         End If
 labas:
     End Sub

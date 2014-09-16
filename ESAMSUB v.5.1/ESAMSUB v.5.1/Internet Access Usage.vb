@@ -3,6 +3,7 @@ Imports System.Runtime.InteropServices
 Public Class Internet_Access_Usage
     Dim status As Integer
     Dim x As Integer
+    Dim tt As ToolTip
     Dim sConnection = New MySqlConnection
     Friend id As String
     Friend fname As String
@@ -19,6 +20,10 @@ Public Class Internet_Access_Usage
             sConnection.Open()
             loadStudents()
         End If
+        tt = New ToolTip
+        tt.SetToolTip(btnRecords, "Open records")
+        tt.SetToolTip(btnSearch, "Search student")
+        tt.SetToolTip(btnBack, "Back to dashboard")
         SendMessage(Me.txtInternetUsage.Handle, &H1501, 0, "$X.XX") 'Me.Font, Brushes.LightGray
         SendMessage(Me.txtInternetUsage.Handle, &H1501, 0, "Use Internet Access")
         SendMessage(Me.txtSearch.Handle, &H1501, 0, "$X.XX") 'Me.Font, Brushes.LightGray
@@ -95,8 +100,8 @@ Public Class Internet_Access_Usage
             End With
             Internet_Access_Prompt.id = txtInternetUsage.Text
             Internet_Access_Prompt.fullname = sqlTable.Rows(0)("fname") & " " & sqlTable.Rows(0)("mname") & " " & sqlTable.Rows(0)("lname")
-            Internet_Access_Prompt.year = sqlTable.Rows(0)("course")
-            Internet_Access_Prompt.course = sqlTable.Rows(0)("year")
+            Internet_Access_Prompt.year = sqlTable.Rows(0)("year")
+            Internet_Access_Prompt.course = sqlTable.Rows(0)("course")
             Internet_Access_Prompt.hour_left = sqlTable.Rows(0)("hour_left")
             Internet_Access_Prompt.lblDate.Text = Date.Today
             Internet_Access_Prompt.lblTime.Text = TimeOfDay
@@ -176,5 +181,13 @@ labas:
                 End With
             End With
         Next
+    End Sub
+
+    Private Sub btnRecords_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRecords.Click
+        'call the form internet access usage form
+        animateWin(Me, False)
+        Me.Hide()
+        animateWin(Internet_Access_Report, True)
+        Internet_Access_Report.Show()
     End Sub
 End Class

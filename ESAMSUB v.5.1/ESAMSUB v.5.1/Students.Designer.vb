@@ -283,9 +283,9 @@ Partial Class Students
         Me.GroupBox1.Controls.Add(Me.pictStudentPic)
         Me.GroupBox1.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(25, 55)
+        Me.GroupBox1.Location = New System.Drawing.Point(21, 33)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(140, 156)
+        Me.GroupBox1.Size = New System.Drawing.Size(189, 199)
         Me.GroupBox1.TabIndex = 121
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Student Picture"
@@ -294,9 +294,9 @@ Partial Class Students
         '
         Me.pictStudentPic.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile2
         Me.pictStudentPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pictStudentPic.Location = New System.Drawing.Point(13, 26)
+        Me.pictStudentPic.Location = New System.Drawing.Point(7, 21)
         Me.pictStudentPic.Name = "pictStudentPic"
-        Me.pictStudentPic.Size = New System.Drawing.Size(111, 112)
+        Me.pictStudentPic.Size = New System.Drawing.Size(175, 170)
         Me.pictStudentPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pictStudentPic.TabIndex = 114
         Me.pictStudentPic.TabStop = False
