@@ -63,8 +63,6 @@ Public Class AddStudent
     End Sub
     'add ng record ng student
     Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
-        'send back default picture
-        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
         'validate lahat ng textbox at combobox kapag walang laman
         If txtStudentId.Text = "" And txtFirstname.Text = "" And txtMiddlename.Text = "" And txtLastname.Text = "" And cmbDepartment.Text = "" And cmbCourse.Text = "" And txtBirthPlace.Text = "" And txtStudentAddress.Text = "" And txtStudentContact.Text = "" And txtnationality.Text = "" And txtReligion.Text = "" And cmbCivilStatus.Text = "" And cmbYear.Text = "" And cmbGender.Text = "" And txtAge.Text = "" And txtGuardian.Text = "" And txtGuardianContact.Text = "" And txtGuardianAddress.Text = "" And txtFatherName.Text = "" And txtFatherOccupation.Text = "" And txtMotherName.Text = "" And txtMotherOccupation.Text = "" Then
             MessageBox.Show("All Required fields are empty", "Cannot add new student", MessageBoxButtons.OK, MessageBoxIcon.Error)
