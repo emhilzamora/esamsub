@@ -116,7 +116,6 @@ Public Class Edit_Student_Record
         End If
     End Sub
     Private Sub btnUpdate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdate.Click
-
         'error handling
         On Error GoTo labas
         'validation kung bakante ang mga textbox
@@ -187,53 +186,71 @@ Public Class Edit_Student_Record
             MessageBox.Show("Mother name is required field", "Cannot update student", MessageBoxButtons.OK, MessageBoxIcon.Error)
             txtMotherName.Focus()
         Else
-            'update student record query
-            Dim sqlQuery As String = "UPDATE tbl_student SET fname =' " & Me.txtFirstname.Text.Trim & _
-                "', mname = '" & Me.txtMiddlename.Text.Trim & " ', lname = '" & Me.txtLastname.Text.Trim & " ', department = '" & Me.cmbDepartment.Text.Trim & " ', course = '" & Me.cmbCourse.Text.Trim & " ', birth_place = '" & Me.txtBirthPlace.Text.Trim & " ', address = '" & Me.txtStudentAddress.Text.Trim & " ', contact_no = '" & Me.txtStudentContact.Text & " ', nationality = '" & Me.txtnationality.Text.Trim & " ', religion = '" & Me.txtReligion.Text.Trim & " ', civil_status = '" & Me.cmbCivilStatus.Text & " ', year = '" & Me.cmbYear.Text & " ', gender = '" & Me.cmbGender.Text & " ', date_birth = '" & Me.dtBirthday.Text & " ', age = '" & Me.txtAge.Text & " ', gName = '" & Me.txtGuardian.Text & " ', gContact = '" & Me.txtGuardianContact.Text & " ', gAddress = '" & Me.txtGuardianAddress.Text & " ', father = '" & Me.txtFatherName.Text & " ', fthr_occupation = '" & Me.txtFatherOccupation.Text & " ', mother = '" & Me.txtMotherName.Text & " ', mthr_occupation = '" & Me.txtMotherOccupation.Text & " ' WHERE  idnumber='" & id & "'"
-            Dim sqlCommand As New MySqlCommand
-            With sqlCommand
+            Select Case MsgBox("Are you sure do you want to save changes?", MsgBoxStyle.YesNo, "Save changes")
+                Case MsgBoxResult.Yes
+                    'update student record query
+                    Dim sqlQuery As String = "UPDATE tbl_student SET fname =' " & Me.txtFirstname.Text.Trim & _
+              "', mname = '" & Me.txtMiddlename.Text.Trim & " ', lname = '" & Me.txtLastname.Text.Trim & " ', department = '" & Me.cmbDepartment.Text.Trim & " ', course = '" & Me.cmbCourse.Text.Trim & " ', birth_place = '" & Me.txtBirthPlace.Text.Trim & " ', address = '" & Me.txtStudentAddress.Text.Trim & " ', contact_no = '" & Me.txtStudentContact.Text & " ', nationality = '" & Me.txtnationality.Text.Trim & " ', religion = '" & Me.txtReligion.Text.Trim & " ', civil_status = '" & Me.cmbCivilStatus.Text & " ', year = '" & Me.cmbYear.Text & " ', gender = '" & Me.cmbGender.Text & " ', date_birth = '" & Me.dtBirthday.Text & " ', age = '" & Me.txtAge.Text & " ', gName = '" & Me.txtGuardian.Text & " ', gContact = '" & Me.txtGuardianContact.Text & " ', gAddress = '" & Me.txtGuardianAddress.Text & " ', father = '" & Me.txtFatherName.Text & " ', fthr_occupation = '" & Me.txtFatherOccupation.Text & " ', mother = '" & Me.txtMotherName.Text & " ', mthr_occupation = '" & Me.txtMotherOccupation.Text & " ' WHERE  idnumber='" & id & "'"
+                    Dim sqlCommand As New MySqlCommand
+                    With sqlCommand
 
-                .CommandText = sqlQuery
-                .Connection = sqlConnection
-                .ExecuteNonQuery()
-            End With
-            pictStudentPic.Image.Save(Application.StartupPath & "\Pictures\" & txtStudentId.Text & ".jpg")
-            'Add record to tbl access card if department is CCs
-            If cmbDepartment.Text = "CCS" Then
-                Dim query_internet_access = "INSERT into tbl_internet_access(idnumber,fname,mname,lname,course,year,hour_left)VALUES('" & Me.txtStudentId.Text.Trim & _
-                "','" & Me.txtFirstname.Text.Trim & "','" & Me.txtMiddlename.Text.Trim & "','" & Me.txtLastname.Text.Trim & "','" & Me.cmbCourse.Text.Trim & "','" & Me.cmbYear.Text.Trim & "','" & "10" & "')ON DUPLICATE KEY UPDATE idnumber = '" & Me.txtStudentId.Text & "'"
-                Dim sqlCommand1 As New MySqlCommand
+                        .CommandText = sqlQuery
+                        .Connection = sqlConnection
+                        .ExecuteNonQuery()
+                    End With
+                    pictStudentPic.Image.Save(Application.StartupPath & "\Pictures\" & txtStudentId.Text & ".jpg")
+                    'Add record to tbl access card if department is CCs
+                    If cmbDepartment.Text = "CCS" Then
+                        Dim query_internet_access = "INSERT into tbl_internet_access(idnumber,fname,mname,lname,course,year,hour_left)VALUES('" & Me.txtStudentId.Text.Trim & _
+                        "','" & Me.txtFirstname.Text.Trim & "','" & Me.txtMiddlename.Text.Trim & "','" & Me.txtLastname.Text.Trim & "','" & Me.cmbCourse.Text.Trim & "','" & Me.cmbYear.Text.Trim & "','" & "10" & "')ON DUPLICATE KEY UPDATE idnumber = '" & Me.txtStudentId.Text & "'"
+                        Dim sqlCommand1 As New MySqlCommand
 
-                With sqlCommand1
-                    .CommandText = query_internet_access
-                    .Connection = sqlConnection
-                    .ExecuteNonQuery()
-                End With
-            End If
+                        With sqlCommand1
+                            .CommandText = query_internet_access
+                            .Connection = sqlConnection
+                            .ExecuteNonQuery()
+                        End With
+                    End If
 
-            'delete student from internet acccess if change the course
-            If cmbDepartment.Text = "CABA" Or cmbDepartment.Text = "CEA" Then
-                Dim query_remove_student As String = "DELETE FROM tbl_internet_access WHERE  idnumber = '" & Me.txtStudentId.Text & "'"
-                Dim sqlCommand2 As New MySqlCommand
-                With sqlCommand2
+                    'delete student from internet acccess if change the course
+                    If cmbDepartment.Text = "CABA" Or cmbDepartment.Text = "CEA" Then
+                        Dim query_remove_student As String = "DELETE FROM tbl_internet_access WHERE  idnumber = '" & Me.txtStudentId.Text & "'"
+                        Dim sqlCommand2 As New MySqlCommand
+                        With sqlCommand2
 
-                    .CommandText = query_remove_student
-                    .Connection = sqlConnection
-                    .ExecuteNonQuery()
-                End With
+                            .CommandText = query_remove_student
+                            .Connection = sqlConnection
+                            .ExecuteNonQuery()
+                        End With
 
-            End If
-            ClearTextBoxes()
-            clearComboBox()
-            animateWin(Me, False)
-            Me.Close()
-            animateWin(Students, True)
-            Students.Show()
-            Students.LoadStudent()
+                    End If
+                    ClearTextBoxes()
+                    clearComboBox()
+                    animateWin(Me, False)
+                    Me.Close()
+                    animateWin(Students, True)
+                    Students.Show()
+                    Students.LoadStudent()
+                    'send back default picture
+                    pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
+                Case MsgBoxResult.No
+                    Select Case MsgBox("Exit editing ?", MsgBoxStyle.YesNo, "Save changes")
+                        Case MsgBoxResult.Yes
+                            ClearTextBoxes()
+                            clearComboBox()
+                            animateWin(Me, False)
+                            Me.Close()
+                            animateWin(Students, True)
+                            Students.Show()
+                            Students.LoadStudent()
+                            'send back default picture
+                            pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
+                        Case MsgBoxResult.No
+                            'walang gagawin
+                    End Select
+            End Select
         End If
 labas:
-        'send back default picture
-        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
     End Sub
     'lilinisin ang mga textbox
     Public Sub ClearTextBoxes()
@@ -246,11 +263,11 @@ labas:
     End Sub
     'lilinisin ang mga combobox
     Public Sub clearComboBox()
-        cmbCivilStatus.Text = ""
-        cmbDepartment.Text = ""
-        cmbYear.Text = ""
-        cmbGender.Text = ""
-        cmbCourse.Text = ""
+        cmbCivilStatus.Text = Nothing
+        cmbDepartment.Text = Nothing
+        cmbYear.Text = Nothing
+        cmbGender.Text = Nothing
+        cmbCourse.Text = Nothing
     End Sub
     Private Sub txtFirstname_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtFirstname.KeyPress
         'Accept Only Letters
@@ -494,12 +511,12 @@ labas:
 
     Private Sub dtBirthday_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtBirthday.ValueChanged
         'set ang birthday automatically
-        Dim myAge =
-DateTime.Today.Year - dtBirthday.Value.Year
-        txtAge.Text = myAge.ToString()
+        Dim yr As Integer = DateDiff(DateInterval.Year, dtBirthday.Value, Now)
+        txtAge.Text = yr
     End Sub
 
     Private Sub btnBrowsePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBrowsePicture.Click
+        'open file for pictures
         Dim fdlg As OpenFileDialog = New OpenFileDialog()
         fdlg.Title = "Choose Student Picture"
         fdlg.InitialDirectory = "c:\"
@@ -518,5 +535,13 @@ DateTime.Today.Year - dtBirthday.Value.Year
 
     Private Sub btnTakePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTakePicture.Click
         Camera_edit.Show()
+    End Sub
+
+    Private Sub cmbCourse_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbCourse.SelectedIndexChanged
+        If cmbCourse.Text = "Associate Computer Technology" Then
+            cmbYear.Items.Clear()
+            cmbYear.Items.Add("First Year")
+            cmbYear.Items.Add("Second Year")
+        End If
     End Sub
 End Class

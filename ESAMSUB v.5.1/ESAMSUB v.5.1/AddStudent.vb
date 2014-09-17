@@ -178,6 +178,7 @@ Public Class AddStudent
                     .ExecuteNonQuery()
                 End With
             End If
+            pictStudentPic.Image.Save(Application.StartupPath & "\Pictures\" & txtStudentId.Text & ".jpg")
             Select Case MsgBox("Student successfully added to database, want to add more Student?", MsgBoxStyle.YesNo, "Added new record")
                 Case MsgBoxResult.Yes
                     'send back default picture
@@ -187,16 +188,16 @@ Public Class AddStudent
                     ClearTextBoxes()
                     txtStudentId.Focus()
                 Case MsgBoxResult.No
-                    'send back default picture
-                    pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
-                    'Walang gagawin kapag no ang kanyang pinili
-                    clearComboBox()
-                    ClearTextBoxes()
                     animateWin(Me, False)
                     Me.Close()
                     animateWin(Students, True)
                     Students.Show()
                     Students.LoadStudent()
+                    'send back default picture
+                    pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
+                    'Walang gagawin kapag no ang kanyang pinili
+                    clearComboBox()
+                    ClearTextBoxes()
             End Select
         End If
     End Sub
@@ -469,19 +470,8 @@ Public Class AddStudent
             cmbYear.Items.Add("Fourth Year")
         End If
     End Sub
-    Private Sub ScaleImage(ByVal p As PictureBox, ByRef i As Bitmap)
-        If i.Height > p.Height Then
-            Dim diff As Integer = i.Height - p.Height
-            Dim Resized As Bitmap = New Bitmap(i, New Size(i.Width - diff, i.Height - diff))
-            i = Resized
-        End If
-        If i.Width > p.Width Then
-            Dim diff As Integer = i.Width - p.Width
-            Dim Resized As Bitmap = New Bitmap(i, New Size(i.Width - diff, i.Height - diff))
-            i = Resized
-        End If
-    End Sub
     Private Sub btnBrowsePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBrowsePicture.Click
+        'open file for the picture
         Dim fdlg As OpenFileDialog = New OpenFileDialog()
         fdlg.Title = "Choose Student Picture"
         fdlg.InitialDirectory = "c:\"
@@ -494,18 +484,16 @@ Public Class AddStudent
             Else
                 pictStudentPic.ImageLocation = fdlg.FileName
             End If
-
         End If
-
     End Sub
 
     Private Sub btnTakePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTakePicture.Click
         Camera.ShowDialog()
     End Sub
     Private Sub dtBirthday_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtBirthday.ValueChanged
-        Dim myAge =
-DateTime.Today.Year - dtBirthday.Value.Year
-        txtAge.Text = myAge.ToString()
+        'set ang birthday automatically
+        Dim yr As Integer = DateDiff(DateInterval.Year, dtBirthday.Value, Now)
+        txtAge.Text = yr
     End Sub
 
     Private Sub btnClear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClear.Click
@@ -513,5 +501,13 @@ DateTime.Today.Year - dtBirthday.Value.Year
         pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
         clearComboBox()
         ClearTextBoxes()
+    End Sub
+
+    Private Sub cmbCourse_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbCourse.SelectedIndexChanged
+        If cmbCourse.Text = "Associate Computer Technology" Then
+            cmbYear.Items.Clear()
+            cmbYear.Items.Add("First Year")
+            cmbYear.Items.Add("Second Year")
+        End If
     End Sub
 End Class

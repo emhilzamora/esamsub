@@ -110,7 +110,7 @@ labas:
         Me.WindowState = FormWindowState.Minimized
     End Sub
     Private Sub btnBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBack.Click
-       
+        id = Nothing
         reset()
         animateWin(Me, False)
         Me.Hide()
@@ -125,6 +125,7 @@ labas:
         Dashboard.Show()
     End Sub
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
+        id = Nothing
         reset()
         LoadStudent()
     End Sub
@@ -268,7 +269,7 @@ labas:
                 .SelectCommand = sqlcommand
                 .Fill(sqlTable)
             End With
-
+            Edit_Student_Record.pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\" & lvStudents.SelectedItems(0).Text & ".jpg"
             Edit_Student_Record.id = lvStudents.SelectedItems(0).Text
             Edit_Student_Record.firstname = sqlTable.Rows(0)("fname")
             Edit_Student_Record.middlename = sqlTable.Rows(0)("mname")

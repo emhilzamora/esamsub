@@ -126,20 +126,27 @@ Public Class Monitoring
     End Sub
 
     Private Sub btnReset_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReset.Click
-        If sConnection.State = ConnectionState.Closed Then
-            sConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
-            sConnection.Open()
-        End If
-        Dim sqlQuery As String = "UPDATE tbl_monitoring_stud SET date_log = '" & "" & "', time_in ='" & "" & "', time_out = '" & "" & " ' WHERE  date_log='" & Date.Today & "'"
-        Dim sqlCommand As New MySqlCommand
-        With sqlCommand
 
-            .CommandText = sqlQuery
-            .Connection = sConnection
-            .ExecuteNonQuery()
-        End With
+        'Validate kung mag exit tlaga ung application
+        Select Case MsgBox("Are you sure you want to reset record?", MsgBoxStyle.YesNo, "Reset Records")
+            Case MsgBoxResult.Yes
+                If sConnection.State = ConnectionState.Closed Then
+                    sConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
+                    sConnection.Open()
+                End If
+                Dim sqlQuery As String = "UPDATE tbl_monitoring_stud SET date_log = '" & "" & "', time_in ='" & "" & "', time_out = '" & "" & " ' WHERE  date_log='" & Date.Today & "'"
+                Dim sqlCommand As New MySqlCommand
+                With sqlCommand
 
-        loadMonitor()
+                    .CommandText = sqlQuery
+                    .Connection = sConnection
+                    .ExecuteNonQuery()
+                End With
+
+                loadMonitor()
+            Case MsgBoxResult.No
+                'Walang gagawin kapag no ang kanyang pinili
+        End Select
     End Sub
 
   
