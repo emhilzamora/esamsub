@@ -326,7 +326,7 @@ Partial Class AddStudent
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(856, 381)
+        Me.Label15.Location = New System.Drawing.Point(836, 92)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(151, 22)
         Me.Label15.TabIndex = 93
@@ -337,7 +337,7 @@ Partial Class AddStudent
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(895, 336)
+        Me.Label16.Location = New System.Drawing.Point(875, 47)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(112, 22)
         Me.Label16.TabIndex = 92
@@ -349,7 +349,7 @@ Partial Class AddStudent
         Me.txtFatherOccupation.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFatherOccupation.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFatherOccupation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtFatherOccupation.Location = New System.Drawing.Point(1013, 375)
+        Me.txtFatherOccupation.Location = New System.Drawing.Point(993, 86)
         Me.txtFatherOccupation.MaxLength = 30
         Me.txtFatherOccupation.Name = "txtFatherOccupation"
         Me.txtFatherOccupation.Size = New System.Drawing.Size(250, 26)
@@ -361,7 +361,7 @@ Partial Class AddStudent
         Me.txtFatherName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFatherName.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFatherName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtFatherName.Location = New System.Drawing.Point(1013, 328)
+        Me.txtFatherName.Location = New System.Drawing.Point(993, 39)
         Me.txtFatherName.MaxLength = 30
         Me.txtFatherName.Name = "txtFatherName"
         Me.txtFatherName.Size = New System.Drawing.Size(250, 26)
@@ -396,7 +396,7 @@ Partial Class AddStudent
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(849, 472)
+        Me.Label18.Location = New System.Drawing.Point(829, 183)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(158, 22)
         Me.Label18.TabIndex = 99
@@ -407,7 +407,7 @@ Partial Class AddStudent
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(888, 425)
+        Me.Label19.Location = New System.Drawing.Point(868, 136)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(119, 22)
         Me.Label19.TabIndex = 98
@@ -419,7 +419,7 @@ Partial Class AddStudent
         Me.txtMotherOccupation.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtMotherOccupation.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMotherOccupation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtMotherOccupation.Location = New System.Drawing.Point(1013, 470)
+        Me.txtMotherOccupation.Location = New System.Drawing.Point(993, 181)
         Me.txtMotherOccupation.MaxLength = 30
         Me.txtMotherOccupation.Name = "txtMotherOccupation"
         Me.txtMotherOccupation.Size = New System.Drawing.Size(250, 26)
@@ -431,7 +431,7 @@ Partial Class AddStudent
         Me.txtMotherName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtMotherName.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMotherName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtMotherName.Location = New System.Drawing.Point(1013, 423)
+        Me.txtMotherName.Location = New System.Drawing.Point(993, 134)
         Me.txtMotherName.MaxLength = 30
         Me.txtMotherName.Name = "txtMotherName"
         Me.txtMotherName.Size = New System.Drawing.Size(250, 26)
@@ -513,9 +513,9 @@ Partial Class AddStudent
         Me.GroupBox1.Controls.Add(Me.pictStudentPic)
         Me.GroupBox1.Controls.Add(Me.btnTakePicture)
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(1013, 19)
+        Me.GroupBox1.Location = New System.Drawing.Point(993, 213)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(230, 300)
+        Me.GroupBox1.Size = New System.Drawing.Size(230, 281)
         Me.GroupBox1.TabIndex = 120
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Student Picture"
@@ -527,9 +527,9 @@ Partial Class AddStudent
         Me.btnBrowsePicture.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBrowsePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnBrowsePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBrowsePicture.Location = New System.Drawing.Point(156, 233)
+        Me.btnBrowsePicture.Location = New System.Drawing.Point(170, 228)
         Me.btnBrowsePicture.Name = "btnBrowsePicture"
-        Me.btnBrowsePicture.Size = New System.Drawing.Size(59, 58)
+        Me.btnBrowsePicture.Size = New System.Drawing.Size(44, 42)
         Me.btnBrowsePicture.TabIndex = 26
         Me.btnBrowsePicture.UseVisualStyleBackColor = True
         '
@@ -551,9 +551,9 @@ Partial Class AddStudent
         Me.btnTakePicture.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTakePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnTakePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTakePicture.Location = New System.Drawing.Point(13, 233)
+        Me.btnTakePicture.Location = New System.Drawing.Point(13, 228)
         Me.btnTakePicture.Name = "btnTakePicture"
-        Me.btnTakePicture.Size = New System.Drawing.Size(59, 58)
+        Me.btnTakePicture.Size = New System.Drawing.Size(44, 42)
         Me.btnTakePicture.TabIndex = 25
         Me.btnTakePicture.UseVisualStyleBackColor = True
         '
@@ -573,7 +573,7 @@ Partial Class AddStudent
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Open Sans Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label27.ForeColor = System.Drawing.Color.White
-        Me.Label27.Location = New System.Drawing.Point(1051, 641)
+        Me.Label27.Location = New System.Drawing.Point(1049, 641)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(40, 20)
         Me.Label27.TabIndex = 125
@@ -584,7 +584,7 @@ Partial Class AddStudent
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Open Sans Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label28.ForeColor = System.Drawing.Color.White
-        Me.Label28.Location = New System.Drawing.Point(1147, 641)
+        Me.Label28.Location = New System.Drawing.Point(1148, 641)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(43, 20)
         Me.Label28.TabIndex = 127
@@ -786,9 +786,9 @@ Partial Class AddStudent
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(-8, 673)
+        Me.Panel1.Location = New System.Drawing.Point(-9, 670)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1321, 27)
+        Me.Panel1.Size = New System.Drawing.Size(1321, 30)
         Me.Panel1.TabIndex = 185
         '
         'btnClear

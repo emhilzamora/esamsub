@@ -8,7 +8,7 @@ Public Class Monitoring
     End Function
     Dim sConnection = New MySqlConnection
     Public Sub loadMonitor()
-        Dim sqlQuery As String = "SELECT * from tbl_monitoring_stud"
+        Dim sqlQuery As String = "SELECT * from tbl_monitoring_stud where date_log ='" & Date.Today & " ' "
         Dim sqlAdapter As New MySqlDataAdapter
         Dim sqlCommand As New MySqlCommand
         Dim TABLE As New DataTable
@@ -83,12 +83,14 @@ Public Class Monitoring
                 End With
 
 
+
                 Student_TimeIn.id = txtMonitoring.Text
                 Student_TimeIn.fullname = sqlTable.Rows(0)("fname") & " " & sqlTable.Rows(0)("mname") & " " & sqlTable.Rows(0)("lname")
                 Student_TimeIn.department = sqlTable.Rows(0)("department")
                 Student_TimeIn.course = sqlTable.Rows(0)("course")
                 Student_TimeIn.ShowDialog()
             End If
+
         ElseIf cmbType.Text = "Time-Out" Then
             If txtMonitoring.Text = Nothing Then
 
@@ -122,6 +124,7 @@ Public Class Monitoring
     Private Sub cmbType_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbType.SelectedIndexChanged
         If cmbType.Text = "Time-In" Or cmbType.Text = "Time-Out" Then
             txtMonitoring.Enabled = True
+            txtMonitoring.Focus()
         End If
     End Sub
 
@@ -142,7 +145,8 @@ Public Class Monitoring
                     .Connection = sConnection
                     .ExecuteNonQuery()
                 End With
-
+                cmbType.Text = Nothing
+                txtMonitoring.Enabled = False
                 loadMonitor()
             Case MsgBoxResult.No
                 'Walang gagawin kapag no ang kanyang pinili
@@ -243,5 +247,9 @@ Public Class Monitoring
         Me.Hide()
         animateWin(Monitoring_Report, True)
         Monitoring_Report.Show()
+    End Sub
+
+    Private Sub cmbType_SelectedValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbType.SelectedValueChanged
+        txtMonitoring.Focus()
     End Sub
 End Class
