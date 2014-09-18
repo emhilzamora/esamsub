@@ -7,6 +7,7 @@ Public Class Monitoring
     Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal msg As Integer, ByVal wParam As Integer, <MarshalAs(UnmanagedType.LPWStr)> ByVal lParam As String) As Int32
     End Function
     Dim sConnection = New MySqlConnection
+    'ito ang pag load ng listview kapag hndi pa naglog in ay hndi pa sya lalabas sa listview
     Public Sub loadMonitor()
         Dim sqlQuery As String = "SELECT * from tbl_monitoring_stud where date_log ='" & Date.Today & " ' "
         Dim sqlAdapter As New MySqlDataAdapter
@@ -36,6 +37,7 @@ Public Class Monitoring
                     .Add(TABLE.Rows(i)("date_log"))
                     .Add(TABLE.Rows(i)("time_in"))
                     .Add(TABLE.Rows(i)("time_out"))
+                    lblStudentCount.Text = lvMonitoringStud.Items.Count
                 End With
             End With
         Next
@@ -83,7 +85,7 @@ Public Class Monitoring
                 End With
 
 
-
+                'ililipat ang record sa prompt ng monitoring
                 Student_TimeIn.id = txtMonitoring.Text
                 Student_TimeIn.fullname = sqlTable.Rows(0)("fname") & " " & sqlTable.Rows(0)("mname") & " " & sqlTable.Rows(0)("lname")
                 Student_TimeIn.department = sqlTable.Rows(0)("department")
@@ -122,6 +124,7 @@ Public Class Monitoring
         End If
     End Sub
     Private Sub cmbType_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbType.SelectedIndexChanged
+        'enabled ang monitoring textbox kapag nakapili kana ng type log in or log out
         If cmbType.Text = "Time-In" Or cmbType.Text = "Time-Out" Then
             txtMonitoring.Enabled = True
             txtMonitoring.Focus()
@@ -129,8 +132,7 @@ Public Class Monitoring
     End Sub
 
     Private Sub btnReset_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReset.Click
-
-        'Validate kung mag exit tlaga ung application
+        'confirmation na mag reset talga ang record
         Select Case MsgBox("Are you sure you want to reset record?", MsgBoxStyle.YesNo, "Reset Records")
             Case MsgBoxResult.Yes
                 If sConnection.State = ConnectionState.Closed Then
