@@ -70,56 +70,56 @@ Public Class Monitoring
 
             Else
                 Dim sqlQuery As String = "SELECT fname,mname,lname,department,course FROM tbl_monitoring_stud WHERE idnumber='" & txtMonitoring.Text & " ' "
-                Dim sqlAdapter As New MySqlDataAdapter
-                Dim sqlcommand As New MySqlCommand
-                Dim sqlTable As New DataTable
+                    Dim sqlAdapter As New MySqlDataAdapter
+                    Dim sqlcommand As New MySqlCommand
+                    Dim sqlTable As New DataTable
 
 
-                With sqlcommand
-                    .CommandText = sqlQuery
-                    .Connection = sConnection
-                End With
-                With sqlAdapter
-                    .SelectCommand = sqlcommand
-                    .Fill(sqlTable)
-                End With
+                    With sqlcommand
+                        .CommandText = sqlQuery
+                        .Connection = sConnection
+                    End With
+                    With sqlAdapter
+                        .SelectCommand = sqlcommand
+                        .Fill(sqlTable)
+                    End With
 
 
-                'ililipat ang record sa prompt ng monitoring
-                Student_TimeIn.id = txtMonitoring.Text
-                Student_TimeIn.fullname = sqlTable.Rows(0)("fname") & " " & sqlTable.Rows(0)("mname") & " " & sqlTable.Rows(0)("lname")
-                Student_TimeIn.department = sqlTable.Rows(0)("department")
-                Student_TimeIn.course = sqlTable.Rows(0)("course")
-                Student_TimeIn.ShowDialog()
-            End If
+                    'ililipat ang record sa prompt ng monitoring
+                    Student_TimeIn.id = txtMonitoring.Text
+                    Student_TimeIn.fullname = sqlTable.Rows(0)("fname") & " " & sqlTable.Rows(0)("mname") & " " & sqlTable.Rows(0)("lname")
+                    Student_TimeIn.department = sqlTable.Rows(0)("department")
+                    Student_TimeIn.course = sqlTable.Rows(0)("course")
+                    Student_TimeIn.ShowDialog()
+                End If
 
         ElseIf cmbType.Text = "Time-Out" Then
-            If txtMonitoring.Text = Nothing Then
+                If txtMonitoring.Text = Nothing Then
 
-            Else
-                Dim sqlQuery As String = "SELECT fname,mname,lname,department,course,time_in FROM tbl_monitoring_stud WHERE idnumber='" & txtMonitoring.Text & " ' "
-                Dim sqlAdapter As New MySqlDataAdapter
-                Dim sqlcommand As New MySqlCommand
-                Dim sqlTable As New DataTable
-
-
-                With sqlcommand
-                    .CommandText = sqlQuery
-                    .Connection = sConnection
-                End With
-                With sqlAdapter
-                    .SelectCommand = sqlcommand
-                    .Fill(sqlTable)
-                End With
+                Else
+                    Dim sqlQuery As String = "SELECT fname,mname,lname,department,course,time_in FROM tbl_monitoring_stud WHERE idnumber='" & txtMonitoring.Text & " ' "
+                    Dim sqlAdapter As New MySqlDataAdapter
+                    Dim sqlcommand As New MySqlCommand
+                    Dim sqlTable As New DataTable
 
 
-                Student_TimeOut.id = txtMonitoring.Text
-                Student_TimeOut.fullname = sqlTable.Rows(0)("fname") & " " & sqlTable.Rows(0)("mname") & " " & sqlTable.Rows(0)("lname")
-                Student_TimeOut.course = sqlTable.Rows(0)("department")
-                Student_TimeOut.course = sqlTable.Rows(0)("course")
-                Student_TimeOut.time_in = sqlTable.Rows(0)("time_in")
-                Student_TimeOut.ShowDialog()
-            End If
+                    With sqlcommand
+                        .CommandText = sqlQuery
+                        .Connection = sConnection
+                    End With
+                    With sqlAdapter
+                        .SelectCommand = sqlcommand
+                        .Fill(sqlTable)
+                    End With
+
+
+                    Student_TimeOut.id = txtMonitoring.Text
+                    Student_TimeOut.fullname = sqlTable.Rows(0)("fname") & " " & sqlTable.Rows(0)("mname") & " " & sqlTable.Rows(0)("lname")
+                    Student_TimeOut.course = sqlTable.Rows(0)("department")
+                    Student_TimeOut.course = sqlTable.Rows(0)("course")
+                    Student_TimeOut.time_in = sqlTable.Rows(0)("time_in")
+                    Student_TimeOut.ShowDialog()
+                End If
 
         End If
     End Sub
