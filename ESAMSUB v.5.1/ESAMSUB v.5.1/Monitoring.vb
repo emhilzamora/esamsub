@@ -150,6 +150,7 @@ Public Class Monitoring
                 cmbType.Text = Nothing
                 txtMonitoring.Enabled = False
                 loadMonitor()
+                lblStudentCount.Text = 0
             Case MsgBoxResult.No
                 'Walang gagawin kapag no ang kanyang pinili
         End Select
