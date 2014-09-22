@@ -39,6 +39,10 @@ ESAMSUBv.5.1
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:ESAMSUB_v._5._1.My.Resources.Resources.Arrow_Down">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:ESAMSUB_v._5._1.My.Resources.Resources.Calendar_mirror">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -264,6 +268,10 @@ ESAMSUBv.5.1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:ESAMSUB_v._5._1.My.Resources.Resources.Untitled_mirror">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:ESAMSUB_v._5._1.My.Resources.Resources.Up_Arrow">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

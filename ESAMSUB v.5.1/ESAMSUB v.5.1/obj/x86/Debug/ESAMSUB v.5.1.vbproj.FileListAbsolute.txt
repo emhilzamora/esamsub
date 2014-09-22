@@ -101,4 +101,3 @@ C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debu
 C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.exe
 C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.xml
 C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.pdb
-C:\Users\Admin\Documents\GitHub\esamsub\ESAMSUB v.5.1\ESAMSUB v.5.1\obj\x86\Debug\ESAMSUB v.5.1.vbprojResolveAssemblyReference.cache

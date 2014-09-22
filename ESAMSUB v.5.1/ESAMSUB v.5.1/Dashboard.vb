@@ -128,6 +128,8 @@ Public Class Dashboard
         Me.Hide()
         animateWin(Monitoring, True)
         Monitoring.Show()
+        Monitoring.txtMonitoring.Focus()
+        Monitoring.pnlWindow.Visible = True
     End Sub
 
     Private Sub btnEmployee_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEmployee.Click

@@ -40,11 +40,11 @@ Partial Class Student_TimeIn
         '
         Me.lblTimeToday.AutoSize = True
         Me.lblTimeToday.BackColor = System.Drawing.Color.Transparent
-        Me.lblTimeToday.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTimeToday.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTimeToday.ForeColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.lblTimeToday.Location = New System.Drawing.Point(64, 113)
+        Me.lblTimeToday.Location = New System.Drawing.Point(80, 147)
         Me.lblTimeToday.Name = "lblTimeToday"
-        Me.lblTimeToday.Size = New System.Drawing.Size(101, 28)
+        Me.lblTimeToday.Size = New System.Drawing.Size(108, 32)
         Me.lblTimeToday.TabIndex = 51
         Me.lblTimeToday.Text = "DATE TODAY"
         '
@@ -52,11 +52,11 @@ Partial Class Student_TimeIn
         '
         Me.lblDateToday.AutoSize = True
         Me.lblDateToday.BackColor = System.Drawing.Color.Transparent
-        Me.lblDateToday.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDateToday.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDateToday.ForeColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.lblDateToday.Location = New System.Drawing.Point(64, 85)
+        Me.lblDateToday.Location = New System.Drawing.Point(80, 115)
         Me.lblDateToday.Name = "lblDateToday"
-        Me.lblDateToday.Size = New System.Drawing.Size(101, 28)
+        Me.lblDateToday.Size = New System.Drawing.Size(108, 32)
         Me.lblDateToday.TabIndex = 50
         Me.lblDateToday.Text = "DATE TODAY"
         '
@@ -66,7 +66,7 @@ Partial Class Student_TimeIn
         Me.lblId.BackColor = System.Drawing.Color.Transparent
         Me.lblId.Font = New System.Drawing.Font("MS Reference Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblId.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblId.Location = New System.Drawing.Point(78, 397)
+        Me.lblId.Location = New System.Drawing.Point(114, 511)
         Me.lblId.Name = "lblId"
         Me.lblId.Size = New System.Drawing.Size(154, 29)
         Me.lblId.TabIndex = 49
@@ -78,7 +78,7 @@ Partial Class Student_TimeIn
         Me.lblTimeIn.BackColor = System.Drawing.Color.Transparent
         Me.lblTimeIn.Font = New System.Drawing.Font("Gill Sans MT", 54.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTimeIn.ForeColor = System.Drawing.Color.Red
-        Me.lblTimeIn.Location = New System.Drawing.Point(265, 149)
+        Me.lblTimeIn.Location = New System.Drawing.Point(409, 208)
         Me.lblTimeIn.Name = "lblTimeIn"
         Me.lblTimeIn.Size = New System.Drawing.Size(183, 101)
         Me.lblTimeIn.TabIndex = 48
@@ -88,10 +88,10 @@ Partial Class Student_TimeIn
         '
         Me.lblCourse.AutoSize = True
         Me.lblCourse.BackColor = System.Drawing.Color.Transparent
-        Me.lblCourse.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCourse.Location = New System.Drawing.Point(114, 352)
+        Me.lblCourse.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCourse.Location = New System.Drawing.Point(148, 453)
         Me.lblCourse.Name = "lblCourse"
-        Me.lblCourse.Size = New System.Drawing.Size(53, 16)
+        Me.lblCourse.Size = New System.Drawing.Size(65, 20)
         Me.lblCourse.TabIndex = 46
         Me.lblCourse.Text = "Course"
         '
@@ -99,10 +99,10 @@ Partial Class Student_TimeIn
         '
         Me.lblFname.AutoSize = True
         Me.lblFname.BackColor = System.Drawing.Color.Transparent
-        Me.lblFname.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFname.Location = New System.Drawing.Point(108, 333)
+        Me.lblFname.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFname.Location = New System.Drawing.Point(138, 429)
         Me.lblFname.Name = "lblFname"
-        Me.lblFname.Size = New System.Drawing.Size(51, 16)
+        Me.lblFname.Size = New System.Drawing.Size(63, 20)
         Me.lblFname.TabIndex = 45
         Me.lblFname.Text = "Fname"
         '
@@ -113,10 +113,10 @@ Partial Class Student_TimeIn
         '
         Me.lblDepartment.AutoSize = True
         Me.lblDepartment.BackColor = System.Drawing.Color.Transparent
-        Me.lblDepartment.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDepartment.Location = New System.Drawing.Point(149, 370)
+        Me.lblDepartment.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDepartment.Location = New System.Drawing.Point(189, 477)
         Me.lblDepartment.Name = "lblDepartment"
-        Me.lblDepartment.Size = New System.Drawing.Size(53, 16)
+        Me.lblDepartment.Size = New System.Drawing.Size(65, 20)
         Me.lblDepartment.TabIndex = 52
         Me.lblDepartment.Text = "Course"
         '
@@ -136,9 +136,9 @@ Partial Class Student_TimeIn
         '
         Me.pctProfile.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile1
         Me.pctProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pctProfile.Location = New System.Drawing.Point(52, 149)
+        Me.pctProfile.Location = New System.Drawing.Point(67, 192)
         Me.pctProfile.Name = "pctProfile"
-        Me.pctProfile.Size = New System.Drawing.Size(189, 176)
+        Me.pctProfile.Size = New System.Drawing.Size(244, 225)
         Me.pctProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctProfile.TabIndex = 70
         Me.pctProfile.TabStop = False
@@ -150,7 +150,7 @@ Partial Class Student_TimeIn
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Student_Login
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(717, 435)
+        Me.ClientSize = New System.Drawing.Size(924, 560)
         Me.Controls.Add(Me.pctProfile)
         Me.Controls.Add(Me.lblTime)
         Me.Controls.Add(Me.lblDepartment)

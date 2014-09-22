@@ -157,10 +157,10 @@ Partial Class Students
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(88, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(352, 40)
+        Me.Label2.Size = New System.Drawing.Size(382, 40)
         Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Employee and Student Monitoring System of" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Urdaneta City University using Barcode" & _
-            " Technology"
+        Me.Label2.Text = "Integrated Employee and Student Monitoring System of" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Urdaneta City University us" & _
+            "ing Barcode Technology"
         '
         'Label1
         '

@@ -163,10 +163,10 @@
     <Compile Include="Monitoring Report.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Monitoring.Designer.vb">
-      <DependentUpon>Monitoring.vb</DependentUpon>
+    <Compile Include="Monitoring Time In.Designer.vb">
+      <DependentUpon>Monitoring Time In.vb</DependentUpon>
     </Compile>
-    <Compile Include="Monitoring.vb">
+    <Compile Include="Monitoring Time In.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Other User Login.Designer.vb">
@@ -266,8 +266,8 @@
     <EmbeddedResource Include="Monitoring Report.resx">
       <DependentUpon>Monitoring Report.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Monitoring.resx">
-      <DependentUpon>Monitoring.vb</DependentUpon>
+    <EmbeddedResource Include="Monitoring Time In.resx">
+      <DependentUpon>Monitoring Time In.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Other User Login.resx">
       <DependentUpon>Other User Login.vb</DependentUpon>
@@ -508,6 +508,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Create Id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up Arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
