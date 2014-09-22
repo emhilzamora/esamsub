@@ -43,7 +43,7 @@ Partial Class Student_TimeOut
         Me.lblTimeIn.BackColor = System.Drawing.Color.Transparent
         Me.lblTimeIn.Font = New System.Drawing.Font("Gill Sans MT", 54.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTimeIn.ForeColor = System.Drawing.Color.Red
-        Me.lblTimeIn.Location = New System.Drawing.Point(312, 144)
+        Me.lblTimeIn.Location = New System.Drawing.Point(270, 148)
         Me.lblTimeIn.Name = "lblTimeIn"
         Me.lblTimeIn.Size = New System.Drawing.Size(183, 101)
         Me.lblTimeIn.TabIndex = 64
@@ -79,7 +79,7 @@ Partial Class Student_TimeOut
         Me.lblTimeOut.BackColor = System.Drawing.Color.Transparent
         Me.lblTimeOut.Font = New System.Drawing.Font("Gill Sans MT", 54.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTimeOut.ForeColor = System.Drawing.Color.Red
-        Me.lblTimeOut.Location = New System.Drawing.Point(312, 266)
+        Me.lblTimeOut.Location = New System.Drawing.Point(270, 270)
         Me.lblTimeOut.Name = "lblTimeOut"
         Me.lblTimeOut.Size = New System.Drawing.Size(183, 101)
         Me.lblTimeOut.TabIndex = 61
@@ -149,9 +149,10 @@ Partial Class Student_TimeOut
         '
         Me.pctProfile.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile1
         Me.pctProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pctProfile.Location = New System.Drawing.Point(51, 147)
+        Me.pctProfile.Location = New System.Drawing.Point(52, 148)
         Me.pctProfile.Name = "pctProfile"
-        Me.pctProfile.Size = New System.Drawing.Size(191, 178)
+        Me.pctProfile.Size = New System.Drawing.Size(189, 176)
+        Me.pctProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctProfile.TabIndex = 69
         Me.pctProfile.TabStop = False
         '

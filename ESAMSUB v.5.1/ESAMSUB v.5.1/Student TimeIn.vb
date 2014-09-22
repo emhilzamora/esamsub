@@ -20,6 +20,7 @@ Public Class Student_TimeIn
     End Sub
 
     Private Sub Student_TimeIn_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        pctProfile.ImageLocation = Application.StartupPath & "\Pictures\" & id & ".jpg"
         tmrEnabled.Start()
         lblId.Text = id
         lblFname.Text = fullname
