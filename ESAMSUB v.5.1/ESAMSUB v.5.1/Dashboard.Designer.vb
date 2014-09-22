@@ -25,17 +25,19 @@ Partial Class Dashboard
         Me.components = New System.ComponentModel.Container()
         Me.lblAdmin = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnShutdown = New System.Windows.Forms.Button()
-        Me.btnMinimize = New System.Windows.Forms.Button()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblTime = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.tmrTimeRunner = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblRegistrar = New System.Windows.Forms.Label()
+        Me.lblIdroom = New System.Windows.Forms.Label()
+        Me.lblSecurity = New System.Windows.Forms.Label()
+        Me.lblHead = New System.Windows.Forms.Label()
+        Me.lblLibrarian = New System.Windows.Forms.Label()
         Me.btnReports = New System.Windows.Forms.Button()
         Me.btnCreatId = New System.Windows.Forms.Button()
         Me.btnEmployee = New System.Windows.Forms.Button()
@@ -45,12 +47,10 @@ Partial Class Dashboard
         Me.btnHelp = New System.Windows.Forms.Button()
         Me.btnManageUsers = New System.Windows.Forms.Button()
         Me.btnMonitoring = New System.Windows.Forms.Button()
+        Me.btnShutdown = New System.Windows.Forms.Button()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnUserPic = New System.Windows.Forms.Button()
-        Me.lblRegistrar = New System.Windows.Forms.Label()
-        Me.lblIdroom = New System.Windows.Forms.Label()
-        Me.lblSecurity = New System.Windows.Forms.Label()
-        Me.lblHead = New System.Windows.Forms.Label()
-        Me.lblLibrarian = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -84,30 +84,6 @@ Partial Class Dashboard
         Me.Panel2.Size = New System.Drawing.Size(1374, 79)
         Me.Panel2.TabIndex = 29
         '
-        'btnShutdown
-        '
-        Me.btnShutdown.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.logout_1_512
-        Me.btnShutdown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnShutdown.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.btnShutdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnShutdown.Location = New System.Drawing.Point(1258, 7)
-        Me.btnShutdown.Name = "btnShutdown"
-        Me.btnShutdown.Size = New System.Drawing.Size(42, 37)
-        Me.btnShutdown.TabIndex = 37
-        Me.btnShutdown.UseVisualStyleBackColor = True
-        '
-        'btnMinimize
-        '
-        Me.btnMinimize.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.searchalt
-        Me.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnMinimize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Location = New System.Drawing.Point(1199, 6)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(42, 37)
-        Me.btnMinimize.TabIndex = 36
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
         'lblDate
         '
         Me.lblDate.AutoSize = True
@@ -129,16 +105,6 @@ Partial Class Dashboard
         Me.lblTime.Size = New System.Drawing.Size(183, 39)
         Me.lblTime.TabIndex = 31
         Me.lblTime.Text = "10:50:09 PM"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Logo
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(8, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(86, 74)
-        Me.PictureBox1.TabIndex = 11
-        Me.PictureBox1.TabStop = False
         '
         'Label2
         '
@@ -186,6 +152,76 @@ Partial Class Dashboard
         Me.Label4.TabIndex = 49
         Me.Label4.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
             "ms v.6.1"
+        '
+        'lblRegistrar
+        '
+        Me.lblRegistrar.AutoSize = True
+        Me.lblRegistrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lblRegistrar.Font = New System.Drawing.Font("Open Sans Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRegistrar.ForeColor = System.Drawing.Color.White
+        Me.lblRegistrar.Location = New System.Drawing.Point(1108, 87)
+        Me.lblRegistrar.Name = "lblRegistrar"
+        Me.lblRegistrar.Size = New System.Drawing.Size(126, 37)
+        Me.lblRegistrar.TabIndex = 51
+        Me.lblRegistrar.Text = "Registrar"
+        Me.lblRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblRegistrar.Visible = False
+        '
+        'lblIdroom
+        '
+        Me.lblIdroom.AutoSize = True
+        Me.lblIdroom.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lblIdroom.Font = New System.Drawing.Font("Open Sans Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIdroom.ForeColor = System.Drawing.Color.White
+        Me.lblIdroom.Location = New System.Drawing.Point(981, 88)
+        Me.lblIdroom.Name = "lblIdroom"
+        Me.lblIdroom.Size = New System.Drawing.Size(253, 37)
+        Me.lblIdroom.TabIndex = 52
+        Me.lblIdroom.Text = "ID Room Personnel"
+        Me.lblIdroom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblIdroom.Visible = False
+        '
+        'lblSecurity
+        '
+        Me.lblSecurity.AutoSize = True
+        Me.lblSecurity.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lblSecurity.Font = New System.Drawing.Font("Open Sans Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSecurity.ForeColor = System.Drawing.Color.White
+        Me.lblSecurity.Location = New System.Drawing.Point(990, 88)
+        Me.lblSecurity.Name = "lblSecurity"
+        Me.lblSecurity.Size = New System.Drawing.Size(245, 37)
+        Me.lblSecurity.TabIndex = 53
+        Me.lblSecurity.Text = "Security Personnel"
+        Me.lblSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblSecurity.Visible = False
+        '
+        'lblHead
+        '
+        Me.lblHead.AutoSize = True
+        Me.lblHead.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lblHead.Font = New System.Drawing.Font("Open Sans Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHead.ForeColor = System.Drawing.Color.White
+        Me.lblHead.Location = New System.Drawing.Point(998, 88)
+        Me.lblHead.Name = "lblHead"
+        Me.lblHead.Size = New System.Drawing.Size(236, 37)
+        Me.lblHead.TabIndex = 54
+        Me.lblHead.Text = "Department Head"
+        Me.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblHead.Visible = False
+        '
+        'lblLibrarian
+        '
+        Me.lblLibrarian.AutoSize = True
+        Me.lblLibrarian.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lblLibrarian.Font = New System.Drawing.Font("Open Sans Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLibrarian.ForeColor = System.Drawing.Color.White
+        Me.lblLibrarian.Location = New System.Drawing.Point(1108, 88)
+        Me.lblLibrarian.Name = "lblLibrarian"
+        Me.lblLibrarian.Size = New System.Drawing.Size(125, 37)
+        Me.lblLibrarian.TabIndex = 55
+        Me.lblLibrarian.Text = "Librarian"
+        Me.lblLibrarian.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblLibrarian.Visible = False
         '
         'btnReports
         '
@@ -309,6 +345,40 @@ Partial Class Dashboard
         Me.btnMonitoring.TabIndex = 39
         Me.btnMonitoring.UseVisualStyleBackColor = True
         '
+        'btnShutdown
+        '
+        Me.btnShutdown.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.logout_1_512
+        Me.btnShutdown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnShutdown.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.btnShutdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnShutdown.Location = New System.Drawing.Point(1258, 7)
+        Me.btnShutdown.Name = "btnShutdown"
+        Me.btnShutdown.Size = New System.Drawing.Size(42, 37)
+        Me.btnShutdown.TabIndex = 37
+        Me.btnShutdown.UseVisualStyleBackColor = True
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.searchalt
+        Me.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMinimize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Location = New System.Drawing.Point(1199, 6)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(42, 37)
+        Me.btnMinimize.TabIndex = 36
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.ucu
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(8, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(79, 74)
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
+        '
         'btnUserPic
         '
         Me.btnUserPic.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
@@ -322,76 +392,6 @@ Partial Class Dashboard
         Me.btnUserPic.Size = New System.Drawing.Size(48, 48)
         Me.btnUserPic.TabIndex = 14
         Me.btnUserPic.UseVisualStyleBackColor = False
-        '
-        'lblRegistrar
-        '
-        Me.lblRegistrar.AutoSize = True
-        Me.lblRegistrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lblRegistrar.Font = New System.Drawing.Font("Open Sans Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRegistrar.ForeColor = System.Drawing.Color.White
-        Me.lblRegistrar.Location = New System.Drawing.Point(1108, 87)
-        Me.lblRegistrar.Name = "lblRegistrar"
-        Me.lblRegistrar.Size = New System.Drawing.Size(126, 37)
-        Me.lblRegistrar.TabIndex = 51
-        Me.lblRegistrar.Text = "Registrar"
-        Me.lblRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblRegistrar.Visible = False
-        '
-        'lblIdroom
-        '
-        Me.lblIdroom.AutoSize = True
-        Me.lblIdroom.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lblIdroom.Font = New System.Drawing.Font("Open Sans Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblIdroom.ForeColor = System.Drawing.Color.White
-        Me.lblIdroom.Location = New System.Drawing.Point(981, 88)
-        Me.lblIdroom.Name = "lblIdroom"
-        Me.lblIdroom.Size = New System.Drawing.Size(253, 37)
-        Me.lblIdroom.TabIndex = 52
-        Me.lblIdroom.Text = "ID Room Personnel"
-        Me.lblIdroom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblIdroom.Visible = False
-        '
-        'lblSecurity
-        '
-        Me.lblSecurity.AutoSize = True
-        Me.lblSecurity.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lblSecurity.Font = New System.Drawing.Font("Open Sans Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSecurity.ForeColor = System.Drawing.Color.White
-        Me.lblSecurity.Location = New System.Drawing.Point(990, 88)
-        Me.lblSecurity.Name = "lblSecurity"
-        Me.lblSecurity.Size = New System.Drawing.Size(245, 37)
-        Me.lblSecurity.TabIndex = 53
-        Me.lblSecurity.Text = "Security Personnel"
-        Me.lblSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblSecurity.Visible = False
-        '
-        'lblHead
-        '
-        Me.lblHead.AutoSize = True
-        Me.lblHead.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lblHead.Font = New System.Drawing.Font("Open Sans Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHead.ForeColor = System.Drawing.Color.White
-        Me.lblHead.Location = New System.Drawing.Point(998, 88)
-        Me.lblHead.Name = "lblHead"
-        Me.lblHead.Size = New System.Drawing.Size(236, 37)
-        Me.lblHead.TabIndex = 54
-        Me.lblHead.Text = "Department Head"
-        Me.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblHead.Visible = False
-        '
-        'lblLibrarian
-        '
-        Me.lblLibrarian.AutoSize = True
-        Me.lblLibrarian.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lblLibrarian.Font = New System.Drawing.Font("Open Sans Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLibrarian.ForeColor = System.Drawing.Color.White
-        Me.lblLibrarian.Location = New System.Drawing.Point(1108, 88)
-        Me.lblLibrarian.Name = "lblLibrarian"
-        Me.lblLibrarian.Size = New System.Drawing.Size(125, 37)
-        Me.lblLibrarian.TabIndex = 55
-        Me.lblLibrarian.Text = "Librarian"
-        Me.lblLibrarian.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblLibrarian.Visible = False
         '
         'Dashboard
         '

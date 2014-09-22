@@ -263,6 +263,10 @@ ESAMSUBv.5.1
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:ESAMSUB_v._5._1.My.Resources.Resources.ucu">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:ESAMSUB_v._5._1.My.Resources.Resources.UCU_logo">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

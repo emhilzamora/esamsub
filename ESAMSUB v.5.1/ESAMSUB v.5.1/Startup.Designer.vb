@@ -25,9 +25,6 @@ Partial Class Startup
         Me.components = New System.ComponentModel.Container()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnShutdown = New System.Windows.Forms.Button()
-        Me.btnMinimize = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblTime = New System.Windows.Forms.Label()
@@ -39,6 +36,9 @@ Partial Class Startup
         Me.btnHelp = New System.Windows.Forms.Button()
         Me.btnOtherUser = New System.Windows.Forms.Button()
         Me.btnAdministor = New System.Windows.Forms.Button()
+        Me.btnShutdown = New System.Windows.Forms.Button()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,40 +54,6 @@ Partial Class Startup
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1374, 79)
         Me.Panel2.TabIndex = 29
-        '
-        'btnShutdown
-        '
-        Me.btnShutdown.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.logout_1_512
-        Me.btnShutdown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnShutdown.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.btnShutdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnShutdown.Location = New System.Drawing.Point(1258, 7)
-        Me.btnShutdown.Name = "btnShutdown"
-        Me.btnShutdown.Size = New System.Drawing.Size(42, 37)
-        Me.btnShutdown.TabIndex = 35
-        Me.btnShutdown.UseVisualStyleBackColor = True
-        '
-        'btnMinimize
-        '
-        Me.btnMinimize.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.searchalt
-        Me.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnMinimize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Location = New System.Drawing.Point(1199, 6)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(42, 37)
-        Me.btnMinimize.TabIndex = 34
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Logo
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(8, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(86, 74)
-        Me.PictureBox1.TabIndex = 11
-        Me.PictureBox1.TabStop = False
         '
         'Label2
         '
@@ -207,6 +173,40 @@ Partial Class Startup
         Me.btnAdministor.Size = New System.Drawing.Size(289, 274)
         Me.btnAdministor.TabIndex = 1
         Me.btnAdministor.UseVisualStyleBackColor = True
+        '
+        'btnShutdown
+        '
+        Me.btnShutdown.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.logout_1_512
+        Me.btnShutdown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnShutdown.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.btnShutdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnShutdown.Location = New System.Drawing.Point(1258, 7)
+        Me.btnShutdown.Name = "btnShutdown"
+        Me.btnShutdown.Size = New System.Drawing.Size(42, 37)
+        Me.btnShutdown.TabIndex = 35
+        Me.btnShutdown.UseVisualStyleBackColor = True
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.searchalt
+        Me.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMinimize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Location = New System.Drawing.Point(1199, 6)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(42, 37)
+        Me.btnMinimize.TabIndex = 34
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.ucu
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(8, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(79, 74)
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
         '
         'Startup
         '

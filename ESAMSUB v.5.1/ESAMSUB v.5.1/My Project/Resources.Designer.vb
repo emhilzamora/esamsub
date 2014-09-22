@@ -683,6 +683,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property ucu() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ucu", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property UCU_logo() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("UCU_logo", resourceCulture)
