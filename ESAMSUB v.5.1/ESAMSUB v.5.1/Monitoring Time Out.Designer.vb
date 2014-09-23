@@ -32,10 +32,10 @@ Partial Class Monitoring_Time_Out
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.grpControl = New System.Windows.Forms.GroupBox()
         Me.pnlWindow = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.txtMonitoring = New System.Windows.Forms.TextBox()
         Me.btnBack2 = New System.Windows.Forms.Button()
         Me.btnUpWindow = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -172,21 +172,8 @@ Partial Class Monitoring_Time_Out
         Me.pnlWindow.Controls.Add(Me.Label1)
         Me.pnlWindow.Location = New System.Drawing.Point(-16, -8)
         Me.pnlWindow.Name = "pnlWindow"
-        Me.pnlWindow.Size = New System.Drawing.Size(1309, 602)
+        Me.pnlWindow.Size = New System.Drawing.Size(1309, 603)
         Me.pnlWindow.TabIndex = 185
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(1145, 518)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(127, 60)
-        Me.Label1.TabIndex = 187
-        Me.Label1.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
-            "ms v.6.1"
         '
         'txtMonitoring
         '
@@ -225,6 +212,19 @@ Partial Class Monitoring_Time_Out
         Me.btnUpWindow.Size = New System.Drawing.Size(43, 41)
         Me.btnUpWindow.TabIndex = 185
         Me.btnUpWindow.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(1145, 518)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(127, 60)
+        Me.Label1.TabIndex = 187
+        Me.Label1.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
+            "ms v.6.1"
         '
         'Label12
         '
@@ -295,7 +295,7 @@ Partial Class Monitoring_Time_Out
         Me.btnRecords.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnRecords.FlatAppearance.BorderSize = 0
         Me.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRecords.Location = New System.Drawing.Point(954, 510)
+        Me.btnRecords.Location = New System.Drawing.Point(958, 510)
         Me.btnRecords.Name = "btnRecords"
         Me.btnRecords.Size = New System.Drawing.Size(36, 36)
         Me.btnRecords.TabIndex = 177

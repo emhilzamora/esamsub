@@ -300,7 +300,7 @@ Partial Class Monitoring
         Me.pnlWindow.Controls.Add(Me.btnUpWindow)
         Me.pnlWindow.Location = New System.Drawing.Point(-7, 78)
         Me.pnlWindow.Name = "pnlWindow"
-        Me.pnlWindow.Size = New System.Drawing.Size(1309, 600)
+        Me.pnlWindow.Size = New System.Drawing.Size(1309, 593)
         Me.pnlWindow.TabIndex = 57
         '
         'Label1

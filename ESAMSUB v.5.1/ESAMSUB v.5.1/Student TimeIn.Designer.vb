@@ -78,7 +78,7 @@ Partial Class Student_TimeIn
         Me.lblTimeIn.BackColor = System.Drawing.Color.Transparent
         Me.lblTimeIn.Font = New System.Drawing.Font("Gill Sans MT", 54.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTimeIn.ForeColor = System.Drawing.Color.Red
-        Me.lblTimeIn.Location = New System.Drawing.Point(409, 208)
+        Me.lblTimeIn.Location = New System.Drawing.Point(418, 208)
         Me.lblTimeIn.Name = "lblTimeIn"
         Me.lblTimeIn.Size = New System.Drawing.Size(183, 101)
         Me.lblTimeIn.TabIndex = 48

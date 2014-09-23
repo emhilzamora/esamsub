@@ -10,11 +10,12 @@ Public Class Student_TimeOut
         lblTime.Text = lblTime.Text + 1
         If lblTime.Text = 25 Then
             Me.Close()
-            animateWin(Monitoring, True)
-            Monitoring.Show()
+            animateWin(Monitoring_Time_Out, True)
+            Monitoring_Time_Out.Show()
             tmrEnabled.Stop()
-            Monitoring.txtMonitoring.Clear()
-            Monitoring.loadMonitor()
+            Monitoring_Time_Out.txtMonitoring.Clear()
+            Monitoring_Time_Out.txtMonitoring.Focus()
+            Monitoring_Time_Out.loadMonitorOut()
             lblTime.Text = 0
         End If
     End Sub
@@ -26,9 +27,10 @@ Public Class Student_TimeOut
         lblFname.Text = fullname
         lblCourse.Text = course
         lblTimeIn.Text = time_in
+        lblTimeOut.Text = TimeOfDay
+        'digital time and date
         lblTimeToday.Text = Now.ToLongTimeString
         lblDateToday.Text = Date.Today
-        lblTimeOut.Text = TimeOfDay
         If sConnection.State = ConnectionState.Closed Then
             sConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
             sConnection.Open()

@@ -43,7 +43,7 @@ Partial Class Student_TimeOut
         Me.lblTimeIn.BackColor = System.Drawing.Color.Transparent
         Me.lblTimeIn.Font = New System.Drawing.Font("Gill Sans MT", 54.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTimeIn.ForeColor = System.Drawing.Color.Red
-        Me.lblTimeIn.Location = New System.Drawing.Point(407, 203)
+        Me.lblTimeIn.Location = New System.Drawing.Point(427, 201)
         Me.lblTimeIn.Name = "lblTimeIn"
         Me.lblTimeIn.Size = New System.Drawing.Size(183, 101)
         Me.lblTimeIn.TabIndex = 64
@@ -79,7 +79,7 @@ Partial Class Student_TimeOut
         Me.lblTimeOut.BackColor = System.Drawing.Color.Transparent
         Me.lblTimeOut.Font = New System.Drawing.Font("Gill Sans MT", 54.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTimeOut.ForeColor = System.Drawing.Color.Red
-        Me.lblTimeOut.Location = New System.Drawing.Point(407, 325)
+        Me.lblTimeOut.Location = New System.Drawing.Point(427, 339)
         Me.lblTimeOut.Name = "lblTimeOut"
         Me.lblTimeOut.Size = New System.Drawing.Size(183, 101)
         Me.lblTimeOut.TabIndex = 61
