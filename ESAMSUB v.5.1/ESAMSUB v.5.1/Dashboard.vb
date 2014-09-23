@@ -124,12 +124,8 @@ Public Class Dashboard
     End Sub
 
     Private Sub btnMonitoring_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMonitoring.Click
-        animateWin(Me, False)
+        SelectMonitoring.ShowDialog()
         Me.Hide()
-        animateWin(Monitoring, True)
-        Monitoring.Show()
-        Monitoring.txtMonitoring.Focus()
-        Monitoring.pnlWindow.Visible = True
     End Sub
 
     Private Sub btnEmployee_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEmployee.Click

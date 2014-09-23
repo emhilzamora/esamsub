@@ -49,7 +49,7 @@ Public Class Monitoring
 
     Private Sub Monitoring_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         tt = New ToolTip
-        tt.SetToolTip(btnReset, "Reset")
+        tt.SetToolTip(btnReset, "Reset record")
         tt.SetToolTip(btnRecords, "Open records")
         tt.SetToolTip(btnSearch, "Search student")
         tt.SetToolTip(btnBack, "Back to dashboard")
@@ -235,6 +235,7 @@ Public Class Monitoring
             tmrWindowUp.Enabled = False
             grpControl.Visible = True
             txtMonitoring.Enabled = False
+            txtMonitoring.Focus()
         End If
     End Sub
 

@@ -169,6 +169,12 @@
     <Compile Include="Monitoring Time In.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Monitoring Time Out.Designer.vb">
+      <DependentUpon>Monitoring Time Out.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoring Time Out.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Other User Login.Designer.vb">
       <DependentUpon>Other User Login.vb</DependentUpon>
     </Compile>
@@ -179,6 +185,12 @@
       <DependentUpon>Print Id Cards.vb</DependentUpon>
     </Compile>
     <Compile Include="Print Id Cards.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectMonitoring.Designer.vb">
+      <DependentUpon>SelectMonitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMonitoring.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SlidingForms.vb" />
@@ -269,11 +281,17 @@
     <EmbeddedResource Include="Monitoring Time In.resx">
       <DependentUpon>Monitoring Time In.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Monitoring Time Out.resx">
+      <DependentUpon>Monitoring Time Out.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Other User Login.resx">
       <DependentUpon>Other User Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Print Id Cards.resx">
       <DependentUpon>Print Id Cards.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectMonitoring.resx">
+      <DependentUpon>SelectMonitoring.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Startup.resx">
       <DependentUpon>Startup.vb</DependentUpon>

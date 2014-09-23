@@ -49,17 +49,17 @@ Partial Class Monitoring
         Me.Label6 = New System.Windows.Forms.Label()
         Me.lblStudentCount = New System.Windows.Forms.Label()
         Me.pnlWindow = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnBack2 = New System.Windows.Forms.Button()
         Me.btnUpWindow = New System.Windows.Forms.Button()
-        Me.btnRecords = New System.Windows.Forms.Button()
-        Me.btnBack = New System.Windows.Forms.Button()
-        Me.btnReset = New System.Windows.Forms.Button()
-        Me.btnSearch = New System.Windows.Forms.Button()
-        Me.btnDownWindow = New System.Windows.Forms.Button()
         Me.tmrWindowUp = New System.Windows.Forms.Timer(Me.components)
         Me.tmrWindowDn = New System.Windows.Forms.Timer(Me.components)
         Me.grpControl = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnReset = New System.Windows.Forms.Button()
+        Me.btnRecords = New System.Windows.Forms.Button()
+        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnDownWindow = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlWindow.SuspendLayout()
@@ -236,7 +236,7 @@ Partial Class Monitoring
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(953, 549)
+        Me.Label12.Location = New System.Drawing.Point(949, 530)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(56, 18)
         Me.Label12.TabIndex = 178
@@ -247,7 +247,7 @@ Partial Class Monitoring
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(1047, 547)
+        Me.Label3.Location = New System.Drawing.Point(1044, 528)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(40, 18)
         Me.Label3.TabIndex = 179
@@ -259,7 +259,7 @@ Partial Class Monitoring
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(1129, 509)
+        Me.Label5.Location = New System.Drawing.Point(1129, 490)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(127, 60)
         Me.Label5.TabIndex = 181
@@ -300,8 +300,21 @@ Partial Class Monitoring
         Me.pnlWindow.Controls.Add(Me.btnUpWindow)
         Me.pnlWindow.Location = New System.Drawing.Point(-7, 78)
         Me.pnlWindow.Name = "pnlWindow"
-        Me.pnlWindow.Size = New System.Drawing.Size(1309, 595)
+        Me.pnlWindow.Size = New System.Drawing.Size(1309, 600)
         Me.pnlWindow.TabIndex = 57
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(1148, 506)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(127, 60)
+        Me.Label1.TabIndex = 187
+        Me.Label1.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
+            "ms v.6.1"
         '
         'btnBack2
         '
@@ -323,77 +336,11 @@ Partial Class Monitoring
         Me.btnUpWindow.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnUpWindow.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnUpWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUpWindow.Location = New System.Drawing.Point(633, 541)
+        Me.btnUpWindow.Location = New System.Drawing.Point(633, 522)
         Me.btnUpWindow.Name = "btnUpWindow"
         Me.btnUpWindow.Size = New System.Drawing.Size(43, 41)
         Me.btnUpWindow.TabIndex = 185
         Me.btnUpWindow.UseVisualStyleBackColor = True
-        '
-        'btnRecords
-        '
-        Me.btnRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnRecords.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Report
-        Me.btnRecords.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnRecords.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRecords.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnRecords.FlatAppearance.BorderSize = 0
-        Me.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRecords.Location = New System.Drawing.Point(954, 510)
-        Me.btnRecords.Name = "btnRecords"
-        Me.btnRecords.Size = New System.Drawing.Size(36, 36)
-        Me.btnRecords.TabIndex = 177
-        Me.btnRecords.UseVisualStyleBackColor = False
-        '
-        'btnBack
-        '
-        Me.btnBack.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.left_Arrow
-        Me.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnBack.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBack.Location = New System.Drawing.Point(56, 16)
-        Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(43, 41)
-        Me.btnBack.TabIndex = 63
-        Me.btnBack.UseVisualStyleBackColor = True
-        '
-        'btnReset
-        '
-        Me.btnReset.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Power___Restart1
-        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.Location = New System.Drawing.Point(1044, 510)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(36, 36)
-        Me.btnReset.TabIndex = 62
-        Me.btnReset.UseVisualStyleBackColor = True
-        '
-        'btnSearch
-        '
-        Me.btnSearch.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Search_alt__2_
-        Me.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.Location = New System.Drawing.Point(1215, 21)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(41, 36)
-        Me.btnSearch.TabIndex = 57
-        Me.btnSearch.UseVisualStyleBackColor = True
-        '
-        'btnDownWindow
-        '
-        Me.btnDownWindow.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Arrow_Down
-        Me.btnDownWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnDownWindow.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDownWindow.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnDownWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDownWindow.Location = New System.Drawing.Point(614, 526)
-        Me.btnDownWindow.Name = "btnDownWindow"
-        Me.btnDownWindow.Size = New System.Drawing.Size(43, 41)
-        Me.btnDownWindow.TabIndex = 184
-        Me.btnDownWindow.UseVisualStyleBackColor = True
         '
         'tmrWindowUp
         '
@@ -419,23 +366,76 @@ Partial Class Monitoring
         Me.grpControl.Controls.Add(Me.Label6)
         Me.grpControl.Location = New System.Drawing.Point(12, 94)
         Me.grpControl.Name = "grpControl"
-        Me.grpControl.Size = New System.Drawing.Size(1276, 579)
+        Me.grpControl.Size = New System.Drawing.Size(1276, 566)
         Me.grpControl.TabIndex = 185
         Me.grpControl.TabStop = False
         Me.grpControl.Visible = False
         '
-        'Label1
+        'btnReset
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(1148, 525)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(127, 60)
-        Me.Label1.TabIndex = 187
-        Me.Label1.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
-            "ms v.6.1"
+        Me.btnReset.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Power___Restart1
+        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReset.Location = New System.Drawing.Point(1044, 491)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(36, 36)
+        Me.btnReset.TabIndex = 62
+        Me.btnReset.UseVisualStyleBackColor = True
+        '
+        'btnRecords
+        '
+        Me.btnRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnRecords.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Report
+        Me.btnRecords.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnRecords.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRecords.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnRecords.FlatAppearance.BorderSize = 0
+        Me.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRecords.Location = New System.Drawing.Point(956, 491)
+        Me.btnRecords.Name = "btnRecords"
+        Me.btnRecords.Size = New System.Drawing.Size(36, 36)
+        Me.btnRecords.TabIndex = 177
+        Me.btnRecords.UseVisualStyleBackColor = False
+        '
+        'btnSearch
+        '
+        Me.btnSearch.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Search_alt__2_
+        Me.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearch.Location = New System.Drawing.Point(1215, 21)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(41, 36)
+        Me.btnSearch.TabIndex = 57
+        Me.btnSearch.UseVisualStyleBackColor = True
+        '
+        'btnBack
+        '
+        Me.btnBack.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.left_Arrow
+        Me.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBack.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack.Location = New System.Drawing.Point(56, 16)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(43, 41)
+        Me.btnBack.TabIndex = 63
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'btnDownWindow
+        '
+        Me.btnDownWindow.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Arrow_Down
+        Me.btnDownWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnDownWindow.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDownWindow.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnDownWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDownWindow.Location = New System.Drawing.Point(614, 507)
+        Me.btnDownWindow.Name = "btnDownWindow"
+        Me.btnDownWindow.Size = New System.Drawing.Size(43, 41)
+        Me.btnDownWindow.TabIndex = 184
+        Me.btnDownWindow.UseVisualStyleBackColor = True
         '
         'Monitoring
         '
