@@ -154,6 +154,7 @@ Partial Class Other_User_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(490, 278)
         Me.Controls.Add(Me.GroupBox1)

@@ -160,6 +160,7 @@ Partial Class Student_TimeOut
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Student_Login
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch

@@ -141,4 +141,11 @@ Public Class Dashboard
         animateWin(Print_Id_Cards, True)
         Print_Id_Cards.Show()
     End Sub
+
+    Private Sub btnReports_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReports.Click
+        animateWin(Me, False)
+        Me.Hide()
+        animateWin(Reports, True)
+        Reports.Show()
+    End Sub
 End Class
