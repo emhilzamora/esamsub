@@ -59,10 +59,6 @@ Partial Class AddStudent
         Me.cmbCivilStatus = New System.Windows.Forms.ComboBox()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.txtReligion = New System.Windows.Forms.TextBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btnBrowsePicture = New System.Windows.Forms.Button()
-        Me.pictStudentPic = New System.Windows.Forms.PictureBox()
-        Me.btnTakePicture = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
@@ -86,8 +82,6 @@ Partial Class AddStudent
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -326,7 +320,7 @@ Partial Class AddStudent
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(836, 92)
+        Me.Label15.Location = New System.Drawing.Point(826, 141)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(151, 22)
         Me.Label15.TabIndex = 93
@@ -337,7 +331,7 @@ Partial Class AddStudent
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(875, 47)
+        Me.Label16.Location = New System.Drawing.Point(865, 96)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(112, 22)
         Me.Label16.TabIndex = 92
@@ -349,7 +343,7 @@ Partial Class AddStudent
         Me.txtFatherOccupation.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFatherOccupation.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFatherOccupation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtFatherOccupation.Location = New System.Drawing.Point(993, 86)
+        Me.txtFatherOccupation.Location = New System.Drawing.Point(983, 135)
         Me.txtFatherOccupation.MaxLength = 30
         Me.txtFatherOccupation.Name = "txtFatherOccupation"
         Me.txtFatherOccupation.Size = New System.Drawing.Size(250, 26)
@@ -361,7 +355,7 @@ Partial Class AddStudent
         Me.txtFatherName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFatherName.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFatherName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtFatherName.Location = New System.Drawing.Point(993, 39)
+        Me.txtFatherName.Location = New System.Drawing.Point(983, 88)
         Me.txtFatherName.MaxLength = 30
         Me.txtFatherName.Name = "txtFatherName"
         Me.txtFatherName.Size = New System.Drawing.Size(250, 26)
@@ -396,7 +390,7 @@ Partial Class AddStudent
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(829, 183)
+        Me.Label18.Location = New System.Drawing.Point(819, 232)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(158, 22)
         Me.Label18.TabIndex = 99
@@ -407,7 +401,7 @@ Partial Class AddStudent
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(868, 136)
+        Me.Label19.Location = New System.Drawing.Point(858, 185)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(119, 22)
         Me.Label19.TabIndex = 98
@@ -419,7 +413,7 @@ Partial Class AddStudent
         Me.txtMotherOccupation.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtMotherOccupation.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMotherOccupation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtMotherOccupation.Location = New System.Drawing.Point(993, 181)
+        Me.txtMotherOccupation.Location = New System.Drawing.Point(983, 230)
         Me.txtMotherOccupation.MaxLength = 30
         Me.txtMotherOccupation.Name = "txtMotherOccupation"
         Me.txtMotherOccupation.Size = New System.Drawing.Size(250, 26)
@@ -431,7 +425,7 @@ Partial Class AddStudent
         Me.txtMotherName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtMotherName.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMotherName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtMotherName.Location = New System.Drawing.Point(993, 134)
+        Me.txtMotherName.Location = New System.Drawing.Point(983, 183)
         Me.txtMotherName.MaxLength = 30
         Me.txtMotherName.Name = "txtMotherName"
         Me.txtMotherName.Size = New System.Drawing.Size(250, 26)
@@ -506,56 +500,6 @@ Partial Class AddStudent
         Me.txtReligion.Name = "txtReligion"
         Me.txtReligion.Size = New System.Drawing.Size(176, 26)
         Me.txtReligion.TabIndex = 11
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.btnBrowsePicture)
-        Me.GroupBox1.Controls.Add(Me.pictStudentPic)
-        Me.GroupBox1.Controls.Add(Me.btnTakePicture)
-        Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(993, 213)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(230, 281)
-        Me.GroupBox1.TabIndex = 120
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Student Picture"
-        '
-        'btnBrowsePicture
-        '
-        Me.btnBrowsePicture.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Explorer
-        Me.btnBrowsePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnBrowsePicture.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBrowsePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnBrowsePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBrowsePicture.Location = New System.Drawing.Point(170, 228)
-        Me.btnBrowsePicture.Name = "btnBrowsePicture"
-        Me.btnBrowsePicture.Size = New System.Drawing.Size(44, 42)
-        Me.btnBrowsePicture.TabIndex = 26
-        Me.btnBrowsePicture.UseVisualStyleBackColor = True
-        '
-        'pictStudentPic
-        '
-        Me.pictStudentPic.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile2
-        Me.pictStudentPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pictStudentPic.Location = New System.Drawing.Point(13, 26)
-        Me.pictStudentPic.Name = "pictStudentPic"
-        Me.pictStudentPic.Size = New System.Drawing.Size(201, 200)
-        Me.pictStudentPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pictStudentPic.TabIndex = 114
-        Me.pictStudentPic.TabStop = False
-        '
-        'btnTakePicture
-        '
-        Me.btnTakePicture.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Pictures_Library
-        Me.btnTakePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnTakePicture.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnTakePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnTakePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTakePicture.Location = New System.Drawing.Point(13, 228)
-        Me.btnTakePicture.Name = "btnTakePicture"
-        Me.btnTakePicture.Size = New System.Drawing.Size(44, 42)
-        Me.btnTakePicture.TabIndex = 25
-        Me.btnTakePicture.UseVisualStyleBackColor = True
         '
         'Label21
         '
@@ -686,7 +630,7 @@ Partial Class AddStudent
         Me.txtGuardianAddress.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtGuardianAddress.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtGuardianAddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtGuardianAddress.Location = New System.Drawing.Point(583, 468)
+        Me.txtGuardianAddress.Location = New System.Drawing.Point(983, 42)
         Me.txtGuardianAddress.MaxLength = 100
         Me.txtGuardianAddress.Name = "txtGuardianAddress"
         Me.txtGuardianAddress.Size = New System.Drawing.Size(250, 26)
@@ -697,7 +641,7 @@ Partial Class AddStudent
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.White
-        Me.Label22.Location = New System.Drawing.Point(430, 468)
+        Me.Label22.Location = New System.Drawing.Point(830, 42)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(143, 22)
         Me.Label22.TabIndex = 105
@@ -733,7 +677,6 @@ Partial Class AddStudent
         Me.GroupBox2.Controls.Add(Me.txtLastname)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.GroupBox1)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label18)
         Me.GroupBox2.Controls.Add(Me.cmbDepartment)
@@ -776,7 +719,7 @@ Partial Class AddStudent
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 77)
+        Me.GroupBox2.Location = New System.Drawing.Point(16, 77)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(1279, 505)
         Me.GroupBox2.TabIndex = 184
@@ -864,8 +807,6 @@ Partial Class AddStudent
         Me.Text = " "
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -908,12 +849,8 @@ Partial Class AddStudent
     Friend WithEvents txtBirthPlace As System.Windows.Forms.TextBox
     Friend WithEvents Label25 As System.Windows.Forms.Label
     Friend WithEvents cmbCivilStatus As System.Windows.Forms.ComboBox
-    Friend WithEvents pictStudentPic As System.Windows.Forms.PictureBox
-    Friend WithEvents btnBrowsePicture As System.Windows.Forms.Button
-    Friend WithEvents btnTakePicture As System.Windows.Forms.Button
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents txtReligion As System.Windows.Forms.TextBox
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents btnSave As System.Windows.Forms.Button
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip

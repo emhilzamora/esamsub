@@ -6,10 +6,10 @@ Public Class Monitoring_Time_Out
     <DllImport("user32.dll", CharSet:=CharSet.Auto)> _
     Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal msg As Integer, ByVal wParam As Integer, <MarshalAs(UnmanagedType.LPWStr)> ByVal lParam As String) As Int32
     End Function
-    Dim sConnection = New MySqlConnection
+    Dim sqlConnection = New MySqlConnection
     'ito ang pag load ng listview kapag hndi pa naglog in ay hndi pa sya lalabas sa listview
     Public Sub loadMonitorOut()
-        Dim sqlQuery As String = "SELECT * from tbl_monitoring_stud where date_log ='" & Date.Today & " ' "
+        Dim sqlQuery As String = "SELECT * from tbl_monitoring_stud where time_out ='" & "Waiting.." & " ' "
         Dim sqlAdapter As New MySqlDataAdapter
         Dim sqlCommand As New MySqlCommand
         Dim TABLE As New DataTable
@@ -17,7 +17,7 @@ Public Class Monitoring_Time_Out
 
         With sqlCommand
             .CommandText = sqlQuery
-            .Connection = sConnection
+            .Connection = sqlConnection
         End With
 
         With sqlAdapter
@@ -53,9 +53,9 @@ Public Class Monitoring_Time_Out
         SendMessage(Me.txtSearch.Handle, &H1501, 0, "Search Student")
         SendMessage(Me.txtMonitoring.Handle, &H1501, 0, "$X.XX") 'Me.Font, Brushes.LightGray
         SendMessage(Me.txtMonitoring.Handle, &H1501, 0, "Read barcode")
-        If sConnection.State = ConnectionState.Closed Then
-            sConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
-            sConnection.Open()
+        If sqlConnection.State = ConnectionState.Closed Then
+            sqlConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
+            sqlConnection.Open()
             loadMonitorOut()
         End If
         loadMonitorOut()
@@ -67,35 +67,7 @@ Public Class Monitoring_Time_Out
         lblDate.Text = Now.ToLongDateString
         lblTime.Text = Now.ToLongTimeString
     End Sub
-
-    Private Sub tmrWindowDn_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrWindowDn.Tick
-        'mag open ung panel para makita ung listview
-        pnlWindow.Height = pnlWindow.Height + 20
-        If pnlWindow.Height >= 587 Then
-            tmrWindowDn.Enabled = False
-            txtMonitoring.Enabled = True
-        End If
-    End Sub
-
-    Private Sub tmrWindowUp_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrWindowUp.Tick
-        'mag open ung panel para makita ung listview
-        pnlWindow.Height = pnlWindow.Height - 20
-        If pnlWindow.Height <= 1 Then
-            tmrWindowUp.Enabled = False
-            grpControl.Visible = True
-            txtMonitoring.Enabled = False
-            txtMonitoring.Focus()
-        End If
-    End Sub
-
-    Private Sub btnUpWindow_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpWindow.Click
-        tmrWindowUp.Enabled = True
-    End Sub
-    Private Sub btnDownWindow_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDownWindow.Click
-        tmrWindowDn.Enabled = True
-    End Sub
-
-    Private Sub btnBack2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBack2.Click
+    Private Sub btnBack2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'disabled the buttons
         Dashboard.btnCreatId.Enabled = False
         Dashboard.btnManageUsers.Enabled = False
@@ -115,16 +87,16 @@ Public Class Monitoring_Time_Out
         'confirmation na mag reset talga ang record
         Select Case MsgBox("Are you sure you want to reset record?", MsgBoxStyle.YesNo, "Reset Records")
             Case MsgBoxResult.Yes
-                If sConnection.State = ConnectionState.Closed Then
-                    sConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
-                    sConnection.Open()
+                If sqlConnection.State = ConnectionState.Closed Then
+                    sqlConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
+                    sqlConnection.Open()
                 End If
                 Dim sqlQuery As String = "UPDATE tbl_monitoring_stud SET date_log = '" & "" & "', time_in ='" & "" & "', time_out = '" & "" & " ' WHERE  date_log='" & Date.Today & "'"
                 Dim sqlCommand As New MySqlCommand
                 With sqlCommand
 
                     .CommandText = sqlQuery
-                    .Connection = sConnection
+                    .Connection = sqlConnection
                     .ExecuteNonQuery()
                 End With
                 txtMonitoring.Enabled = False
@@ -137,23 +109,16 @@ Public Class Monitoring_Time_Out
 
     Private Sub btnBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBack.Click
         'panel back to size
-        tmrWindowDn.Enabled = True
-        grpControl.Visible = False
-        'back to dashboard
-        If tmrWindowDn.Enabled - False Then
-            'disabled the buttons
-            Dashboard.btnCreatId.Enabled = False
+        Dashboard.btnCreatId.Enabled = False
             Dashboard.btnManageUsers.Enabled = False
             Dashboard.btnCreatId.Enabled = False
             Dashboard.btnEmployee.Enabled = False
             Dashboard.btnMonitoring.Enabled = False
             Dashboard.btnStudents.Enabled = False
-            pnlWindow.Visible = True
             animateWin(Me, False)
             Me.Hide()
             animateWin(Dashboard, True)
             Dashboard.Show()
-        End If
     End Sub
 
     Private Sub txtMonitoring_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtMonitoring.TextChanged
@@ -167,7 +132,7 @@ Public Class Monitoring_Time_Out
 
             With sqlcommand
                 .CommandText = sqlQuery
-                .Connection = sConnection
+                .Connection = sqlConnection
             End With
             With sqlAdapter
                 .SelectCommand = sqlcommand
@@ -196,7 +161,7 @@ Public Class Monitoring_Time_Out
         Dim TABLE As New DataTable
         With SqlCommand
             .CommandText = SqlQuery
-            .Connection = sConnection
+            .Connection = sqlConnection
         End With
 
         With SqlAdapter

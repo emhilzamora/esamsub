@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Student_TimeIn
-    Dim sConnection = New MySqlConnection
+    Dim sqlConnection = New MySqlConnection
     Friend id As String
     Friend fullname As String
     Friend department As String
@@ -13,7 +13,8 @@ Public Class Student_TimeIn
             animateWin(Monitoring, True)
             Monitoring.Show()
             tmrEnabled.Stop()
-            Monitoring.txtSearch.Clear()
+            Monitoring.txtMonitoring.Clear()
+            Monitoring.txtMonitoring.Focus()
             Monitoring.loadMonitor()
             lblTime.Text = 0
         End If
@@ -29,16 +30,16 @@ Public Class Student_TimeIn
         lblTimeToday.Text = Now.ToLongTimeString
         lblDateToday.Text = Date.Today
         lblTimeIn.Text = TimeOfDay
-        If sConnection.State = ConnectionState.Closed Then
-            sConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
-            sConnection.Open()
+        If sqlConnection.State = ConnectionState.Closed Then
+            sqlConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
+            sqlConnection.Open()
         End If
         Dim sqlQuery As String = "UPDATE tbl_monitoring_stud SET date_log ='" & lblDateToday.Text & "', time_in ='" & lblTimeIn.Text & "', time_out = '" & "Waiting.." & " ' WHERE  idnumber='" & lblId.Text & "'"
         Dim sqlCommand As New MySqlCommand
         With sqlCommand
 
             .CommandText = sqlQuery
-            .Connection = sConnection
+            .Connection = sqlConnection
             .ExecuteNonQuery()
         End With
         Dim sqlQuery1 As String = "INSERT into tbl_monitor_report(idnumber,fullname,department,course,date_log,time_in,time_out) VALUES('" & lblId.Text & _
@@ -47,10 +48,14 @@ Public Class Student_TimeIn
         With sqlCommand1
 
             .CommandText = sqlQuery1
-            .Connection = sConnection
+            .Connection = sqlConnection
             .ExecuteNonQuery()
         End With
         Monitoring.txtMonitoring.Text = ""
         Monitoring.loadMonitor()
+    End Sub
+
+    Private Sub txtMonitoring_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 End Class

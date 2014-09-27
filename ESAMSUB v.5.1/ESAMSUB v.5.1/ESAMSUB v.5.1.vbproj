@@ -167,6 +167,12 @@
     <Compile Include="Internet Access Usage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Internet Access_CrystalReportViewer.Designer.vb">
+      <DependentUpon>Internet Access_CrystalReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Internet Access_CrystalReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Manage Users.Designer.vb">
       <DependentUpon>Manage Users.vb</DependentUpon>
     </Compile>
@@ -297,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Internet Access Usage.resx">
       <DependentUpon>Internet Access Usage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internet Access_CrystalReportViewer.resx">
+      <DependentUpon>Internet Access_CrystalReportViewer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage Users.resx">
       <DependentUpon>Manage Users.vb</DependentUpon>

@@ -46,9 +46,6 @@ Public Class Edit_Student_Record
         tt = New ToolTip
         tt.SetToolTip(btnUpdate, "Update")
         tt.SetToolTip(btnCancel, "Cancel")
-        tt.SetToolTip(btnBrowsePicture, "Browse Pictures")
-        tt.SetToolTip(btnTakePicture, "Take Picture")
-        tt.SetToolTip(pictStudentPic, "Default Picture")
         'pag pasa ng laman ng mga variable
         Me.txtStudentId.Text = id
         Me.txtFirstname.Text = firstname
@@ -198,7 +195,6 @@ Public Class Edit_Student_Record
                         .Connection = sqlConnection
                         .ExecuteNonQuery()
                     End With
-                    pictStudentPic.Image.Save(Application.StartupPath & "\Pictures\" & txtStudentId.Text & ".jpg")
                     'Add record to tbl access card if department is CCs
                     If cmbDepartment.Text = "CCS" Then
                         Dim query_internet_access = "INSERT into tbl_internet_access(idnumber,fname,mname,lname,course,year,hour_left)VALUES('" & Me.txtStudentId.Text.Trim & _
@@ -232,7 +228,6 @@ Public Class Edit_Student_Record
                     Students.Show()
                     Students.LoadStudent()
                     'send back default picture
-                    pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
                 Case MsgBoxResult.No
                     Select Case MsgBox("Exit editing ?", MsgBoxStyle.YesNo, "Save changes")
                         Case MsgBoxResult.Yes
@@ -244,7 +239,6 @@ Public Class Edit_Student_Record
                             Students.Show()
                             Students.LoadStudent()
                             'send back default picture
-                            pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
                         Case MsgBoxResult.No
                             'walang gagawin
                     End Select
@@ -254,12 +248,22 @@ labas:
     End Sub
     'lilinisin ang mga textbox
     Public Sub ClearTextBoxes()
-        For Each ctrl As Control In Controls
-            If ctrl.GetType Is GetType(TextBox) Then
-                ctrl.Text = Nothing
-            End If
-        Next
-
+        txtAge.Text = Nothing
+        txtBirthPlace.Text = Nothing
+        txtFatherName.Text = Nothing
+        txtFatherOccupation.Text = Nothing
+        txtFirstname.Text = Nothing
+        txtLastname.Text = Nothing
+        txtMiddlename.Text = Nothing
+        txtGuardian.Text = Nothing
+        txtGuardianAddress.Text = Nothing
+        txtGuardianContact.Text = Nothing
+        txtMotherName.Text = Nothing
+        txtMotherOccupation.Text = Nothing
+        txtReligion.Text = Nothing
+        txtnationality.Text = Nothing
+        txtStudentContact.Text = Nothing
+        txtStudentAddress.Text = Nothing
     End Sub
     'lilinisin ang mga combobox
     Public Sub clearComboBox()
@@ -506,7 +510,6 @@ labas:
         ClearTextBoxes()
         clearComboBox()
         'send back default picture
-        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
     End Sub
 
     Private Sub dtBirthday_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtBirthday.ValueChanged
@@ -514,29 +517,6 @@ labas:
         Dim yr As Integer = DateDiff(DateInterval.Year, dtBirthday.Value, Now)
         txtAge.Text = yr
     End Sub
-
-    Private Sub btnBrowsePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBrowsePicture.Click
-        'open file for pictures
-        Dim fdlg As OpenFileDialog = New OpenFileDialog()
-        fdlg.Title = "Choose Student Picture"
-        fdlg.InitialDirectory = "c:\"
-        fdlg.Filter = "Picture Files(*.jpg;*.jpeg;*.png;*.bmp;*.gif)|*.jpg;*.jpeg;*.png;*.bmp;*.gif"
-        fdlg.FilterIndex = 2
-        fdlg.RestoreDirectory = True
-        If fdlg.ShowDialog() = DialogResult.OK Then
-            If File.Exists(fdlg.FileName) = False Then
-                MessageBox.Show("Sorry, The File You Specified Does Not Exist.")
-            Else
-                pictStudentPic.ImageLocation = fdlg.FileName
-            End If
-
-        End If
-    End Sub
-
-    Private Sub btnTakePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTakePicture.Click
-        Camera_edit.Show()
-    End Sub
-
     Private Sub cmbCourse_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbCourse.SelectedIndexChanged
         If cmbCourse.Text = "Associate Computer Technology" Then
             cmbYear.Items.Clear()

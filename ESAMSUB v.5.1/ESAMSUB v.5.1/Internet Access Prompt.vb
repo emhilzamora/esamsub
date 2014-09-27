@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Internet_Access_Prompt
-    Dim sConnection = New MySqlConnection
+    Dim sqlConnection = New MySqlConnection
     Friend id As String
     Friend fullname As String
     Friend course As String
@@ -20,16 +20,16 @@ Public Class Internet_Access_Prompt
             lblHourLeft.Visible = False
         Else
 
-            If sConnection.State = ConnectionState.Closed Then
-                sConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
-                sConnection.Open()
+            If sqlConnection.State = ConnectionState.Closed Then
+                sqlConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
+                sqlConnection.Open()
             End If
             Dim sqlQuery As String = "UPDATE tbl_internet_access SET hour_left ='" & lblHourLeft.Text & " ' WHERE  idnumber='" & lblId.Text & "'"
             Dim sqlCommand As New MySqlCommand
             With sqlCommand
 
                 .CommandText = sqlQuery
-                .Connection = sConnection
+                .Connection = sqlConnection
                 .ExecuteNonQuery()
             End With
             If lblHourLeft.Text <= 0 Then
@@ -41,7 +41,7 @@ Public Class Internet_Access_Prompt
                 With sqlCommand1
 
                     .CommandText = sqlQuery1
-                    .Connection = sConnection
+                    .Connection = sqlConnection
                     .ExecuteNonQuery()
                 End With
             End If

@@ -43,6 +43,8 @@ Partial Class Internet_Access_Report
         Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.btnSearch = New System.Windows.Forms.Button()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.btnReport = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -161,7 +163,7 @@ Partial Class Internet_Access_Report
         Me.lvInternetAccessReport.FullRowSelect = True
         Me.lvInternetAccessReport.GridLines = True
         Me.lvInternetAccessReport.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.lvInternetAccessReport.Location = New System.Drawing.Point(100, 153)
+        Me.lvInternetAccessReport.Location = New System.Drawing.Point(101, 153)
         Me.lvInternetAccessReport.Name = "lvInternetAccessReport"
         Me.lvInternetAccessReport.Size = New System.Drawing.Size(1109, 420)
         Me.lvInternetAccessReport.TabIndex = 62
@@ -227,12 +229,40 @@ Partial Class Internet_Access_Report
         Me.btnSearch.TabIndex = 63
         Me.btnSearch.UseVisualStyleBackColor = True
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(98, 129)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(48, 18)
+        Me.Label12.TabIndex = 180
+        Me.Label12.Text = "Report"
+        '
+        'btnReport
+        '
+        Me.btnReport.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnReport.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Report
+        Me.btnReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReport.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnReport.FlatAppearance.BorderSize = 0
+        Me.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReport.Location = New System.Drawing.Point(101, 90)
+        Me.btnReport.Name = "btnReport"
+        Me.btnReport.Size = New System.Drawing.Size(36, 36)
+        Me.btnReport.TabIndex = 179
+        Me.btnReport.UseVisualStyleBackColor = False
+        '
         'Internet_Access_Report
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1300, 700)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.btnReport)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.lvInternetAccessReport)
@@ -245,7 +275,7 @@ Partial Class Internet_Access_Report
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Internet_Access_Report"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Internet_Access_Report"
+        Me.Text = "Internet Access Report"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -273,4 +303,6 @@ Partial Class Internet_Access_Report
     Friend WithEvents ColumnHeader12 As System.Windows.Forms.ColumnHeader
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox
     Friend WithEvents btnSearch As System.Windows.Forms.Button
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents btnReport As System.Windows.Forms.Button
 End Class

@@ -36,7 +36,6 @@
     Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
         btnTakePicture.Enabled = True
         'ipapasa ang picture sa kabila
-        Edit_Student_Record.pictStudentPic.Image = pictMainCamera.Image
         'babalik sa pag add ng student
         animateWin(Me, False)
         Me.Hide()

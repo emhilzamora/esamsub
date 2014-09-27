@@ -7,7 +7,6 @@
         animateWin(Monitoring, True)
         Monitoring.Show()
         Monitoring.txtMonitoring.Focus()
-        Monitoring.pnlWindow.Visible = True
     End Sub
 
     Private Sub btnTimeOut_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTimeOut.Click
@@ -16,7 +15,11 @@
         Dashboard.Hide()
         animateWin(Monitoring_Time_Out, True)
         Monitoring_Time_Out.Show()
-        Monitoring_Time_Out.txtMonitoring.Focus()
-        Monitoring_Time_Out.pnlWindow.Visible = True
+        Monitoring.txtMonitoring.Focus()
+    End Sub
+
+    Private Sub btnShutdown_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnShutdown.Click
+        Me.Hide()
+        Dashboard.Show()
     End Sub
 End Class

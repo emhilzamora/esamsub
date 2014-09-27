@@ -18,9 +18,6 @@ Public Class AddStudent
         tt = New ToolTip
         tt.SetToolTip(btnSave, "Save")
         tt.SetToolTip(btnCancel, "Cancel")
-        tt.SetToolTip(btnBrowsePicture, "Browse Pictures")
-        tt.SetToolTip(btnTakePicture, "Take Picture")
-        tt.SetToolTip(pictStudentPic, "Default Picture")
         tt.SetToolTip(btnClear, "Clear fields")
         tt.SetToolTip(cmbCourse, "Select Department first")
         SendMessage(Me.txtStudentAddress.Handle, &H1501, 0, "$X.XX") 'Me.Font, Brushes.LightGray
@@ -36,7 +33,6 @@ Public Class AddStudent
 
     Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
         'send back default picture
-        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
         ClearTextBoxes()
         ClearComboBox()
         animateWin(Me, False)
@@ -46,20 +42,30 @@ Public Class AddStudent
     End Sub
     'lilinisin ang mga textbox
     Public Sub ClearTextBoxes()
-        For Each ctrl As Control In Controls
-            If ctrl.GetType Is GetType(TextBox) Then
-                ctrl.Text = Nothing
-            End If
-        Next
-
+        txtAge.Text = Nothing
+        txtBirthPlace.Text = Nothing
+        txtFatherName.Text = Nothing
+        txtFatherOccupation.Text = Nothing
+        txtFirstname.Text = Nothing
+        txtLastname.Text = Nothing
+        txtMiddlename.Text = Nothing
+        txtGuardian.Text = Nothing
+        txtGuardianAddress.Text = Nothing
+        txtGuardianContact.Text = Nothing
+        txtMotherName.Text = Nothing
+        txtMotherOccupation.Text = Nothing
+        txtReligion.Text = Nothing
+        txtnationality.Text = Nothing
+        txtStudentContact.Text = Nothing
+        txtStudentAddress.Text = Nothing
     End Sub
     'lilinisin ang mga combobox
     Public Sub clearComboBox()
-        cmbCivilStatus.Text = ""
-        cmbDepartment.Text = ""
-        cmbYear.Text = ""
-        cmbGender.Text = ""
-        cmbCourse.Text = ""
+        cmbCivilStatus.Text = Nothing
+        cmbDepartment.Text = Nothing
+        cmbYear.Text = Nothing
+        cmbGender.Text = Nothing
+        cmbCourse.Text = Nothing
     End Sub
     'add ng record ng student
     Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
@@ -176,11 +182,9 @@ Public Class AddStudent
                     .ExecuteNonQuery()
                 End With
             End If
-            pictStudentPic.Image.Save(Application.StartupPath & "\Pictures\" & txtStudentId.Text & ".jpg")
             Select Case MsgBox("Student successfully added to database, want to add more Student?", MsgBoxStyle.YesNo, "Added new record")
                 Case MsgBoxResult.Yes
                     'send back default picture
-                    pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
                     'pag yes close the application
                     clearComboBox()
                     ClearTextBoxes()
@@ -192,7 +196,6 @@ Public Class AddStudent
                     Students.Show()
                     Students.LoadStudent()
                     'send back default picture
-                    pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
                     'Walang gagawin kapag no ang kanyang pinili
                     clearComboBox()
                     ClearTextBoxes()
@@ -468,7 +471,7 @@ Public Class AddStudent
             cmbYear.Items.Add("Fourth Year")
         End If
     End Sub
-    Private Sub btnBrowsePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBrowsePicture.Click
+    Private Sub btnBrowsePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'open file for the picture
         Dim fdlg As OpenFileDialog = New OpenFileDialog()
         fdlg.Title = "Choose Student Picture"
@@ -480,12 +483,11 @@ Public Class AddStudent
             If File.Exists(fdlg.FileName) = False Then
                 MessageBox.Show("Sorry, The File You Specified Does Not Exist.")
             Else
-                pictStudentPic.ImageLocation = fdlg.FileName
             End If
         End If
     End Sub
 
-    Private Sub btnTakePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTakePicture.Click
+    Private Sub btnTakePicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Camera.ShowDialog()
     End Sub
     Private Sub dtBirthday_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtBirthday.ValueChanged
@@ -496,7 +498,6 @@ Public Class AddStudent
 
     Private Sub btnClear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClear.Click
         'send back default picture
-        pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\Profile.jpg"
         clearComboBox()
         ClearTextBoxes()
     End Sub

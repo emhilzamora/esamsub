@@ -29,13 +29,9 @@ Partial Class Monitoring_Time_Out
         Me.lblTime = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Banner = New System.Windows.Forms.Label()
+        Me.txtMonitoring = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.grpControl = New System.Windows.Forms.GroupBox()
-        Me.pnlWindow = New System.Windows.Forms.Panel()
-        Me.txtMonitoring = New System.Windows.Forms.TextBox()
-        Me.btnBack2 = New System.Windows.Forms.Button()
-        Me.btnUpWindow = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -54,16 +50,12 @@ Partial Class Monitoring_Time_Out
         Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.btnDownWindow = New System.Windows.Forms.Button()
         Me.lblStudentCount = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.tmrTimeDate = New System.Windows.Forms.Timer(Me.components)
-        Me.tmrWindowUp = New System.Windows.Forms.Timer(Me.components)
-        Me.tmrWindowDn = New System.Windows.Forms.Timer(Me.components)
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpControl.SuspendLayout()
-        Me.pnlWindow.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -134,6 +126,18 @@ Partial Class Monitoring_Time_Out
         Me.Banner.TabIndex = 33
         Me.Banner.Text = "Monitoring Student Time Out" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'txtMonitoring
+        '
+        Me.txtMonitoring.BackColor = System.Drawing.Color.White
+        Me.txtMonitoring.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtMonitoring.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMonitoring.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.txtMonitoring.Location = New System.Drawing.Point(255, 27)
+        Me.txtMonitoring.MaxLength = 30
+        Me.txtMonitoring.Name = "txtMonitoring"
+        Me.txtMonitoring.Size = New System.Drawing.Size(237, 26)
+        Me.txtMonitoring.TabIndex = 59
+        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(120, Byte), Integer))
@@ -144,7 +148,7 @@ Partial Class Monitoring_Time_Out
         '
         'grpControl
         '
-        Me.grpControl.Controls.Add(Me.pnlWindow)
+        Me.grpControl.Controls.Add(Me.txtMonitoring)
         Me.grpControl.Controls.Add(Me.Label12)
         Me.grpControl.Controls.Add(Me.Label5)
         Me.grpControl.Controls.Add(Me.Label3)
@@ -154,7 +158,6 @@ Partial Class Monitoring_Time_Out
         Me.grpControl.Controls.Add(Me.btnSearch)
         Me.grpControl.Controls.Add(Me.btnBack)
         Me.grpControl.Controls.Add(Me.lvMonitoringOut)
-        Me.grpControl.Controls.Add(Me.btnDownWindow)
         Me.grpControl.Controls.Add(Me.lblStudentCount)
         Me.grpControl.Controls.Add(Me.Label6)
         Me.grpControl.Location = New System.Drawing.Point(12, 78)
@@ -162,69 +165,6 @@ Partial Class Monitoring_Time_Out
         Me.grpControl.Size = New System.Drawing.Size(1276, 579)
         Me.grpControl.TabIndex = 186
         Me.grpControl.TabStop = False
-        '
-        'pnlWindow
-        '
-        Me.pnlWindow.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.pnlWindow.Controls.Add(Me.txtMonitoring)
-        Me.pnlWindow.Controls.Add(Me.btnBack2)
-        Me.pnlWindow.Controls.Add(Me.btnUpWindow)
-        Me.pnlWindow.Controls.Add(Me.Label1)
-        Me.pnlWindow.Location = New System.Drawing.Point(-16, -8)
-        Me.pnlWindow.Name = "pnlWindow"
-        Me.pnlWindow.Size = New System.Drawing.Size(1309, 603)
-        Me.pnlWindow.TabIndex = 185
-        '
-        'txtMonitoring
-        '
-        Me.txtMonitoring.BackColor = System.Drawing.Color.White
-        Me.txtMonitoring.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtMonitoring.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMonitoring.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtMonitoring.Location = New System.Drawing.Point(988, 34)
-        Me.txtMonitoring.MaxLength = 30
-        Me.txtMonitoring.Name = "txtMonitoring"
-        Me.txtMonitoring.Size = New System.Drawing.Size(237, 26)
-        Me.txtMonitoring.TabIndex = 59
-        '
-        'btnBack2
-        '
-        Me.btnBack2.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.left_Arrow
-        Me.btnBack2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnBack2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBack2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnBack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBack2.Location = New System.Drawing.Point(72, 24)
-        Me.btnBack2.Name = "btnBack2"
-        Me.btnBack2.Size = New System.Drawing.Size(43, 41)
-        Me.btnBack2.TabIndex = 186
-        Me.btnBack2.UseVisualStyleBackColor = True
-        '
-        'btnUpWindow
-        '
-        Me.btnUpWindow.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Up_Arrow
-        Me.btnUpWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnUpWindow.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnUpWindow.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnUpWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUpWindow.Location = New System.Drawing.Point(630, 533)
-        Me.btnUpWindow.Name = "btnUpWindow"
-        Me.btnUpWindow.Size = New System.Drawing.Size(43, 41)
-        Me.btnUpWindow.TabIndex = 185
-        Me.btnUpWindow.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(1145, 518)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(127, 60)
-        Me.Label1.TabIndex = 187
-        Me.Label1.Text = "©Copyright Protected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      All Right Reseve" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Developer 2014" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         ies" & _
-            "ms v.6.1"
         '
         'Label12
         '
@@ -387,19 +327,6 @@ Partial Class Monitoring_Time_Out
         Me.ColumnHeader1.Text = "Time Out"
         Me.ColumnHeader1.Width = 125
         '
-        'btnDownWindow
-        '
-        Me.btnDownWindow.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Arrow_Down
-        Me.btnDownWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnDownWindow.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDownWindow.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnDownWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDownWindow.Location = New System.Drawing.Point(614, 526)
-        Me.btnDownWindow.Name = "btnDownWindow"
-        Me.btnDownWindow.Size = New System.Drawing.Size(43, 41)
-        Me.btnDownWindow.TabIndex = 184
-        Me.btnDownWindow.UseVisualStyleBackColor = True
-        '
         'lblStudentCount
         '
         Me.lblStudentCount.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -429,14 +356,6 @@ Partial Class Monitoring_Time_Out
         '
         Me.tmrTimeDate.Enabled = True
         '
-        'tmrWindowUp
-        '
-        Me.tmrWindowUp.Interval = 1
-        '
-        'tmrWindowDn
-        '
-        Me.tmrWindowDn.Interval = 1
-        '
         'Monitoring_Time_Out
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
@@ -457,8 +376,6 @@ Partial Class Monitoring_Time_Out
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpControl.ResumeLayout(False)
         Me.grpControl.PerformLayout()
-        Me.pnlWindow.ResumeLayout(False)
-        Me.pnlWindow.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -488,15 +405,8 @@ Partial Class Monitoring_Time_Out
     Friend WithEvents ColumnHeader9 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader10 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents btnDownWindow As System.Windows.Forms.Button
     Friend WithEvents lblStudentCount As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents tmrTimeDate As System.Windows.Forms.Timer
-    Friend WithEvents pnlWindow As System.Windows.Forms.Panel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtMonitoring As System.Windows.Forms.TextBox
-    Friend WithEvents btnBack2 As System.Windows.Forms.Button
-    Friend WithEvents btnUpWindow As System.Windows.Forms.Button
-    Friend WithEvents tmrWindowUp As System.Windows.Forms.Timer
-    Friend WithEvents tmrWindowDn As System.Windows.Forms.Timer
 End Class

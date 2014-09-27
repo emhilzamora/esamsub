@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Runtime.InteropServices
 Public Class Internet_Access_Report
-    Dim sConnection As New MySqlConnection
+    Dim sqlConnection As New MySqlConnection
     Dim tt1 As ToolTip
     'para sa hint ng textbox
     <DllImport("user32.dll", CharSet:=CharSet.Auto)> _
@@ -20,9 +20,9 @@ Public Class Internet_Access_Report
     End Sub
 
     Private Sub Internet_Access_Report_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        If sConnection.State = ConnectionState.Closed Then
-            sConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
-            sConnection.Open()
+        If sqlConnection.State = ConnectionState.Closed Then
+            sqlConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
+            sqlConnection.Open()
             loadReports()
         End If
         tt1 = New ToolTip
@@ -39,7 +39,7 @@ Public Class Internet_Access_Report
 
         With sqlCommand
             .CommandText = sqlQuery
-            .Connection = sConnection
+            .Connection = sqlConnection
         End With
 
         With sqlAdapter
@@ -74,7 +74,7 @@ Public Class Internet_Access_Report
         Dim TABLE As New DataTable
         With SqlCommand
             .CommandText = SqlQuery
-            .Connection = sConnection
+            .Connection = sqlConnection
         End With
 
         With SqlAdapter
@@ -108,7 +108,7 @@ Public Class Internet_Access_Report
         Dim TABLE As New DataTable
         With SqlCommand
             .CommandText = SqlQuery
-            .Connection = sConnection
+            .Connection = sqlConnection
         End With
 
         With SqlAdapter
@@ -132,5 +132,9 @@ Public Class Internet_Access_Report
                 End With
             End With
         Next
+    End Sub
+
+    Private Sub btnReport_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReport.Click
+        Internet_Access_CrystalReportViewer.ShowDialog()
     End Sub
 End Class

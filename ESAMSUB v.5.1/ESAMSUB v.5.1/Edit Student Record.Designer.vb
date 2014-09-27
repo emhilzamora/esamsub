@@ -22,10 +22,6 @@ Partial Class Edit_Student_Record
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btnBrowsePicture = New System.Windows.Forms.Button()
-        Me.pictStudentPic = New System.Windows.Forms.PictureBox()
-        Me.btnTakePicture = New System.Windows.Forms.Button()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.txtReligion = New System.Windows.Forms.TextBox()
         Me.cmbCivilStatus = New System.Windows.Forms.ComboBox()
@@ -81,62 +77,10 @@ Partial Class Edit_Student_Record
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.btnBrowsePicture)
-        Me.GroupBox1.Controls.Add(Me.pictStudentPic)
-        Me.GroupBox1.Controls.Add(Me.btnTakePicture)
-        Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(997, 204)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(230, 280)
-        Me.GroupBox1.TabIndex = 177
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Student Picture"
-        '
-        'btnBrowsePicture
-        '
-        Me.btnBrowsePicture.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Explorer
-        Me.btnBrowsePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnBrowsePicture.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBrowsePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnBrowsePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBrowsePicture.Location = New System.Drawing.Point(170, 228)
-        Me.btnBrowsePicture.Name = "btnBrowsePicture"
-        Me.btnBrowsePicture.Size = New System.Drawing.Size(44, 42)
-        Me.btnBrowsePicture.TabIndex = 26
-        Me.btnBrowsePicture.UseVisualStyleBackColor = True
-        '
-        'pictStudentPic
-        '
-        Me.pictStudentPic.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile2
-        Me.pictStudentPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pictStudentPic.Location = New System.Drawing.Point(13, 26)
-        Me.pictStudentPic.Name = "pictStudentPic"
-        Me.pictStudentPic.Size = New System.Drawing.Size(201, 200)
-        Me.pictStudentPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pictStudentPic.TabIndex = 114
-        Me.pictStudentPic.TabStop = False
-        '
-        'btnTakePicture
-        '
-        Me.btnTakePicture.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Pictures_Library
-        Me.btnTakePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnTakePicture.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnTakePicture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.btnTakePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTakePicture.Location = New System.Drawing.Point(13, 228)
-        Me.btnTakePicture.Name = "btnTakePicture"
-        Me.btnTakePicture.Size = New System.Drawing.Size(44, 42)
-        Me.btnTakePicture.TabIndex = 25
-        Me.btnTakePicture.UseVisualStyleBackColor = True
         '
         'Label26
         '
@@ -235,7 +179,7 @@ Partial Class Edit_Student_Record
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.White
-        Me.Label22.Location = New System.Drawing.Point(419, 475)
+        Me.Label22.Location = New System.Drawing.Point(841, 47)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(143, 22)
         Me.Label22.TabIndex = 172
@@ -247,7 +191,7 @@ Partial Class Edit_Student_Record
         Me.txtGuardianAddress.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtGuardianAddress.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtGuardianAddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtGuardianAddress.Location = New System.Drawing.Point(573, 467)
+        Me.txtGuardianAddress.Location = New System.Drawing.Point(995, 39)
         Me.txtGuardianAddress.MaxLength = 100
         Me.txtGuardianAddress.Name = "txtGuardianAddress"
         Me.txtGuardianAddress.Size = New System.Drawing.Size(250, 26)
@@ -281,7 +225,7 @@ Partial Class Edit_Student_Record
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(825, 174)
+        Me.Label18.Location = New System.Drawing.Point(825, 234)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(158, 22)
         Me.Label18.TabIndex = 170
@@ -292,7 +236,7 @@ Partial Class Edit_Student_Record
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(864, 127)
+        Me.Label19.Location = New System.Drawing.Point(864, 187)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(119, 22)
         Me.Label19.TabIndex = 169
@@ -304,7 +248,7 @@ Partial Class Edit_Student_Record
         Me.txtMotherOccupation.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtMotherOccupation.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMotherOccupation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtMotherOccupation.Location = New System.Drawing.Point(997, 170)
+        Me.txtMotherOccupation.Location = New System.Drawing.Point(997, 230)
         Me.txtMotherOccupation.MaxLength = 30
         Me.txtMotherOccupation.Name = "txtMotherOccupation"
         Me.txtMotherOccupation.Size = New System.Drawing.Size(250, 26)
@@ -316,7 +260,7 @@ Partial Class Edit_Student_Record
         Me.txtMotherName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtMotherName.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMotherName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtMotherName.Location = New System.Drawing.Point(997, 123)
+        Me.txtMotherName.Location = New System.Drawing.Point(997, 183)
         Me.txtMotherName.MaxLength = 30
         Me.txtMotherName.Name = "txtMotherName"
         Me.txtMotherName.Size = New System.Drawing.Size(250, 26)
@@ -372,7 +316,7 @@ Partial Class Edit_Student_Record
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(832, 83)
+        Me.Label15.Location = New System.Drawing.Point(832, 143)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(151, 22)
         Me.Label15.TabIndex = 167
@@ -383,7 +327,7 @@ Partial Class Edit_Student_Record
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(871, 38)
+        Me.Label16.Location = New System.Drawing.Point(871, 98)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(112, 22)
         Me.Label16.TabIndex = 166
@@ -395,7 +339,7 @@ Partial Class Edit_Student_Record
         Me.txtFatherOccupation.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFatherOccupation.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFatherOccupation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtFatherOccupation.Location = New System.Drawing.Point(997, 75)
+        Me.txtFatherOccupation.Location = New System.Drawing.Point(997, 135)
         Me.txtFatherOccupation.MaxLength = 30
         Me.txtFatherOccupation.Name = "txtFatherOccupation"
         Me.txtFatherOccupation.Size = New System.Drawing.Size(250, 26)
@@ -407,7 +351,7 @@ Partial Class Edit_Student_Record
         Me.txtFatherName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFatherName.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFatherName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtFatherName.Location = New System.Drawing.Point(997, 28)
+        Me.txtFatherName.Location = New System.Drawing.Point(997, 88)
         Me.txtFatherName.MaxLength = 30
         Me.txtFatherName.Name = "txtFatherName"
         Me.txtFatherName.Size = New System.Drawing.Size(250, 26)
@@ -429,7 +373,7 @@ Partial Class Edit_Student_Record
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Open Sans Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(472, 42)
+        Me.Label14.Location = New System.Drawing.Point(471, 42)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(85, 22)
         Me.Label14.TabIndex = 164
@@ -453,7 +397,7 @@ Partial Class Edit_Student_Record
         Me.txtnationality.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtnationality.Font = New System.Drawing.Font("Open Sans Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtnationality.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.txtnationality.Location = New System.Drawing.Point(573, 38)
+        Me.txtnationality.Location = New System.Drawing.Point(572, 38)
         Me.txtnationality.MaxLength = 30
         Me.txtnationality.Name = "txtnationality"
         Me.txtnationality.Size = New System.Drawing.Size(176, 26)
@@ -692,7 +636,6 @@ Partial Class Edit_Student_Record
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.GroupBox1)
         Me.GroupBox2.Controls.Add(Me.cmbDepartment)
         Me.GroupBox2.Controls.Add(Me.Label18)
         Me.GroupBox2.Controls.Add(Me.Label4)
@@ -827,8 +770,6 @@ Partial Class Edit_Student_Record
         Me.Name = "Edit_Student_Record"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Edit_Student_Record"
-        Me.GroupBox1.ResumeLayout(False)
-        CType(Me.pictStudentPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -839,10 +780,6 @@ Partial Class Edit_Student_Record
 
     End Sub
     Friend WithEvents btnUpdate As System.Windows.Forms.Button
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents btnBrowsePicture As System.Windows.Forms.Button
-    Friend WithEvents pictStudentPic As System.Windows.Forms.PictureBox
-    Friend WithEvents btnTakePicture As System.Windows.Forms.Button
     Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents txtReligion As System.Windows.Forms.TextBox

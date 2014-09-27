@@ -6,7 +6,7 @@ Public Class Other_User_Login
     Dim da As New MySqlDataAdapter
     'declare con as connection and it will now a new connection because 
     'it is equal to Getconnection Function
-    Dim con As MySqlConnection = loginConnection()
+    Dim sqlConnection As MySqlConnection = loginConnection()
     'para sa hint ng textbox
     <DllImport("user32.dll", CharSet:=CharSet.Auto)> _
     Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal msg As Integer, ByVal wParam As Integer, <MarshalAs(UnmanagedType.LPWStr)> ByVal lParam As String) As Int32
@@ -50,7 +50,7 @@ Public Class Other_User_Login
                 sql = "select * from tbl_users where user_type = '" & cmbUserType.Text & "' and username ='" & txtUsername.Text & "' and password = '" & txtPassword.Text & "'"
                 'bind the connection and query
                 With cmd
-                    .Connection = con
+                    .Connection = sqlConnection
                     .CommandText = sql
                 End With
                 da.SelectCommand = cmd
@@ -132,7 +132,7 @@ Public Class Other_User_Login
             MsgBox(ex.Message)
 
         End Try
-        con.Clone()
+        sqlConnection.Clone()
     End Sub
     Private Sub txtPassword_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtPassword.KeyDown
         If e.KeyCode = Keys.Up Then
@@ -158,7 +158,7 @@ Public Class Other_User_Login
                     sql = "select * from tbl_users where user_type = '" & cmbUserType.Text & "' and username ='" & txtUsername.Text & "' and password = '" & txtPassword.Text & "'"
                     'bind the connection and query
                     With cmd
-                        .Connection = con
+                        .Connection = sqlConnection
                         .CommandText = sql
                     End With
                     da.SelectCommand = cmd
@@ -240,7 +240,7 @@ Public Class Other_User_Login
                 MsgBox(ex.Message)
 
             End Try
-            con.Clone()
+            sqlConnection.Clone()
         End If
     End Sub
 

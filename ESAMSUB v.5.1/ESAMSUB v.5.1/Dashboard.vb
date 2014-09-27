@@ -125,7 +125,6 @@ Public Class Dashboard
 
     Private Sub btnMonitoring_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMonitoring.Click
         SelectMonitoring.ShowDialog()
-        Me.Hide()
     End Sub
 
     Private Sub btnEmployee_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEmployee.Click

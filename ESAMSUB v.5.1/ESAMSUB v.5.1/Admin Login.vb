@@ -6,7 +6,7 @@ Public Class Admin_Login
     Dim da As New MySqlDataAdapter
     'declare con as connection and it will now a new connection because 
     'it is equal to Getconnection Function
-    Dim con As MySqlConnection = loginConnection()
+    Dim sqlConnection As MySqlConnection = loginConnection()
     'para sa hint ng textbox
     <DllImport("user32.dll", CharSet:=CharSet.Auto)> _
     Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal msg As Integer, ByVal wParam As Integer, <MarshalAs(UnmanagedType.LPWStr)> ByVal lParam As String) As Int32
@@ -70,7 +70,7 @@ Public Class Admin_Login
                     sql = "select * from tbl_users where username ='" & txtUsername.Text & "' and password = '" & txtPassword.Text & "'"
                     'bind the connection and query
                     With cmd
-                        .Connection = con
+                        .Connection = sqlConnection
                         .CommandText = sql
                     End With
                     da.SelectCommand = cmd
@@ -111,7 +111,7 @@ Public Class Admin_Login
                 MsgBox(ex.Message)
 
             End Try
-            con.Clone()
+            sqlConnection.Clone()
         End If
     End Sub
 
@@ -136,7 +136,7 @@ Public Class Admin_Login
                 sql = "select * from tbl_users where username ='" & txtUsername.Text & "' and password = '" & txtPassword.Text & "'"
                 'bind the connection and query
                 With cmd
-                    .Connection = con
+                    .Connection = sqlConnection
                     .CommandText = sql
                 End With
                 da.SelectCommand = cmd
@@ -177,7 +177,7 @@ Public Class Admin_Login
             MsgBox(ex.Message)
 
         End Try
-        con.Clone()
+        sqlConnection.Clone()
     End Sub
 
 End Class

@@ -134,7 +134,7 @@ Partial Class Reports
         Me.grpControls.ForeColor = System.Drawing.Color.White
         Me.grpControls.Location = New System.Drawing.Point(71, 100)
         Me.grpControls.Name = "grpControls"
-        Me.grpControls.Size = New System.Drawing.Size(134, 233)
+        Me.grpControls.Size = New System.Drawing.Size(134, 358)
         Me.grpControls.TabIndex = 52
         Me.grpControls.TabStop = False
         Me.grpControls.Text = "Select Report"
@@ -144,7 +144,7 @@ Partial Class Reports
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(9, 150)
+        Me.Label4.Location = New System.Drawing.Point(11, 168)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(114, 18)
         Me.Label4.TabIndex = 55
@@ -157,7 +157,7 @@ Partial Class Reports
         Me.btnEmployeeReport.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEmployeeReport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnEmployeeReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEmployeeReport.Location = New System.Drawing.Point(43, 109)
+        Me.btnEmployeeReport.Location = New System.Drawing.Point(45, 127)
         Me.btnEmployeeReport.Name = "btnEmployeeReport"
         Me.btnEmployeeReport.Size = New System.Drawing.Size(42, 38)
         Me.btnEmployeeReport.TabIndex = 56
@@ -168,7 +168,7 @@ Partial Class Reports
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(14, 73)
+        Me.Label3.Location = New System.Drawing.Point(16, 83)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(103, 18)
         Me.Label3.TabIndex = 53
@@ -181,7 +181,7 @@ Partial Class Reports
         Me.btnStudentReport.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnStudentReport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.btnStudentReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStudentReport.Location = New System.Drawing.Point(43, 28)
+        Me.btnStudentReport.Location = New System.Drawing.Point(45, 38)
         Me.btnStudentReport.Name = "btnStudentReport"
         Me.btnStudentReport.Size = New System.Drawing.Size(42, 38)
         Me.btnStudentReport.TabIndex = 54
@@ -204,9 +204,9 @@ Partial Class Reports
         '
         Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(71, 339)
+        Me.GroupBox1.Location = New System.Drawing.Point(71, 473)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(134, 296)
+        Me.GroupBox1.Size = New System.Drawing.Size(134, 162)
         Me.GroupBox1.TabIndex = 53
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filter"

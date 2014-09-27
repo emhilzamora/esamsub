@@ -4,7 +4,7 @@ Public Class Internet_Access_Usage
     Dim status As Integer
     Dim x As Integer
     Dim tt As ToolTip
-    Dim sConnection = New MySqlConnection
+    Dim sqlConnection = New MySqlConnection
     Friend id As String
     Friend fname As String
     Friend lname As String
@@ -15,9 +15,9 @@ Public Class Internet_Access_Usage
     Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal msg As Integer, ByVal wParam As Integer, <MarshalAs(UnmanagedType.LPWStr)> ByVal lParam As String) As Int32
     End Function
     Private Sub Internet_Access_Usage_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        If sConnection.State = ConnectionState.Closed Then
-            sConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
-            sConnection.Open()
+        If sqlConnection.State = ConnectionState.Closed Then
+            sqlConnection.ConnectionString = "SERVER =localhost; USERID=root;PASSWORD=;DATABASE=esamsub2014;"
+            sqlConnection.Open()
             loadStudents()
         End If
         tt = New ToolTip
@@ -40,7 +40,7 @@ Public Class Internet_Access_Usage
 
         With sqlCommand
             .CommandText = sqlQuery
-            .Connection = sConnection
+            .Connection = sqlConnection
         End With
 
         With sqlAdapter
@@ -99,7 +99,7 @@ Public Class Internet_Access_Usage
 
             With sqlcommand
                 .CommandText = sqlQuery
-                .Connection = sConnection
+                .Connection = sqlConnection
             End With
             With sqlAdapter
                 .SelectCommand = sqlcommand
@@ -130,7 +130,7 @@ labas:
         Dim TABLE As New DataTable
         With SqlCommand
             .CommandText = SqlQuery
-            .Connection = sConnection
+            .Connection = sqlConnection
         End With
 
         With SqlAdapter
@@ -164,7 +164,7 @@ labas:
         Dim TABLE As New DataTable
         With SqlCommand
             .CommandText = SqlQuery
-            .Connection = sConnection
+            .Connection = sqlConnection
         End With
 
         With SqlAdapter

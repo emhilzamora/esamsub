@@ -43,10 +43,10 @@ Partial Class Internet_Access_Prompt
         '
         Me.lblName.AutoSize = True
         Me.lblName.BackColor = System.Drawing.Color.Transparent
-        Me.lblName.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.Location = New System.Drawing.Point(106, 333)
+        Me.lblName.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.Location = New System.Drawing.Point(196, 537)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(50, 16)
+        Me.lblName.Size = New System.Drawing.Size(82, 26)
         Me.lblName.TabIndex = 0
         Me.lblName.Text = "Label1"
         '
@@ -54,10 +54,10 @@ Partial Class Internet_Access_Prompt
         '
         Me.lblYear.AutoSize = True
         Me.lblYear.BackColor = System.Drawing.Color.Transparent
-        Me.lblYear.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblYear.Location = New System.Drawing.Point(106, 354)
+        Me.lblYear.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblYear.Location = New System.Drawing.Point(196, 569)
         Me.lblYear.Name = "lblYear"
-        Me.lblYear.Size = New System.Drawing.Size(50, 16)
+        Me.lblYear.Size = New System.Drawing.Size(82, 26)
         Me.lblYear.TabIndex = 1
         Me.lblYear.Text = "Label2"
         '
@@ -65,10 +65,10 @@ Partial Class Internet_Access_Prompt
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(53, 372)
+        Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(106, 598)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 16)
+        Me.Label3.Size = New System.Drawing.Size(96, 26)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Course:"
         '
@@ -76,10 +76,10 @@ Partial Class Internet_Access_Prompt
         '
         Me.lblCourse.AutoSize = True
         Me.lblCourse.BackColor = System.Drawing.Color.Transparent
-        Me.lblCourse.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCourse.Location = New System.Drawing.Point(106, 372)
+        Me.lblCourse.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCourse.Location = New System.Drawing.Point(196, 600)
         Me.lblCourse.Name = "lblCourse"
-        Me.lblCourse.Size = New System.Drawing.Size(50, 16)
+        Me.lblCourse.Size = New System.Drawing.Size(82, 26)
         Me.lblCourse.TabIndex = 3
         Me.lblCourse.Text = "Label4"
         '
@@ -87,11 +87,11 @@ Partial Class Internet_Access_Prompt
         '
         Me.lblDate.AutoSize = True
         Me.lblDate.BackColor = System.Drawing.Color.Transparent
-        Me.lblDate.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDate.Font = New System.Drawing.Font("Agency FB", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(254, Byte), Integer), CType(CType(81, Byte), Integer))
-        Me.lblDate.Location = New System.Drawing.Point(64, 86)
+        Me.lblDate.Location = New System.Drawing.Point(126, 141)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(62, 28)
+        Me.lblDate.Size = New System.Drawing.Size(90, 42)
         Me.lblDate.TabIndex = 4
         Me.lblDate.Text = "lblDate"
         '
@@ -99,11 +99,11 @@ Partial Class Internet_Access_Prompt
         '
         Me.lblTime.AutoSize = True
         Me.lblTime.BackColor = System.Drawing.Color.Transparent
-        Me.lblTime.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTime.Font = New System.Drawing.Font("Agency FB", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTime.ForeColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(254, Byte), Integer), CType(CType(81, Byte), Integer))
-        Me.lblTime.Location = New System.Drawing.Point(64, 113)
+        Me.lblTime.Location = New System.Drawing.Point(126, 181)
         Me.lblTime.Name = "lblTime"
-        Me.lblTime.Size = New System.Drawing.Size(55, 28)
+        Me.lblTime.Size = New System.Drawing.Size(79, 42)
         Me.lblTime.TabIndex = 5
         Me.lblTime.Text = "Label1"
         '
@@ -111,11 +111,11 @@ Partial Class Internet_Access_Prompt
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Agency FB", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(254, Byte), Integer), CType(CType(81, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(592, 232)
+        Me.Label1.Location = New System.Drawing.Point(1046, 384)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 32)
+        Me.Label1.Size = New System.Drawing.Size(161, 58)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "TIME LEFT"
         '
@@ -123,11 +123,11 @@ Partial Class Internet_Access_Prompt
         '
         Me.lblNoTimeLeft.AutoSize = True
         Me.lblNoTimeLeft.BackColor = System.Drawing.Color.Transparent
-        Me.lblNoTimeLeft.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNoTimeLeft.Font = New System.Drawing.Font("Agency FB", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNoTimeLeft.ForeColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(254, Byte), Integer), CType(CType(81, Byte), Integer))
-        Me.lblNoTimeLeft.Location = New System.Drawing.Point(375, 232)
+        Me.lblNoTimeLeft.Location = New System.Drawing.Point(656, 384)
         Me.lblNoTimeLeft.Name = "lblNoTimeLeft"
-        Me.lblNoTimeLeft.Size = New System.Drawing.Size(304, 32)
+        Me.lblNoTimeLeft.Size = New System.Drawing.Size(551, 58)
         Me.lblNoTimeLeft.TabIndex = 7
         Me.lblNoTimeLeft.Text = "SORRY YOU HAVE NO MORE TIME LEFT"
         Me.lblNoTimeLeft.Visible = False
@@ -136,11 +136,11 @@ Partial Class Internet_Access_Prompt
         '
         Me.lblHourLeft.AutoSize = True
         Me.lblHourLeft.BackColor = System.Drawing.Color.Transparent
-        Me.lblHourLeft.Font = New System.Drawing.Font("Gill Sans MT", 99.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHourLeft.Font = New System.Drawing.Font("Gill Sans MT", 150.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHourLeft.ForeColor = System.Drawing.Color.Red
-        Me.lblHourLeft.Location = New System.Drawing.Point(435, 152)
+        Me.lblHourLeft.Location = New System.Drawing.Point(778, 278)
         Me.lblHourLeft.Name = "lblHourLeft"
-        Me.lblHourLeft.Size = New System.Drawing.Size(211, 183)
+        Me.lblHourLeft.Size = New System.Drawing.Size(315, 275)
         Me.lblHourLeft.TabIndex = 8
         Me.lblHourLeft.Text = "10"
         '
@@ -150,7 +150,7 @@ Partial Class Internet_Access_Prompt
         Me.lblInterval.BackColor = System.Drawing.Color.Transparent
         Me.lblInterval.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblInterval.ForeColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(254, Byte), Integer), CType(CType(81, Byte), Integer))
-        Me.lblInterval.Location = New System.Drawing.Point(422, 323)
+        Me.lblInterval.Location = New System.Drawing.Point(639, 567)
         Me.lblInterval.Name = "lblInterval"
         Me.lblInterval.Size = New System.Drawing.Size(22, 28)
         Me.lblInterval.TabIndex = 9
@@ -161,11 +161,11 @@ Partial Class Internet_Access_Prompt
         '
         Me.lblId.AutoSize = True
         Me.lblId.BackColor = System.Drawing.Color.Transparent
-        Me.lblId.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblId.Font = New System.Drawing.Font("MS Reference Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblId.ForeColor = System.Drawing.Color.White
-        Me.lblId.Location = New System.Drawing.Point(51, 390)
+        Me.lblId.Location = New System.Drawing.Point(105, 627)
         Me.lblId.Name = "lblId"
-        Me.lblId.Size = New System.Drawing.Size(116, 26)
+        Me.lblId.Size = New System.Drawing.Size(177, 40)
         Me.lblId.TabIndex = 10
         Me.lblId.Text = "20111861"
         '
@@ -173,9 +173,9 @@ Partial Class Internet_Access_Prompt
         '
         Me.pctProfile.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Profile1
         Me.pctProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pctProfile.Location = New System.Drawing.Point(50, 147)
+        Me.pctProfile.Location = New System.Drawing.Point(92, 239)
         Me.pctProfile.Name = "pctProfile"
-        Me.pctProfile.Size = New System.Drawing.Size(192, 178)
+        Me.pctProfile.Size = New System.Drawing.Size(345, 282)
         Me.pctProfile.TabIndex = 11
         Me.pctProfile.TabStop = False
         '
@@ -189,7 +189,7 @@ Partial Class Internet_Access_Prompt
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.BackgroundImage = Global.ESAMSUB_v._5._1.My.Resources.Resources.Internet_Access
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(717, 435)
+        Me.ClientSize = New System.Drawing.Size(1300, 700)
         Me.Controls.Add(Me.pctProfile)
         Me.Controls.Add(Me.lblId)
         Me.Controls.Add(Me.lblInterval)

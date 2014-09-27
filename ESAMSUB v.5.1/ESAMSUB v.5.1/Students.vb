@@ -269,7 +269,6 @@ labas:
                 .SelectCommand = sqlcommand
                 .Fill(sqlTable)
             End With
-            Edit_Student_Record.pictStudentPic.ImageLocation = Application.StartupPath & "\Pictures\" & lvStudents.SelectedItems(0).Text & ".jpg"
             Edit_Student_Record.id = lvStudents.SelectedItems(0).Text
             Edit_Student_Record.firstname = sqlTable.Rows(0)("fname")
             Edit_Student_Record.middlename = sqlTable.Rows(0)("mname")
